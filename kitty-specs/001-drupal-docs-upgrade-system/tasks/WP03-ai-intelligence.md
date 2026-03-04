@@ -1,13 +1,17 @@
 ---
 work_package_id: WP03
 title: Intelligence - AI Merging & Gap Identification
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: main
+base_commit: e7de078d189410feec807f9506ec5c5ccbec1ebb
+created_at: '2026-03-04T18:54:05.584494+00:00'
 subtasks:
 - T010
 - T011
 - T012
 phase: Phase 2 - Intelligence
+shell_pid: "67378"
 history:
 - timestamp: '2026-03-04T12:15:00Z'
   lane: planned
