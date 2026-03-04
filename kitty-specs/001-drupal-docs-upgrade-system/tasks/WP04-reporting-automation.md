@@ -1,14 +1,18 @@
 ---
 work_package_id: WP04
 title: Automation - Reporting & GitHub Actions
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: main
+base_commit: 6bc42146bf6329c3011979b5880bc424fb177c14
+created_at: '2026-03-04T18:56:23.838293+00:00'
 subtasks:
 - T013
 - T014
 - T015
 - T016
 phase: Phase 2 - Automation
+shell_pid: "67378"
 history:
 - timestamp: '2026-03-04T12:15:00Z'
   lane: planned
