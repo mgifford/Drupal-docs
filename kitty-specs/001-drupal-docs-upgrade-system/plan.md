@@ -11,7 +11,19 @@ The planner will not begin until all planning questions have been answered—cap
 
 ## Summary
 
-[Extract from feature spec: primary requirement + technical approach from research]
+The **Drupal Documentation Upgrade System** will leverage a Python-based crawling and conversion engine to mirror `drupal.org` documentation (/docs and /documentation) into this repository. It will use GitHub Actions for automated, throttled synchronization and Gemini for intelligent content analysis and transformation. The resulting structured Markdown (frontmatter + inline RDFa) will be served via Jekyll on GitHub Pages.
+
+### Engineering Alignment
+- **Crawler Stack**: Python (Scrapy/BeautifulSoup/Pandoc)
+- **Content Storage**: In-repo (mirrored Markdown and assets)
+- **Deployment**: GitHub Pages (Jekyll)
+- **AI Agent**: Hybrid (Gemini for Reasoning, Ollama for Transformation)
+- **Local Model**: `qwen2.5-coder:7b` via Ollama (http://localhost:11434)
+- **Sync Schedule**: GitHub Actions (Daily Cron)
+- **Reporting Strategy**: Hybrid (GitHub Issues for Gaps + Jekyll Report Page)
+- **Workflow Trigger**: Issue comments (e.g., "Confirmed") to approve/transition content.
+- **Consolidation Strategy**: AI-Driven Merger (Consolidate d.o and Drupal CMS into a unified version).
+- **Validation Approach**: Gemini-grounded for stable releases (D11 focus), with frontmatter highlighting version-specific instructions for D10, D11, and Drupal CMS.
 
 ## Technical Context
 
@@ -21,15 +33,14 @@ The planner will not begin until all planning questions have been answered—cap
   the iteration process.
 -->
 
-**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]  
-**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]  
-**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]  
-**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]  
-**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
-**Project Type**: [single/web/mobile - determines source structure]  
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
-**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
+**Language/Version**: Python 3.11+
+**Primary Dependencies**: Scrapy, Beautiful Soup 4, Pandoc/TurnDown, Jekyll
+**Storage**: File-based (git repository) for Markdown and Binary assets
+**Testing**: pytest for crawler/converter logic
+**Target Platform**: GitHub Actions (Runner), GitHub Pages
+**Project Type**: Python CLI / Automation + Jekyll Site
+**Performance Goals**: Throttle-controlled sync to avoid Drupal.org load
+**Scale/Scope**: ~10k+ documentation pages, multiple gigabytes of media assets
 
 ## Constitution Check
 
@@ -42,61 +53,36 @@ The planner will not begin until all planning questions have been answered—cap
 ### Documentation (this feature)
 
 ```
-kitty-specs/[###-feature]/
-├── plan.md              # This file (/spec-kitty.plan command output)
-├── research.md          # Phase 0 output (/spec-kitty.plan command)
-├── data-model.md        # Phase 1 output (/spec-kitty.plan command)
-├── quickstart.md        # Phase 1 output (/spec-kitty.plan command)
-├── contracts/           # Phase 1 output (/spec-kitty.plan command)
-└── tasks.md             # Phase 2 output (/spec-kitty.tasks command - NOT created by /spec-kitty.plan)
+kitty-specs/001-drupal-docs-upgrade-system/
+├── plan.md              # This file
+├── research.md          # Implementation research findings
+├── data-model.md        # Metadata and entity definitions
+├── quickstart.md        # Setup guide for the new system
+├── contracts/           # Crawler/API interfaces
+└── tasks.md             # Work package definitions (future)
 ```
 
 ### Source Code (repository root)
-<!--
-  ACTION REQUIRED: Replace the placeholder tree below with the concrete layout
-  for this feature. Delete unused options and expand the chosen structure with
-  real paths (e.g., apps/admin, packages/something). The delivered plan must
-  not include Option labels.
--->
 
 ```
-# [REMOVE IF UNUSED] Option 1: Single project (DEFAULT)
-src/
-├── models/
-├── services/
-├── cli/
-└── lib/
+crawler/                 # Python crawling/conversion engine
+├── spiders/             # Scrapy spiders for d.o
+├── transformers/        # HTML to Markdown + AI Logic
+└── main.py              # CLI Entry point
 
-tests/
-├── contract/
-├── integration/
-└── unit/
+content/                 # Mirrored Documentation (Managed by automation)
+├── docs/                # Converted d.o docs
+├── media/               # Mirrored assets
+└── reports/             # Jekyll gap reports
 
-# [REMOVE IF UNUSED] Option 2: Web application (when "frontend" + "backend" detected)
-backend/
-├── src/
-│   ├── models/
-│   ├── services/
-│   └── api/
-└── tests/
+.github/
+└── workflows/           # Daily cron sync actions
 
-frontend/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   └── services/
-└── tests/
-
-# [REMOVE IF UNUSED] Option 3: Mobile + API (when "iOS/Android" detected)
-api/
-└── [same as backend above]
-
-ios/ or android/
-└── [platform-specific structure: feature modules, UI flows, platform tests]
+_config.yml              # Jekyll configuration
+index.md                 # Documentation Portal homepage
 ```
 
-**Structure Decision**: [Document the selected structure and reference the real
-directories captured above]
+**Structure Decision**: A dual-purpose repository combining the Python automation engine (under `crawler/`) and the generated static site content (under `content/` and root).
 
 ## Complexity Tracking
 

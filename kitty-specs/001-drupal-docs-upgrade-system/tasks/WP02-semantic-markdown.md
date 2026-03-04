@@ -25,8 +25,8 @@ history:
 
 ## Context & Constraints
 - Depends on output from **WP01**.
+- **Model Routing**: Use Ollama (`qwen2.5-coder:7b`) at `http://localhost:11434` for routine Markdown normalization and metadata extraction.
 - Must preserve semantic structure (headings, lists, code blocks).
-- Metadata must include `source_url`, `suggested_reviewers`, and `last_sync`.
 
 ## Subtasks & Detailed Guidance
 

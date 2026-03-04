@@ -1,0 +1,57 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Drupal Docs Gap Report",
+    "type": "object",
+    "properties": {
+        "version": {
+            "type": "string"
+        },
+        "timestamp": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "scanned_pages": {
+            "type": "integer"
+        },
+        "gaps": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "source_url": {
+                        "type": "string"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "missing_info": {
+                        "type": "string"
+                    },
+                    "severity": {
+                        "enum": [
+                            "high",
+                            "medium",
+                            "low"
+                        ]
+                    },
+                    "suggested_fix": {
+                        "type": "string"
+                    },
+                    "issue_number": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "source_url",
+                    "missing_info",
+                    "severity"
+                ]
+            }
+        }
+    },
+    "required": [
+        "version",
+        "timestamp",
+        "gaps"
+    ]
+}
