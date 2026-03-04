@@ -1,0 +1,12 @@
+{
+  "wp_id": "WP05",
+  "feature_slug": "001-drupal-docs-upgrade-system",
+  "worktree_path": ".worktrees/001-drupal-docs-upgrade-system-WP05",
+  "branch_name": "001-drupal-docs-upgrade-system-WP05",
+  "base_branch": "main",
+  "base_commit": "7c18a3d0a9602e4ec163f14fda877f360172a53c",
+  "dependencies": [],
+  "created_at": "2026-03-04T18:59:28.879384+00:00",
+  "created_by": "implement-command",
+  "vcs_backend": "git"
+}

@@ -1,0 +1,12 @@
+{
+  "wp_id": "WP04",
+  "feature_slug": "001-drupal-docs-upgrade-system",
+  "worktree_path": ".worktrees/001-drupal-docs-upgrade-system-WP04",
+  "branch_name": "001-drupal-docs-upgrade-system-WP04",
+  "base_branch": "main",
+  "base_commit": "6bc42146bf6329c3011979b5880bc424fb177c14",
+  "dependencies": [],
+  "created_at": "2026-03-04T18:56:23.838293+00:00",
+  "created_by": "implement-command",
+  "vcs_backend": "git"
+}

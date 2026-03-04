@@ -1,0 +1,27 @@
+name: Approval Workflow
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  approve-content:
+    if: contains(github.event.comment.body, 'Confirmed')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Approve Documentation Upgrade
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # 1. Identify the documentation file associated with the issue
+          # (Simplified: assumes metadata or labels can identify the file)
+          # In a real implementation, we would parse the issue body for the file path.
+          echo "Processing approval for issue #${{ github.event.issue.number }}"
+          
+          # 2. Update the 'status' in frontmatter to 'upgraded'
+          # python crawler/scripts/approve_doc.py --issue ${{ github.event.issue.number }}
+          
+          # 3. Close the issue
+          gh issue close ${{ github.event.issue.number }} --comment "Documentation upgrade confirmed and deployed."

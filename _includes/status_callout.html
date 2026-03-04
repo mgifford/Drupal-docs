@@ -1,0 +1,15 @@
+{% if page.drupal_version %}
+<div class="label label-blue">{{ page.drupal_version }}</div>
+{% endif %}
+
+{% if page.status == "upgraded" %}
+<div class="label label-green">Upgraded</div>
+{% elsif page.status == "draft" %}
+<div class="label label-yellow">AI Draft</div>
+{% elsif page.status == "gap" %}
+<div class="label label-red">Gap Identified</div>
+{% endif %}
+
+{% if page.is_drupal_cms %}
+<div class="label label-purple">Drupal CMS</div>
+{% endif %}

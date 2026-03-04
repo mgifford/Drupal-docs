@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<hr>
+<div class="status-footer">
+    {% include status_callout.html %}
+    <p class="text-small">
+        Source: <a href="{{ page.source_url }}">{{ page.source_url }}</a><br>
+        Suggested Reviewers: {{ page.suggested_reviewers | join: ", " }}
+    </p>
+</div>
