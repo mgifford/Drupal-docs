@@ -1,14 +1,18 @@
 ---
 work_package_id: WP02
 title: Conversion - Semantic Markdown Transformer
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: main
+base_commit: 145423071d31e5a07938d420fe2add327a7821f8
+created_at: '2026-03-04T18:21:18.371909+00:00'
 subtasks:
 - T006
 - T007
 - T008
 - T009
 phase: Phase 1 - Infrastructure
+shell_pid: "67378"
 history:
 - timestamp: '2026-03-04T12:15:00Z'
   lane: planned
