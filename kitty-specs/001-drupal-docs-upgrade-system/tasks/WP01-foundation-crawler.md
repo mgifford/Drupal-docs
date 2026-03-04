@@ -1,8 +1,11 @@
 ---
 work_package_id: WP01
 title: Foundation - Crawler Engine
-lane: planned
+lane: "doing"
 dependencies: []
+base_branch: main
+base_commit: d3d9fb71b522a88251b01f9bd578768897ba1657
+created_at: '2026-03-04T17:19:03.657365+00:00'
 subtasks:
 - T001
 - T002
@@ -10,6 +13,7 @@ subtasks:
 - T004
 - T005
 phase: Phase 1 - Infrastructure
+shell_pid: "67378"
 history:
 - timestamp: '2026-03-04T12:15:00Z'
   lane: planned
