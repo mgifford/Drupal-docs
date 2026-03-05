@@ -1,20 +1,20 @@
 ---
-author: ''
-drupal_version: ''
-last_updated: ''
+author: Drupal Association
+drupal_version: null
+last_updated: null
 readability_score: -29.79
 source_url: https://www.drupal.org/
 suggested_reviewers: []
-summary: Welcome to Drupal.org, where you can discover, build, and support the Drupal
-  CMS. This site offers information on Drupal Core, Drupal CMS, Drupal AI, documentation,
-  local development, community resources, and more.
+summary: The Drupal.org home page provides information about the open-source content
+  management system, including details on technical aspects of Drupal, building with
+  Drupal, community resources, and how to support Drupal.
 tags:
 - Drupal
 - CMS
 - Open Source
-- Community
+- Web Development
 themes: []
-title: Drupal.org
+title: Drupal.org Home Page
 ---
 
 ```markdown
@@ -40,7 +40,7 @@ title: Drupal.org
 
 - [Download Drupal](/download)
 - [Documentation](/documentation)
-- [Getting Started](https://www.drupal.org/docs/getting-started)
+- [Getting started](https://www.drupal.org/docs/getting-started)
 - [Local Development Guide](https://www.drupal.org/docs/official_docs/local-development-guide)
 - [Developer Resources](https://www.drupal.org/developers)
 - [Drupal CMS User Guide](https://new.drupal.org/docs/drupal-cms)

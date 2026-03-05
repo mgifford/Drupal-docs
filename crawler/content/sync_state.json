@@ -1,0 +1,59 @@
+{
+  "https://www.drupal.org/docs": {
+    "last_crawled": "now"
+  },
+  "https://www.drupal.org/documentation": {
+    "last_crawled": "now"
+  },
+  "https://www.drupal.org/docs/glossary": {
+    "last_crawled": "now"
+  },
+  "https://www.drupal.org/docs/develop/drupal-apis/token-api": {
+    "last_crawled": "now"
+  },
+  "https://www.drupal.org/docs/7/organizing-content-with-taxonomy/organizing-content-with-taxonomy": {
+    "last_crawled": "now"
+  },
+  "https://www.drupal.org/docs/develop/drupal-apis/token-api/token-upgrade-guides": {
+    "last_crawled": "now"
+  },
+  "https://www.drupal.org/docs/7/organizing-content-with-taxonomies/using-taxonomy-urls-to-display-sets-of-content": {
+    "last_crawled": "now"
+  },
+  "https://www.drupal.org/docs/7/organizing-content-with-taxonomies/guidelines-for-taxonomy-design": {
+    "last_crawled": "now"
+  },
+  "https://www.drupal.org/docs/7/organizing-content-with-taxonomies/create-a-vocabulary": {
+    "last_crawled": "now"
+  },
+  "https://www.drupal.org/docs/7/organizing-content-with-taxonomies/add-a-vocabulary-to-a-content-type": {
+    "last_crawled": "now"
+  },
+  "https://www.drupal.org/docs/7/organizing-content-with-taxonomies/add-a-term-to-a-vocabulary": {
+    "last_crawled": "now"
+  },
+  "https://www.drupal.org/docs/7/organizing-content-with-taxonomies/add-a-field-to-a-taxonomy-term-drupal-7-and-later": {
+    "last_crawled": "now"
+  },
+  "https://www.drupal.org/docs/7/organizing-content-with-taxonomies/about-taxonomies": {
+    "last_crawled": "now"
+  },
+  "https://www.drupal.org/docs/develop/drupal-apis/token-api/tokens-available-in-drupal-core": {
+    "last_crawled": "now"
+  },
+  "https://www.drupal.org/docs/develop/drupal-apis/token-api/token-api-hooks": {
+    "last_crawled": "now"
+  },
+  "https://www.drupal.org/docs/develop/drupal-apis/token-api/how-to-use-token-api": {
+    "last_crawled": "now"
+  },
+  "https://www.drupal.org/docs/develop/drupal-apis/token-api/overview-of-token-api": {
+    "last_crawled": "now"
+  },
+  "https://www.drupal.org/docs/user_guide/en/blocks-chapter.html": {
+    "last_crawled": "now"
+  },
+  "https://www.drupal.org/docs/develop/drupal-apis/icon-api": {
+    "last_crawled": "now"
+  }
+}

@@ -20,8 +20,8 @@
 
 title: Drupal Documentation Upgrade Portal
 description: Automated Drupal 11 documentation upgrades and status reports.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/Drupal-docs" # the subpath of your site, e.g. /blog
+url: "https://mgifford.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 remote_theme: just-the-docs/just-the-docs

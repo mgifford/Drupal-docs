@@ -1,13 +1,19 @@
-# Define your item pipelines here
-#
-# Don't forget to add your pipeline to the ITEM_PIPELINES setting
-# See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-
-
-# useful for handling different item types with a single interface
+import os
+import json
 from itemadapter import ItemAdapter
 
-
-class DrupalCrawlerPipeline:
+class SaveHTMLPipeline:
     def process_item(self, item, spider):
+        # Save to crawler/downloads/
+        # Note: Scrapy runs from 'crawler' dir, so 'downloads' will be 'crawler/downloads'
+        output_dir = "downloads"
+        os.makedirs(output_dir, exist_ok=True)
+        
+        # Use a safe filename from URL
+        filename = item['url'].replace('https://', '').replace('/', '_').replace('.', '_') + ".html"
+        file_path = os.path.join(output_dir, filename)
+        
+        with open(file_path, 'w') as f:
+            f.write(item.get('html', '') or "")
+            
         return item

@@ -24,9 +24,10 @@ AUTOTHROTTLE_DEBUG = False
 ITEM_PIPELINES = {
     "scrapy.pipelines.images.ImagesPipeline": 1,
     "scrapy.pipelines.files.FilesPipeline": 2,
+    "drupal_crawler.pipelines.SaveHTMLPipeline": 3,
 }
 
-IMAGES_STORE = "content/media/images"
-FILES_STORE = "content/media/files"
+IMAGES_STORE = "downloads/media/images"
+FILES_STORE = "downloads/media/files"
 
 FEED_EXPORT_ENCODING = "utf-8"

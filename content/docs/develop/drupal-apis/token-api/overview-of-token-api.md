@@ -3,25 +3,18 @@ author: ''
 drupal_version: ''
 last_updated: ''
 readability_score: -29.79
-source_url: https://www.drupal.org/
+source_url: /home
 suggested_reviewers: []
-summary: Welcome to Drupal.org, where you can discover, build, and support the Drupal
-  CMS. This site offers information on Drupal Core, Drupal CMS, Drupal AI, documentation,
-  local development, community resources, and more.
-tags:
-- Drupal
-- CMS
-- Open Source
-- Community
+summary: The open source framework behind millions of websites.
+tags: []
 themes: []
-title: Drupal.org
+title: Drupal.org home
 ---
 
 ```markdown
 # Drupal.org Home
 
 ## Discover Drupal
-
 - [Drupal Core](https://www.drupal.org/about/overview/technical)
 - [Drupal CMS](https://new.drupal.org/drupal-cms)
 - [Drupal AI](https://new.drupal.org/ai)
@@ -37,10 +30,9 @@ title: Drupal.org
 - [Drupal for Travel & Tourism](https://new.drupal.org/industries/travel)
 
 ## Build with Drupal
-
 - [Download Drupal](/download)
 - [Documentation](/documentation)
-- [Getting Started](https://www.drupal.org/docs/getting-started)
+- [Getting started](https://www.drupal.org/docs/getting-started)
 - [Local Development Guide](https://www.drupal.org/docs/official_docs/local-development-guide)
 - [Developer Resources](https://www.drupal.org/developers)
 - [Drupal CMS User Guide](https://new.drupal.org/docs/drupal-cms)
@@ -53,7 +45,6 @@ title: Drupal.org
 - [Security Advisories](/security)
 
 ## Partners & Services
-
 - [Find a Drupal Certified Partner](https://www.drupal.org/drupal-services)
 - [Become a Drupal Certified Partner](https://new.drupal.org/association/become-a-drupal-certified-partner)
 - [Find a Hosting Provider](https://www.drupal.org/hosting)
@@ -62,7 +53,6 @@ title: Drupal.org
 - [Drupal Steward](https://www.drupal.org/steward)
 
 ## Community
-
 - [About the Community](https://www.drupal.org/community)
 - [How to Contribute](https://www.drupal.org/community/contributor-guide)
 - [DrupalCon](https://events.drupal.org/)
@@ -75,7 +65,6 @@ title: Drupal.org
 - [Drupal Swag Shop](https://www.drupal.org/swag)
 
 ## Support Drupal
-
 - [The Drupal Association](/association)
 - [Donate](/association/donate)
 - [Become a Partner](/association/become-a-drupal-certified-partner)
@@ -84,7 +73,6 @@ title: Drupal.org
 - [Drupal Swag Shop](https://www.drupal.org/swag?utm_source=drupalorg&utm_medium=banner&utm_campaign=drupal_swag_shop_2020_09_17)
 
 ## Get Started
-
 - [Try Drupal CMS](https://new.drupal.org/drupal-cms/trial)
 - [Try Hosting](/try-hosting)
 ```
