@@ -1,0 +1,31 @@
+<div class="text-small">
+  <p class="mb-2">
+    Project: <a href="https://github.com/mgifford/Drupal-docs">mgifford/Drupal-docs</a>
+    | Source docs: <a href="https://www.drupal.org/documentation">Drupal.org Documentation</a>
+    | <a href="https://www.drupal.org/docs">Drupal Guide</a>
+    | <a href="https://www.drupal.org/docs/develop">Developer Docs</a>
+    | <a href="https://api.drupal.org/">API Reference</a>
+  </p>
+
+  <p class="mb-2">
+    {%- if page.author and page.author != "null" -%}
+      Original author(s): {{ page.author }}.
+    {%- else -%}
+      Original author(s): Drupal.org individual contributors.
+    {%- endif -%}
+    {%- if page.source_url and page.source_url != "null" -%}
+      {%- assign source_link = page.source_url -%}
+      {%- unless source_link contains 'http://' or source_link contains 'https://' -%}
+        {%- assign source_link = 'https://www.drupal.org' | append: source_link -%}
+      {%- endunless -%}
+      Source page: <a href="{{ source_link }}">{{ page.source_url }}</a>.
+    {%- endif -%}
+  </p>
+
+  <p class="mb-0">
+    Drupal's online documentation is &copy; 2000-2026 by the individual contributors and can be used in accordance with the
+    <a href="https://www.drupal.org/terms">Creative Commons License, Attribution-ShareAlike 2.0</a>.
+    PHP code is distributed under the
+    <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU General Public License</a>.
+  </p>
+</div>

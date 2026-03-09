@@ -1,84 +1,47 @@
 ---
 author: null
-drupal_version: null
-last_updated: null
-readability_score: -29.79
-source_url: null
-suggested_reviewers: []
-summary: null
+drupal_version: '7'
+last_updated: 22 August 2016
+readability_score: 51.85
+source_url: /docs/7/organizing-content-with-taxonomies/add-a-vocabulary-to-a-content-type
+suggested_reviewers:
+- Log in
+- Create account
+summary: To use taxonomy terms to organize your content, the vocabulary must be associated
+  with the content type. To add vocabulary, go to structure->taxonomy->add vocabulary.
+  Here you can add a vocabulary list. Once created, you will see it appear in the
+  list and can click to "view terms" and then will be able to add terms to the vocabulary
+  list.
 tags: null
 themes: null
-title: null
+title: Add a vocabulary to a content type
 ---
 
-```markdown
-# Drupal.org home
+# Add a vocabulary to a content type
 
-## Discover Drupal
+**Last updated on:** 22 August 2016
 
-- [Drupal Core](https://www.drupal.org/about/overview/technical)
-- [Drupal CMS](https://new.drupal.org/drupal-cms)
-- [Drupal AI](https://new.drupal.org/ai)
-- [Case Studies](https://www.drupal.org/case-studies)
-- [Drupal for Government](https://www.drupal.org/industries/government)
-- [Drupal for Higher Education](https://www.drupal.org/industries/education)
-- [Drupal for Nonprofit](https://www.drupal.org/industries/nonprofit)
-- [Drupal for eCommerce](https://www.drupal.org/industries/ecommerce)
-- [Drupal for FinTech](https://www.drupal.org/industries/fintech)
-- [Drupal for Healthcare](https://www.drupal.org/industries/healthcare)
-- [Drupal for Enterprise](https://new.drupal.org/industries/enterprise)
-- [Drupal for Retail](https://new.drupal.org/industries/retail)
-- [Drupal for Travel & Tourism](https://new.drupal.org/industries/travel)
+**Deprecated:** Drupal 7 will no longer be supported after January 5, 2025. [Learn more and find resources for Drupal 7 sites](/about/drupal-7/d7eol/partners)
 
-## Build with Drupal
+To use taxonomy terms to organize your content, the vocabulary must be associated with the content type. To add vocabulary, go to structure->taxonomy->add vocabulary. Here you can add a vocabulary list. Once created, you will see it appear in the list and can click to "view terms" and then will be able to add terms to the vocabulary list.
 
-- [Download Drupal](/download)
-- [Documentation](/documentation)
-- [Getting started](https://www.drupal.org/docs/getting-started)
-- [Local Development Guide](https://www.drupal.org/docs/official_docs/local-development-guide)
-- [Developer Resources](https://www.drupal.org/developers)
-- [Drupal CMS User Guide](https://new.drupal.org/docs/drupal-cms)
-- [Drupal User Guide](https://www.drupal.org/docs/user_guide/en/index.html)
-- [API](https://api.drupal.org/api/drupal/11.x)
-- [Modules](https://www.drupal.org/project/modules)
-- [Themes](https://www.drupal.org/project/themes)
-- [Distributions](https://www.drupal.org/project/project_distribution)
-- [Issue queues](/project/issues)
-- [Security Advisories](/security)
+1. In order to associate taxonomy terms to your content, you must add a field of type 'term reference' on the /Administration/Structure/Content types/[your-content-type]/Manage fields page.
+2. Add a new field by entering a label in the **Add new field** box, select **Term reference** from the dropdown box in Field Type, then select the relevant widget.
 
-## Partners & Services
+   ![Add a term reference field in a content type](/files/node1886980_1.jpg)
 
-- [Find a Drupal Certified Partner](https://www.drupal.org/drupal-services)
-- [Become a Drupal Certified Partner](https://new.drupal.org/association/become-a-drupal-certified-partner)
-- [Find a Hosting Provider](https://www.drupal.org/hosting)
-- [Find a Migration Partner](https://www.drupal.org/about/drupal-7/d7eol/migration-resource-center/enterprise)
-- [Find Training](https://www.drupal.org/training)
-- [Drupal Steward](https://www.drupal.org/steward)
+3. Click **Save**. You are immediately taken to the Field Settings page.
+4. Select the vocabulary that you want to use with this term reference field, then click **Save Field Settings**.
 
-## Community
+   ![Select the vocabulary to use for the term reference](/files/node1886980_2.jpg)
 
-- [About the Community](https://www.drupal.org/community)
-- [How to Contribute](https://www.drupal.org/community/contributor-guide)
-- [DrupalCon](https://events.drupal.org/)
-- [Events](https://www.drupal.org/community/events)
-- [Jobs / Careers](https://jobs.drupal.org/home)
-- [News & Blogs](https://www.drupal.org/blog)
-- [Forum](https://www.drupal.org/forum)
-- [Slack](/community/contributor-guide/reference-information/talk/tools/slack)
-- [Newsletters](https://www.drupal.org/subscribe)
-- [Drupal Swag Shop](https://www.drupal.org/swag)
+5. You are taken to a page to configure the newly added term reference field. Here you can change the term label, provide some help text and provide a default value.
 
-## Support Drupal
+**Help improve this page**
 
-- [The Drupal Association](/association)
-- [Donate](/association/donate)
-- [Become a Partner](/association/become-a-drupal-certified-partner)
-- [Become a Ripple Maker](/association/RippleMakers)
-- [Become an Organization Member](/association/organization-membership)
-- [Drupal Swag Shop](https://www.drupal.org/swag?utm_source=drupalorg&utm_medium=banner&utm_campaign=drupal_swag_shop_2020_09_17)
+Page status: No known problems
 
-## Get Started
-
-- [Try Drupal CMS](https://new.drupal.org/drupal-cms/trial)
-- [Try Hosting](/try-hosting)
-```
+You can:
+- Log in, click **Edit**, and edit this page
+- Log in, click **Discuss**, update the Page status value, and suggest an improvement
+- Log in and [create a Documentation issue](/node/add/project-issue/documentation?title=Suggestion%20for%3A%20%281886980%29%20Add%20a%20vocabulary%20to%20a%20content%20type) with your suggestion

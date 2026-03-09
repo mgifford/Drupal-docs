@@ -1,11 +1,58 @@
-<div class="content">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:fb="http://ogp.me/ns/fb#"
+  xmlns:og="http://ogp.me/ns#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="MobileOptimized" content="width" />
+  <!--[if IE]><![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Documentation for Icon API introduced in Drupal 11.1" />
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)" />
+<link rel="image_src" href="https://www.drupal.org/sites/all/themes/bluecheese/images/drupal_meta_image.png" />
+<link rel="canonical" href="https://www.drupal.org/docs/develop/drupal-apis/icon-api" />
+<link rel="shortlink" href="https://www.drupal.org/node/3498568" />
+<meta property="og:site_name" content="Drupal.org" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.drupal.org/docs/develop/drupal-apis/icon-api" />
+<meta property="og:title" content="Icon API" />
+<meta property="og:description" content="Drupal 11.1 introduced the new Icon API, which allows modules and themes to define icon packs. An icon pack consists of a series of icons, each with a unique identifier that the system can then use. Modules and themes can alter icon packs. How to add an icon pack To declare an icon pack, simply create a MODULE_OR_THEME_NAME.icons.yml file in your theme or module&#039;s root directory, e.g. modules/custom/mymodule/mymodule.icons.yml. Each top-level entry in this YAML file defines a new icon pack, as a plugin with YAML discovery." />
+<meta property="og:updated_time" content="2026-01-14T09:59:17+00:00" />
+<meta property="article:published_time" content="2025-01-09T17:22:03+00:00" />
+<meta property="article:modified_time" content="2026-01-14T09:59:17+00:00" />
+  <title>Icon API | Drupal APIs | Drupal Wiki guide on Drupal.org</title>
+  <link type="text/css" rel="stylesheet" href="/files/advagg_css/css__IGnvPR1nQd12eUWIitgZ6GDDyWxn9W82zUE-pgSt6Y8__Gh7RLUb1X-_kkfJcUW2xrjQQJCrbwuGgKr5Ix51cJYc__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__Xi-PZpvKTY78w7l1WNsqwUA52MIupHJebCMiX34Ugt0__D_EUHDAfEQdxcLiSDY7hREUWkG1Ge56_h2z3Er8V188__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__WF0PRotZAhCcl0aJjY5W2LYj8UwiYuB2dZEFluOh3Tc__FviX13FUB-Ppa2XB29BUIJQZ1Wg-F5XiDE7XD5y7mjQ__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__Fx0_w1L9q3nwzXnALG7UfjLF34FGYgJTz636-GWbM6k__0jWLTEHP3h5U5RcXuZcFhf0DdvRdzP3_wzCVNT015Ls__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__71G6gao0TOuJxFfw9efqGV9HafmPRGSqQoYV4yqGUWc__0k8WmohJ7uI39H7Fx7anieczTl-L07amrSNRIaXteE4__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+  </head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-3498568 node-type-documentation drupalorg-site-main panels-layout og-context og-context-node og-context-node-2814041" >
+  <div id="skip-link" tabindex="-1">
+    <a class="element-invisible element-focusable" href="#content">Skip to main content</a>
+    <a class="element-invisible element-focusable skip-link-search" href="#search-block-form">Skip to search</a>
+  </div>
+    <div class="region region-page-top">
+    <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W36H8DW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div id="drupalorg-crosssite-gdpr">Can we use first and third party cookies and web beacons to <a href="https://www.drupal.org/terms">understand our audience, and to tailor promotions you see</a>?<br><button class="yes">Yes, please</button><button class="no">No, do not track me</button></div>  </div>
+      <div id="nav-header">
+          <div class="menu-nav">
+        <a class="nav-btn" id="nav-open-btn" href="#block-system-main-menu"><img src="/sites/all/themes/bluecheese/images/icon-w-menu.svg" alt="Main menu"></a>
+      </div>
+        <nav id="navigation-inner" class="container-12" role="navigation">
+        <div class="region region-navigation">
+    <div id="block-system-main-menu" class="block block-system block-menu">
+<div class="block-inner">
+    
+  <div class="content">
     <div class="menu-block"><ul class="menu button"><li class="first leaf"><a href="/home" title="Drupal.org home page">Drupal.org home</a></li>
 <li class="expanded"><a href="https://www.drupal.org/about/overview/technical" title="">Discover Drupal</a><div class="menu-block"><ul class="menu button"><li class="first leaf"><a href="https://www.drupal.org/about/overview/technical" title="The open source framework behind millions of websites.">Drupal Core</a></li>
 <li class="leaf"><a href="https://new.drupal.org/drupal-cms" title="Drupal CMS puts the power of Drupal into the hands of marketers, designers and content creators.">Drupal CMS</a></li>
 <li class="leaf"><a href="https://new.drupal.org/ai" title="Open limitless possibilities with Drupal AI">Drupal AI</a></li>
 <li class="leaf"><a href="https://www.drupal.org/case-studies" title="Powerful stories that show Drupal solutions in the real world.">Case Studies</a></li>
 <li class="leaf"><a href="https://www.drupal.org/industries/government" title="Drupal is the open-source CMS that enables digital transformation of government and increases citizen engagement.">Drupal for Government</a></li>
-<li class="leaf"><a href="https://www.drupal.org/industries/education" title="See why 70% of the world's leading universities chose Drupal.">Drupal for Higher Education</a></li>
+<li class="leaf"><a href="https://www.drupal.org/industries/education" title="See why 70% of the world&#039;s leading universities chose Drupal.">Drupal for Higher Education</a></li>
 <li class="leaf"><a href="https://www.drupal.org/industries/nonprofit" title="See why Drupal is the open-source CMS choice for some of the world’s most influential nonprofits.">Drupal for Nonprofit</a></li>
 <li class="leaf"><a href="https://www.drupal.org/industries/ecommerce" title="Natively integrate content and commerce.">Drupal for eCommerce</a></li>
 <li class="leaf"><a href="https://www.drupal.org/industries/fintech" title="Secure and trustworth FinTech infrastructure.">Drupal for FinTech</a></li>
@@ -51,10 +98,741 @@
 <li class="leaf"><a href="/association/donate" title="Donate to the non-profit that supports Drupal">Donate</a></li>
 <li class="leaf"><a href="/association/become-a-drupal-certified-partner" title="Join the network of official Drupal Certified Partners">Become a Partner</a></li>
 <li class="leaf"><a href="/association/RippleMakers" title="Become an individual member of the Drupal Association">Become a Ripple Maker</a></li>
-<li class="leaf"><a href="/association/organization-membership" title="Join and show your organization's support for Drupal">Become an Organization Member</a></li>
+<li class="leaf"><a href="/association/organization-membership" title="Join and show your organization&#039;s support for Drupal">Become an Organization Member</a></li>
 <li class="last leaf"><a href="https://www.drupal.org/swag?utm_source=drupalorg&amp;utm_medium=banner&amp;utm_campaign=drupal_swag_shop_2020_09_17" title="Get your Drupal-branded bucket hats, hoodies, and more">Drupal Swag Shop</a></li>
 </ul></div></li>
 <li class="last expanded"><a href="/try-hosting" title="Try Drupal">Get Started</a><div class="menu-block"><ul class="menu button"><li class="first leaf"><a href="https://new.drupal.org/drupal-cms/trial" title="">Try Drupal CMS</a></li>
 <li class="last leaf"><a href="/try-hosting" title="">Try Hosting</a></li>
 </ul></div></li>
 </ul></div><a class="close-btn" href="#top">Return to content</a>  </div>
+  </div>
+</div>
+<div id="block-search-form" class="block block-search">
+<div class="block-inner">
+    
+  <div class="content">
+    <form action="/docs/develop/drupal-apis/icon-api" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input placeholder="Search…" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input alt="Search" type="image" id="edit-submit" name="submit" value="Search" src="/sites/all/themes/bluecheese/images/icon-w-search.svg" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-UYl17gLtd5DEMBOMBZkAosp7X47Msb0wVilwNqmnReI" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+  </div>
+</div>
+<div id="block-system-user-menu" class="block block-system block-menu">
+<div class="block-inner">
+    
+  <div class="content">
+    <div class="menu-block"><ul class="menu"><li class="button default"><a href="#block-system-user-menu"><img src="https://www.drupal.org/sites/all/themes/bluecheese/images/icon-w-user.svg" alt="Log in, view profile, and more"></a><ul><li class="first leaf"><a href="/user/login?destination=node/3498568" title="">Log in</a></li>
+<li class="last leaf"><a href="/user/register?destination=node/3498568" title="">Create account</a></li>
+</ul></li></ul></div>  </div>
+  </div>
+</div>
+  </div>
+    </nav>
+  </div>
+
+    <div id="header" class="clearfix">
+    <div id="header-inner" class="container-12 clearfix">
+      <div id="header-left">
+        <div id="site-name"><a href="/documentation">Documentation</a></div>
+              </div>
+      <div id="header-right">
+          <div class="region region-header">
+    <div id="block-drupalorg-search-documentation" class="block block-drupalorg">
+<div class="block-inner">
+    
+  <div class="content">
+    <form class="container-inline" action="/docs/develop/drupal-apis/icon-api" method="post" id="drupalorg-documentation-search-form" accept-charset="UTF-8"><div><input type="hidden" name="form_build_id" value="form-acknTouN2MEeMYB4lQx14weokuSaLAmiwJsswG0_sGM" />
+<input type="hidden" name="form_id" value="drupalorg_documentation_search_form" />
+<div class="form-item form-type-textfield form-item-drupalorg-documentation-search-form">
+  <label class="element-invisible" for="edit-drupalorg-documentation-search-form--2">Search </label>
+ <input placeholder="Search documentation…" type="text" id="edit-drupalorg-documentation-search-form--2" name="drupalorg_documentation_search_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions--2"><input alt="Search" type="image" id="edit-submit--2" name="submit" value="Search" src="/sites/all/themes/bluecheese/images/icon-w-search.svg" class="form-submit" /></div></div></form>  </div>
+  </div>
+</div>
+  </div>
+      </div>
+    </div>
+  </div>
+  
+      <div id="banner" data-nosnippet>
+        <div class="region region-banner">
+    <div id="block-drupalorg-announcements" class="block block-drupalorg">
+<div class="block-inner">
+    
+  <div class="content">
+    <div class="announcement">Level up your skills at DrupalCon Chicago 2026 with focused Summits and immersive, hands-on Trainings led by community experts.</div>
+<div class="cta"><a href="https://events.drupal.org/chicago2026/summits-trainings" class="global-announce-banner dc-chicago-26-training-summits">View all offerings and register today</a></div>  </div>
+  </div>
+</div>
+  </div>
+    </div>
+  
+  <div id="page" class="clearfix">
+    <div class="breadbox"><nav class="breadcrumb container-12"><span><a href="/docs/develop">Develop</a></span><span><a href="/docs/develop/drupal-apis">Drupal APIs</a></span></nav></div>
+
+    <div id="main" role="main">
+      
+      <div id="content" class="clearfix">
+                                <div id="content-inner" class="clearfix">
+
+          
+            <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+<div class="block-inner">
+    
+  <div class="content">
+    
+<div class="panelizer-view-mode node node-full node-documentation node-3498568">
+        
+<div class="panel-display hydra panel-layout clearfix " >
+
+  <div class="container preface clearfix panel-panel">
+    <div class="container-inner preface-inner panel-panel-inner">
+          </div>
+  </div>
+
+  <div class="container content clearfix">
+    <div class="container-inner content-inner panel-panel-inner">
+      <div class="column-content-region top-right-content column panel-panel">
+        <div class="column-content-region-inner top-right-content-inner column-inner panel-panel-inner">
+          <div class="panel-pane pane-block pane-drupalorg-carbon-ad-sidebar"  >
+  
+      
+  
+  <div class="pane-content">
+    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYIEKJI&placement=drupalorg" id="_carbonads_js"></script><div class="ad-explanation description">Advertising sustains the DA. Ads are hidden for members. <a href="/association/individual-membership">Join today</a></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-block pane-table-of-contents-toc-w-3y7froeoqmgrpcmgnphqwt4pi3"  id="on-this-page" >
+  
+        <h3 class="pane-title">
+      On this page    </h3>
+    
+  
+  <div class="pane-content">
+    <div class="item-list"><ul class="anchor-list"><li class="anchor-list__item h2-tag first"><a href="/docs/develop/drupal-apis/icon-api#s-how-to-add-an-icon-pack" class="toc-link toc-link-invalid-id active">How to add an icon pack</a></li>
+<li class="anchor-list__item h3-tag"><a href="/docs/develop/drupal-apis/icon-api#s-icon-pack-within-themes" class="toc-link toc-link-invalid-id active">Icon pack within themes</a></li>
+<li class="anchor-list__item h3-tag"><a href="/docs/develop/drupal-apis/icon-api#s-icon-pack-declaration-examples" class="toc-link toc-link-invalid-id active">Icon pack declaration examples</a></li>
+<li class="anchor-list__item h4-tag"><a href="/docs/develop/drupal-apis/icon-api#s-simple-with-path-and-wildcard" class="toc-link toc-link-invalid-id active">Simple with path and wildcard</a></li>
+<li class="anchor-list__item h4-tag"><a href="/docs/develop/drupal-apis/icon-api#s-simple-with-svg-settings-and-wildcard" class="toc-link toc-link-invalid-id active">Simple with SVG, settings and wildcard</a></li>
+<li class="anchor-list__item h4-tag"><a href="/docs/develop/drupal-apis/icon-api#s-simple-with-svg-sprite-file" class="toc-link toc-link-invalid-id active">Simple with SVG sprite file</a></li>
+<li class="anchor-list__item h4-tag"><a href="/docs/develop/drupal-apis/icon-api#s-advanced-with-metadata" class="toc-link toc-link-invalid-id active">Advanced with metadata</a></li>
+<li class="anchor-list__item h3-tag"><a href="/docs/develop/drupal-apis/icon-api#s-icon-pack-external-examples" class="toc-link toc-link-invalid-id active">Icon pack external examples</a></li>
+<li class="anchor-list__item h2-tag"><a href="/docs/develop/drupal-apis/icon-api#s-yaml-icon-pack-declaration-documentation" class="toc-link toc-link-invalid-id active">YAML icon pack declaration documentation</a></li>
+<li class="anchor-list__item h3-tag"><a href="/docs/develop/drupal-apis/icon-api#s-the-extractor-key" class="toc-link toc-link-invalid-id active">The `extractor` key</a></li>
+<li class="anchor-list__item h4-tag"><a href="/docs/develop/drupal-apis/icon-api#s-path-extractor-path" class="toc-link toc-link-invalid-id active">Path extractor `path`</a></li>
+<li class="anchor-list__item h4-tag"><a href="/docs/develop/drupal-apis/icon-api#s-svg-extractor-svg" class="toc-link toc-link-invalid-id active">SVG extractor `svg`</a></li>
+<li class="anchor-list__item h4-tag"><a href="/docs/develop/drupal-apis/icon-api#s-svg-sprite-extractor-svg-sprite" class="toc-link toc-link-invalid-id active">SVG Sprite extractor `svg_sprite`</a></li>
+<li class="anchor-list__item h3-tag"><a href="/docs/develop/drupal-apis/icon-api#s-the-config-key" class="toc-link toc-link-invalid-id active">The `config` key</a></li>
+<li class="anchor-list__item h3-tag"><a href="/docs/develop/drupal-apis/icon-api#s-the-settings-key" class="toc-link toc-link-invalid-id active">The `settings` key</a></li>
+<li class="anchor-list__item h3-tag"><a href="/docs/develop/drupal-apis/icon-api#s-the-template-key" class="toc-link toc-link-invalid-id active">The `template` key</a></li>
+<li class="anchor-list__item h3-tag"><a href="/docs/develop/drupal-apis/icon-api#s-the-library-key" class="toc-link toc-link-invalid-id active">The `library` key</a></li>
+<li class="anchor-list__item h3-tag"><a href="/docs/develop/drupal-apis/icon-api#s-optional-metadata-keys" class="toc-link toc-link-invalid-id active">Optional metadata keys</a></li>
+<li class="anchor-list__item h3-tag"><a href="/docs/develop/drupal-apis/icon-api#s-the-optional-preview-key" class="toc-link toc-link-invalid-id active">The optional `preview` key</a></li>
+<li class="anchor-list__item h2-tag"><a href="/docs/develop/drupal-apis/icon-api#s-how-to-add-an-extractor" class="toc-link toc-link-invalid-id active">How to add an Extractor</a></li>
+<li class="anchor-list__item h2-tag"><a href="/docs/develop/drupal-apis/icon-api#s-render-an-icon-with-php" class="toc-link toc-link-invalid-id active">Render an icon with PHP</a></li>
+<li class="anchor-list__item h2-tag"><a href="/docs/develop/drupal-apis/icon-api#s-render-an-icon-with-twig" class="toc-link toc-link-invalid-id active">Render an icon with Twig</a></li>
+<li class="anchor-list__item h2-tag last"><a href="/docs/develop/drupal-apis/icon-api#s-contrib-module" class="toc-link toc-link-invalid-id active">Contrib module</a></li>
+</ul></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-block pane-og-menu-og-single-menu-block"  id="drupal-apis" >
+  
+        <h2 class="pane-title">
+      <a href="/docs/develop/drupal-apis">Drupal APIs</a>    </h2>
+    
+  
+  <div class="pane-content">
+    <ul class="menu"><li class="first leaf"><a href="/docs/develop/drupal-apis/access-policy-api">Access Policy API</a></li>
+<li class="leaf"><a href="/docs/develop/drupal-apis/ajax-api">AJAX API</a></li>
+<li class="leaf"><a href="/docs/develop/drupal-apis/authentication-api">Authentication API</a></li>
+<li class="leaf"><a href="/docs/drupal-apis/batch-api">Batch API</a></li>
+<li class="leaf"><a href="/docs/drupal-apis/block-api">Block API</a></li>
+<li class="leaf"><a href="/docs/develop/drupal-apis/cache-api">Cache API</a></li>
+<li class="leaf"><a href="/docs/drupal-apis/deprecated-ckeditor-4-api-drupal-8-and-9" title="">(deprecated) CKEditor 4 API</a></li>
+<li class="leaf"><a href="/docs/drupal-apis/ckeditor-5-api">CKEditor 5 API</a></li>
+<li class="leaf"><a href="/docs/drupal-apis/configuration-api">Configuration API</a></li>
+<li class="leaf"><a href="/docs/develop/drupal-apis/database-api">Database API</a></li>
+<li class="leaf"><a href="/docs/drupal-apis/entity-api">Entity API</a></li>
+<li class="leaf"><a href="/docs/drupal-apis/filter-api">Filter API</a></li>
+<li class="leaf"><a href="/docs/develop/drupal-apis/form-api">Form API</a></li>
+<li class="leaf"><a href="/docs/develop/drupal-apis/javascript-api">JavaScript API</a></li>
+<li class="leaf"><a href="/docs/drupal-apis/layout-api">Layout API</a></li>
+<li class="leaf"><a href="/docs/drupal-apis/logging-api">Logging API</a></li>
+<li class="leaf"><a href="/docs/drupal-apis/menu-api">Menu API</a></li>
+<li class="leaf"><a href="/docs/drupal-apis/middleware-api">Middleware API</a></li>
+<li class="leaf"><a href="/docs/drupal-apis/migrate-api">Migrate API</a></li>
+<li class="leaf"><a href="/docs/drupal-apis/plugin-api">Plugin API</a></li>
+<li class="leaf"><a href="/docs/develop/drupal-apis/restful-web-services-api">RESTful Web Services API</a></li>
+<li class="leaf"><a href="/docs/drupal-apis/render-api">Render API</a></li>
+<li class="leaf"><a href="/docs/drupal-apis/responses">Responses</a></li>
+<li class="leaf"><a href="/docs/drupal-apis/routing-system">Routing system</a></li>
+<li class="leaf"><a href="/docs/develop/drupal-apis/runtime-assertions">Runtime Assertions</a></li>
+<li class="leaf"><a href="/docs/drupal-apis/serialization-api">Serialization API</a></li>
+<li class="leaf"><a href="/docs/drupal-apis/services-and-dependency-injection">Services and dependency injection</a></li>
+<li class="leaf"><a href="/docs/develop/drupal-apis/state-api">State API</a></li>
+<li class="leaf"><a href="/docs/drupal-apis/text-editor-api">Text Editor API</a></li>
+<li class="leaf"><a href="/docs/drupal-apis/tour-api">Tour API</a></li>
+<li class="leaf"><a href="/docs/develop/drupal-apis/translation-api-code-text" title="">Translation API</a></li>
+<li class="leaf"><a href="/docs/develop/drupal-apis/typed-data-api">Typed Data API</a></li>
+<li class="leaf"><a href="/docs/drupal-apis/update-api">Update API</a></li>
+<li class="leaf"><a href="/docs/develop/drupal-apis/htmx">HTMX</a></li>
+<li class="leaf active-trail"><a href="/docs/develop/drupal-apis/icon-api" class="active-trail active">Icon API</a></li>
+<li class="last leaf"><a href="/docs/develop/drupal-apis/token-api">Token API</a></li>
+</ul>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-node-links"  >
+  
+      
+  
+  <div class="pane-content">
+      </div>
+
+  
+  </div>
+        </div>
+      </div>
+      <div class="column-content-region left-content column panel-panel ">
+        <div class="column-content-region-inner left-content-inner column-inner panel-panel-inner">
+          <div class="panel-pane pane-node-title"  >
+  
+      
+  
+  <div class="pane-content">
+    <h1>Icon API</h1>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-node-updated"  id="last-updated-on" >
+  
+        <span class="pane-title">
+      Last <a href="/node/3498568/discuss">updated</a> on    </span>
+    
+  
+  <div class="pane-content">
+    14 January 2026  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-entity-field pane-node-field-documentation-status"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="field field-name-field-documentation-status field-type-list-text field-label-hidden"><div class="field-items"><div class="field-item even"><p class="deprecated">This documentation <strong>needs review</strong>. See "Help improve this page" in the sidebar.</p></div></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-entity-field pane-node-body"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>Drupal 11.1 introduced the new <a href="https://www.drupal.org/node/3490350" target="_blank" rel="nofollow">Icon API</a>, which allows modules and themes to define icon packs. An icon pack consists of a series of icons, each with a unique identifier that the system can then use. Modules and themes can alter icon packs.</p>
+<h2 id="s-how-to-add-an-icon-pack"><a class="toc-anchor" title="Permalink to this headline" href="#s-how-to-add-an-icon-pack"></a>How to add an icon pack</h2>
+<p>To declare an icon pack, simply create a <code class="language-php">MODULE_OR_THEME_NAME.icons.yml</code> file in your theme or module's root directory, e.g. <code class="language-php">modules/custom/mymodule/mymodule.icons.yml</code>. Each top-level entry in this YAML file defines a new icon pack, as a plugin with YAML discovery.</p>
+<p>The <code class="language-php">config &gt; sources</code> YAML value can be used to declare the location of the physical icons in your Drupal installation. The recommended location for the generic icon packs that can be managed using a package manager is the <code class="language-php">libraries</code> folder. You can place your own icons in your theme or module.</p>
+<p>An icon pack must have an <a href="#extractors" rel="nofollow">extractor</a>, which can take the values <code class="language-php">path</code>, <code class="language-php">svg</code> or <code class="language-php">svg_sprite</code>. Contrib modules can add more extractors.</p>
+<p>You can find the <a href="https://git.drupalcode.org/project/drupal/-/blob/11.x/core/assets/schemas/v1/icon_pack.schema.json" target="_blank" rel="nofollow">icon pack JSON schema definition</a> in <code class="language-php">core/assets/schemas/v1/icon_pack.schema.json</code>.</p>
+<h3 id="s-icon-pack-within-themes"><a class="toc-anchor" title="Permalink to this headline" href="#s-icon-pack-within-themes"></a>Icon pack within themes</h3>
+<p>Some themes provide icons out of the box, leveraging the API:</p>
+<ul>
+<li><a href="https://www.drupal.org/project/ui_suite_bootstrap" target="_blank" rel="nofollow">UI Suite Bootstrap 5.x</a> include <a href="https://git.drupalcode.org/project/ui_suite_bootstrap/-/blob/5.1.x/ui_suite_bootstrap.icons.yml" rel="nofollow">Bootstrap icons</a></li>
+<li><a href="https://www.drupal.org/project/ui_suite_dsfr" target="_blank" rel="nofollow">UI Suite DSFR</a> include <a href="https://git.drupalcode.org/project/ui_suite_dsfr/-/blob/1.1.x/ui_suite_dsfr.icons.yml" rel="nofollow">DSFR icons</a></li>
+<li><a href="https://www.drupal.org/project/ui_suite_uswds" target="_blank" rel="nofollow">UI Suite USWDS</a> include <a href="https://git.drupalcode.org/project/ui_suite_uswds/-/blob/4.0.x/ui_suite_uswds.icons.yml" rel="nofollow">USWDS icons</a></li>
+<li><a href="https://www.drupal.org/project/ui_suite_daisyui" target="_blank" rel="nofollow">UI Suite DaisyUI</a> include <a href="https://git.drupalcode.org/project/ui_suite_daisyui/-/blob/4.0.x/ui_suite_daisyui.icons.yml" rel="nofollow">Hero icons</a></li>
+</ul>
+<h3 id="s-icon-pack-declaration-examples"><a class="toc-anchor" title="Permalink to this headline" href="#s-icon-pack-declaration-examples"></a>Icon pack declaration examples</h3>
+<p>See YAML icon pack declaration documentation for details on each available keys.</p>
+<h4 id="s-simple-with-path-and-wildcard"><a class="toc-anchor" title="Permalink to this headline" href="#s-simple-with-path-and-wildcard"></a>Simple with path and wildcard</h4>
+<pre>
+<code class="language-php language-yaml">fixed_path:
+  extractor: path
+  config:
+    sources:
+      - icons/*.svg
+      - /libraries/icons/*.svg
+  template: '&lt;img src="{{ source }}" width="32" height="32" alt="{{ icon_id }}"&gt;'</code>
+</pre><h4 id="s-simple-with-svg-settings-and-wildcard"><a class="toc-anchor" title="Permalink to this headline" href="#s-simple-with-svg-settings-and-wildcard"></a>Simple with SVG, settings and wildcard</h4>
+<pre>
+<code class="language-php language-yaml">svg:
+  label: SVG icons
+  extractor: svg
+  config:
+    sources:
+      - icons/*.svg
+  settings:
+    size:
+      title: "Size"
+      type: "integer"
+      default: 32
+    color:
+      title: "Color"
+      type: "string"
+      format: "color"
+  template: &gt;-
+    &lt;svg
+      {{ attributes
+          .setAttribute('viewBox', attributes.viewBox|default('0 0 50 50'))
+          .setAttribute('width', size|default('32'))
+          .setAttribute('height', size|default('32'))
+          .setAttribute('fill', color|default('currentColor'))
+          .setAttribute('aria-hidden', 'true')
+      }}
+    &gt;
+      {{ content }}
+    &lt;/svg&gt;</code>
+</pre><h4 id="s-simple-with-svg-sprite-file"><a class="toc-anchor" title="Permalink to this headline" href="#s-simple-with-svg-sprite-file"></a>Simple with SVG sprite file</h4>
+<pre>
+<code class="language-php language-yaml">svg_sprite:
+  label: SVG sprite icons
+  extractor: svg_sprite
+  config:
+    sources:
+      - icons/foo_sprite.svg
+  settings:
+    size:
+      title: "Size"
+      type: "integer"
+      default: 32
+  template: &gt;-
+    &lt;svg
+      xmlns="https://www.w3.org/2000/svg"
+      width="{{ size|default(32) }}"
+      height="{{ size|default(32) }}"
+      aria-hidden="true"
+    &gt;
+      &lt;use href="{{ source }}#{{ icon_id }}"/&gt;
+    &lt;/svg&gt;
+</code></pre><h4 id="s-advanced-with-metadata"><a class="toc-anchor" title="Permalink to this headline" href="#s-advanced-with-metadata"></a>Advanced with metadata</h4>
+<pre>
+<code class="language-php language-yaml">wildcard_path:
+  # Implicit is always enabled, if false will not be available.
+  enabled: true
+  label: Wildcards
+  description: Icons from wildcard path
+  links:
+    - https://www.drupal.org
+  version: 1.0.0
+  license:
+    name: GPL-3.0-or-later
+    url: https://www.gnu.org/licenses/gpl-3.0.html
+    gpl-compatible: true
+  # Mandatory values to discover icons.
+  extractor: path
+  config:
+    sources:
+      - icons/*.png
+      - icons/{group}/*.png
+      - icons/*/{group}/*.png
+      - icons/extracted/prefix_{icon_id}_suffix.png
+  settings:
+    width:
+      title: "Width"
+      type: "integer"
+      default: 32
+    height:
+      title: "Height"
+      type: "integer"
+      default: 32
+    alt:
+      title: "Alt text"
+      type: "string"
+      description: "Accessibility alternative text, leave empty for decorative icon."
+  template: &gt;-
+    &lt;img
+      class="icon icon-{{ icon_id|clean_class }}"
+      src="{{ source }}"
+      width="{{ width|default(32) }}"
+      height="{{ height|default(32) }}"
+      alt="{{ icon_id }}"
+    &gt;</code></pre><p>See <a href="https://git.drupalcode.org/project/drupal/-/blob/11.x/core/lib/Drupal/Core/Theme/Icon/Plugin/IconPackManager.php" target="_blank" rel="nofollow"><code class="language-php">core/lib/Drupal/Core/Theme/Icon/Plugin/IconPackManager.php</code></a> in the code-base for extended documentation of the various keys and their values.<br />
+As well as test examples in <a href="https://git.drupalcode.org/project/drupal/-/blob/11.x/core/modules/system/tests/modules/icon_test/icon_test.icons.yml" target="_blank" rel="nofollow"><code class="language-php">core/modules/system/tests/modules/icon_test/icon_test.icons.yml</code></a>.</p>
+<h3 id="s-icon-pack-external-examples"><a class="toc-anchor" title="Permalink to this headline" href="#s-icon-pack-external-examples"></a>Icon pack external examples</h3>
+<p>An external GitLab repository include examples of Icon packs declarations for UI Icons contrib modules.</p>
+<ul>
+<li><a href="https://gitlab.com/ui-icons/ui-icons-example" rel="nofollow">UI Icons Example</a></li>
+</ul>
+<h2 id="s-yaml-icon-pack-declaration-documentation"><a class="toc-anchor" title="Permalink to this headline" href="#s-yaml-icon-pack-declaration-documentation"></a>YAML icon pack declaration documentation</h2>
+<h3 id="s-the-extractor-key"><a class="toc-anchor" title="Permalink to this headline" href="#s-the-extractor-key"></a>The `extractor` key</h3>
+<p>Drupal core provides common extractors to handle icons as images of format PNG, GIF, SVG and SVG Sprite.</p>
+<p>These extractors <strong>require</strong> a <code class="language-php">config &gt; sources</code> array to indicate the physical path(s) or URL(s) to the icons.<br />
+URL must simply be the direct access to the Icon, only <strong>http(s)</strong> is allowed.</p>
+<h4 id="s-path-extractor-path"><a class="toc-anchor" title="Permalink to this headline" href="#s-path-extractor-path"></a>Path extractor `path`</h4>
+<p>The extractor <code class="language-php">path</code> within the class <code class="language-php"><a href="https://git.drupalcode.org/project/drupal/-/blob/11.x/core/lib/Drupal/Core/Theme/Plugin/IconExtractor/PathExtractor.php" target="_blank" rel="nofollow">PathExtractor</a></code> provide a way to add local or remote images. Images of types <code class="language-php">svg, png, gif</code> are allowed, other formats will be ignored.</p>
+<p>Path extractor will allow to create a Twig template using key <code class="language-php">template</code> with variables:</p>
+<ul>
+<li><code class="language-php">source</code>: The local path to the file within Drupal or the Url for remote file</li>
+<li><code class="language-php">icon_id</code>: The Icon id based on the name of the file</li>
+<li><code class="language-php">group</code>: Optional metadata if set in the <code class="language-php">config &gt; sources</code> to be extracted from the path, not available for remote files</li>
+<li>... Any other variable from <code class="language-php">settings</code> definition or extractor, see <code class="language-php">settings</code> key explanation</li>
+</ul>
+<h4 id="s-svg-extractor-svg"><a class="toc-anchor" title="Permalink to this headline" href="#s-svg-extractor-svg"></a>SVG extractor `svg`</h4>
+<p>The extractor <code class="language-php">svg</code> within class <a href="https://git.drupalcode.org/project/drupal/-/blob/11.x/core/lib/Drupal/Core/Theme/Plugin/IconExtractor/SvgExtractor.php" target="_blank" rel="nofollow">SvgExtractor</a> provide a way to handle and render SVG files.<br />
+Difference with <code class="language-php">path</code> is that this extractor will read and rewrite the SVG content, for security concern, only local SVG files are allowed.</p>
+<p>SVG extractor will allow to create a Twig template using key <code class="language-php">template</code> with variables:</p>
+<ul>
+<li><code class="language-php">content</code>: The svg file markup without <code class="language-php">&lt;svg&gt;</code> parent element</li>
+<li><code class="language-php">attributes</code>: The <a href="https://www.drupal.org/docs/8/theming-drupal-8/using-attributes-in-templates" target="_blank" rel="nofollow">Drupal Attributes object</a> populated with the original SVG files attributes existing in the <code class="language-php">&lt;svg&gt;</code> element.<br />
+	For example if original svg file is <code class="language-php">&lt;svg viewBox="0 0 50 50" class="foo"&gt;...&lt;/svg&gt;</code>, the attributes variable will have <code class="language-php">viewbox</code> and <code class="language-php">class</code> set.</li>
+<li><code class="language-php">icon_id</code>: The Icon id based on the name of the file</li>
+<li><code class="language-php">group</code>: Optional metadata if set in the <code class="language-php">config &gt; sources</code> to be extracted from the path</li>
+<li>... Any other variable from <code class="language-php">settings</code> definition or extractor, see <code class="language-php">settings</code> key explanation</li>
+</ul>
+<h4 id="s-svg-sprite-extractor-svg-sprite"><a class="toc-anchor" title="Permalink to this headline" href="#s-svg-sprite-extractor-svg-sprite"></a>SVG Sprite extractor `svg_sprite`</h4>
+<p>The extractor <code class="language-php">svg_sprite</code> within class <a href="https://git.drupalcode.org/project/drupal/-/blob/11.x/core/lib/Drupal/Core/Theme/Plugin/IconExtractor/SvgSpriteExtractor.php" target="_blank" rel="nofollow">SvgSpriteExtractor</a> provide a way to handle and render SVG Sprite file.<br />
+Difference with <code class="language-php">svg</code> is that  this extractor will read and discover each icon from each SVG file(s) looking for element <code class="language-php">&lt;symbol&gt;</code>, the content of each symbol will not be read and <code class="language-php">content</code> variable is not available.</p>
+<p>Difference with <code class="language-php">path</code> is that this extractor will read and rewrite the SVG content, for security concern, only local SVG files are allowed.</p>
+<p>SVG Sprite extractor will allow to create a Twig template using key <code class="language-php">template</code> with variables:</p>
+<ul>
+<li><code class="language-php">source</code>: The local path to the file within Drupal or the Url for remote file</li>
+<li><code class="language-php">icon_id</code>: The Icon id based on the name of the file</li>
+<li><code class="language-php">group</code>: Optional metadata if set in the <code class="language-php">config &gt; sources</code> to be extracted from the path, not available for remote files</li>
+<li>... Any other variable from <code class="language-php">settings</code> definition or extractor, see <code class="language-php">settings</code> key explanation</li>
+</ul>
+<p>The recommended way of integrating the sprite is to use <code class="language-php">&lt;use href="{{ source }}#{{ icon_id }}"/&gt;</code> in the template.</p>
+<h3 id="s-the-config-key"><a class="toc-anchor" title="Permalink to this headline" href="#s-the-config-key"></a>The `config` key</h3>
+<p>Most common usage for the config key is to set a <code class="language-php">sources</code> array value to give a path to the icons to be discovered. This is needed for core extractors. The extractor class can then use it to return the list of discovered icons.</p>
+<p>All config values are passed to the extractor, this is useful for custom extractors to have any needed configuration data.</p>
+<h5>The `config &gt; sources` key</h5>
+<p>Sources is used to inform the extractor of path(s) or url(s) to discover the list of icons available in Drupal.</p>
+<p>The path(s) will not be discovered recursively, it can include wildcard <code class="language-php">*</code> in any part of the path.</p>
+<p>If the path do not start with a slash <code class="language-php">/</code>, it will resolve to the module or theme, else it will resolve to Drupal web root.</p>
+<pre>
+<code class="language-php language-yaml">config:
+  sources:
+    - assets/icons/*.svg # relative to the YAML file module or theme
+    - icons/*/*.svg # relative to the YAML file module or theme
+    - icons/* # relative to the YAML file module or theme, all png, svg and gif
+    - /libraries/my-icons/*.svg # absolute to Drupal installation folder
+    - http://www.my_domain.com/my_icon.png
+</code></pre><p>For path(s), it can include the keyword <code class="language-php">{icon_id}</code> to identify and extract icons names and optionally <code class="language-php">{group}</code> to group icons. For example:</p>
+<pre>
+<code class="language-php language-yaml">config:
+  sources:
+    - /libraries/icon_pack/icons/{icon_id}-24.svg</code>
+</pre><p>Icons are located in the Drupal web root <code class="language-php">libraries</code> folder, only with suffix <code class="language-php">-24</code>.</p>
+<pre>
+<code class="language-php language-yaml">config:
+  sources:
+    - assets/icons/{icon_id}.svg</code>
+</pre><p>Icons located in the Module or Theme where the <code class="language-php">EXTENSION_NAME.icons.yml</code> file ie <code class="language-php">my_module/assets/icons/</code>.</p>
+<pre>
+<code class="language-php language-yaml">config:
+  sources:
+    - /libraries/icon_pack/icons/{group}/*.svg
+    - /libraries/other_pack/icons/{group}/*.svg</code>
+</pre><p>The group metadata will be extracted, it's used for example in contrib module <a href="https://www.drupal.org/project/ui_icons" target="_blank" rel="nofollow">UI Icons</a> to have a library of icons.</p>
+<h3 id="s-the-settings-key"><a class="toc-anchor" title="Permalink to this headline" href="#s-the-settings-key"></a>The `settings` key</h3>
+<p>The <code class="language-php">settings</code> key allow to define any setting specific to the Icon Pack that will be generated as a Drupal Form when the icon is used and pass to the Twig template.</p>
+<p>The format follow the <a href="https://json-schema.org/understanding-json-schema/reference/type" rel="nofollow">JSON Schema reference</a>.</p>
+<p>For example a common usage is to include a <code class="language-php">size</code> or <code class="language-php">width</code> and <code class="language-php">height</code> option to control the icon. For example:</p>
+<pre>
+<code class="language-php language-yaml">settings:
+  size:
+    title: "Size"
+    description: "Set a size for this icon."
+    type: "integer"
+    default: 32</code>
+</pre><p>This will allow the user to fill a <code class="language-php">size</code> form alongside the Icon form. And the value will be passed to the <code class="language-php">template</code>, so you can use them:</p>
+<pre>
+<code class="language-html language-php language-twig">&lt;img class="icon icon-{{ icon_id|clean_class }}" src="{{ source }}" width="{{ size|default(24) }}" height="{{ size|default(24) }}"&gt;</code>
+</pre><p>It is highly recommended to provide default in the Twig template as default values in the <code class="language-php">settings</code> form are just indicative.</p>
+<h3 id="s-the-template-key"><a class="toc-anchor" title="Permalink to this headline" href="#s-the-template-key"></a>The `template` key</h3>
+<p>The key <code class="language-php">template</code> provide a Twig template to render the Icon.<br />
+Available variables in the template are based on the <code class="language-php">extractor</code> used.</p>
+<p>To keep an accessible content, check the <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/presentation_role" rel="nofollow">ARIA: presentation role documentation</a>.</p>
+<p>For example with <code class="language-php">svg</code> extractor and a <code class="language-php">size</code> setting:</p>
+<pre>
+<code class="language-php language-yaml">my_pack:
+  extractor: svg
+  settings:
+    size:
+      title: "Size"
+      type: "integer"
+      default: 32
+  template: &gt;-
+    &lt;svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon icon-{{ icon_id|clean_class }}"
+      width="{{ size|default(32) }}"
+      height="{{ size|default(32) }}"
+      fill="currentColor"
+      aria-hidden="true"
+    &gt;
+      {{ content }}
+    &lt;/svg&gt;</code>
+</pre><h3 id="s-the-library-key"><a class="toc-anchor" title="Permalink to this headline" href="#s-the-library-key"></a>The `library` key</h3>
+<p>The key <code class="language-php">library</code> provide a way to include JavaScript and CSS assets with your icons.<br />
+This is intended for JavaScript or Class based icons.</p>
+<p>The value must be a valid Drupal library declared in a module or theme, see <a href="https://www.drupal.org/docs/develop/theming-drupal/adding-assets-css-js-to-a-drupal-theme-via-librariesyml" rel="nofollow">Drupal assets documentation</a> to declare one that can be included with your icon pack.</p>
+<h3 id="s-optional-metadata-keys"><a class="toc-anchor" title="Permalink to this headline" href="#s-optional-metadata-keys"></a>Optional metadata keys</h3>
+<pre>
+<code class="language-php language-yaml">pack_metadata:
+  enabled: true # Default true if not set, if false the icons will not be discovered
+  label: Wildcards # Optional label
+  description: Icons from wildcard path # Optional label
+  links:
+    - https://www.drupal.org
+  version: 1.0.0 # Optional version
+  license:
+    name: GPL-3.0-or-later
+    url: https://www.gnu.org/licenses/gpl-3.0.html
+    gpl-compatible: true</code></pre><p>Metadata keys and values will be available for contrib modules, for example module <a href="https://www.drupal.org/project/ui_icons" target="_blank" rel="nofollow">UI Icons</a> will use them for a library of icons.</p>
+<h3 id="s-the-optional-preview-key"><a class="toc-anchor" title="Permalink to this headline" href="#s-the-optional-preview-key"></a>The optional `preview` key</h3>
+<p>The key <code class="language-php">preview</code> provide a Twig template to render the Icon in the back office context for a contrib module. This could be an Icon selector preview, the library...</p>
+<p>This template access the same variables as the <code class="language-php">template</code> but it must allow to display the icon in a square ratio of <strong>48x48px</strong> to allow consistent preview.</p>
+<p>This is optional as core extractors already include a preview template, this value is intended for custom extractor that display the icon in a different way.</p>
+<p>For example, font based icons need this value as example for <a href="https://gitlab.com/ui-icons/ui-icons-example/-/blob/main/ui_icons_material/ui_icons_material.icons.yml" rel="nofollow">Material icons</a>.</p>
+<h2 id="s-how-to-add-an-extractor"><a class="toc-anchor" title="Permalink to this headline" href="#s-how-to-add-an-extractor"></a>How to add an Extractor</h2>
+<p>An extractor is a Plugin based class to allow discovering icons to make them available in your Drupal.</p>
+<p>Modules can add additional extractors by creating an <a href="https://git.drupalcode.org/project/drupal/-/blob/11.x/core/lib/Drupal/Core/Theme/Icon/Attribute/IconExtractor.php" target="_blank" rel="nofollow"><code class="language-php">IconExtractor</code></a> plugin (PHP attribute discovery). An extractor must implement the <a href="https://git.drupalcode.org/project/drupal/-/blob/11.x/core/lib/Drupal/Core/Theme/Icon/IconExtractorInterface.php" target="_blank" rel="nofollow">IconExtractorInterface</a>.</p>
+<p>For example <a href="https://www.drupal.org/project/iconify_icons" target="_blank" rel="nofollow">Iconify Icons</a> module provide a specific<a href="https://git.drupalcode.org/project/iconify_icons/-/blob/1.0.x/modules/iconify_icons_provider/src/Plugin/IconExtractor/IconifyExtractor.php?ref_type=heads" target="_blank" rel="nofollow"> Iconify extractor</a> as <code class="language-php">iconify</code>.<br />
+Module <a href="https://www.drupal.org/project/ui_icons" target="_blank" rel="nofollow">UI icons</a> provide a <a href="https://git.drupalcode.org/project/ui_icons/-/blob/1.1.x/modules/ui_icons_font/src/Plugin/IconExtractor/FontExtractor.php?ref_type=heads" target="_blank" rel="nofollow">web font extractor</a> as <code class="language-php">font</code>.</p>
+<h2 id="s-render-an-icon-with-php"><a class="toc-anchor" title="Permalink to this headline" href="#s-render-an-icon-with-php"></a>Render an icon with PHP</h2>
+<p>An icon can be rendered using a new <code class="language-php">icon</code> render element</p>
+<pre>
+<code class="language-php">$build['icon'] = [
+  '#type' =&gt; 'icon',
+  '#pack_id' =&gt; 'material_symbols',
+  '#icon_id' =&gt; 'home',
+  '#settings' =&gt; [
+    'size' =&gt; 64,
+  ],
+];</code>
+</pre><p>Properties are:</p>
+<ul>
+<li><code class="language-php">#pack_id</code>: (string) Icon Pack provider plugin id</li>
+<li><code class="language-php">#icon_id</code>: (string) Name of the icon</li>
+<li><code class="language-php">#settings</code>: (array) Settings sent to the inline Twig template</li>
+</ul>
+<p>If pack or icon id are not provided or invalid there will be no error and the element will be returned and processed with an empty icon string.</p>
+<h2 id="s-render-an-icon-with-twig"><a class="toc-anchor" title="Permalink to this headline" href="#s-render-an-icon-with-twig"></a>Render an icon with Twig</h2>
+<p>An icon can also be rendered using a new <code class="language-php">icon()</code> Twig function, settings are passed as third parameter:</p>
+<pre>
+<code class="language-php">{{ icon('material_symbols', 'home', {size: 64}) }}</code></pre><p>Parameters are in order:</p>
+<ul>
+<li>The icon pack id, required <code class="language-php">string</code></li>
+<li>The icon ID, required <code class="language-php">string</code></li>
+<li>An array of settings for the icon, optional <code class="language-php">array|null </code></li>
+</ul>
+<p>If pack or icon id are not provided or invalid there will be no error and no value returned.</p>
+<h2 id="s-contrib-module"><a class="toc-anchor" title="Permalink to this headline" href="#s-contrib-module"></a>Contrib module</h2>
+<p>Module <a href="https://www.drupal.org/project/ui_icons" target="_blank" rel="nofollow">UI Icons</a> is leveraging this API to enable Drupal integration.</p></div></div></div>  </div>
+
+  
+  </div>
+        </div>
+      </div>
+      <div class="column-content-region bottom-right-content column panel-panel">
+        <div class="column-content-region-inner bottom-right-content-inner column-inner panel-panel-inner">
+          <div class="panel-pane pane-views-panes pane-documentation-help-improve-pane"  id="help-improve-this-page" >
+  
+        <h2 class="pane-title">
+      Help improve this page    </h2>
+    
+  
+  <div class="pane-content">
+    <div class="view view-documentation-help view-id-documentation_help view-display-id-improve_pane view-dom-id-46308c904c0cac138740d16d45476082">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <span class="views-field views-field-field-documentation-status">    <strong class="views-label views-label-field-documentation-status">Page status: </strong>    <span class="field-content">Needs review</span>  </span>  
+  <div class="views-field views-field-nothing">        <span class="field-content"><br /><strong>You can:</strong><br />
+<ul>
+<li>Log in, click <a href="/node/3498568/edit">Edit</a>, and edit this page</li>
+<li>Log in, click <a href="/node/3498568/discuss">Discuss</a>, update the Page status value, and suggest an improvement</li>
+<li>Log in and <a href="/node/add/project-issue/documentation?title=Suggestion%20for%3A%20%283498568%29%20Icon%20API">create a Documentation issue</a> with your suggestion</li>
+</ul></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+
+  
+  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer clearfix panel-panel">
+    <div class="container-inner footer-inner panel-panel-inner">
+          </div>
+  </div>
+
+</div><!-- /.sutro -->
+</div>
+  </div>
+  </div>
+</div>
+  </div>
+        </div>
+              </div> <!-- /#content -->
+
+    </div> <!-- /#column-left -->
+
+      </div> <!-- /#page -->
+
+  <div id="footer" role="contentinfo">
+            <div class="region region-footer">
+    <div id="block-drupalorg-documentation-license" class="block block-drupalorg">
+<div class="block-inner">
+    
+  <div class="content">
+    Drupal’s online documentation is © 2000-2026 by the individual contributors and can be used in accordance with the <a href="/terms">Creative Commons License, Attribution-ShareAlike 2.0</a>. PHP code is distributed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU General Public License</a>.  </div>
+  </div>
+</div>
+<div id="block-drupalorg-crosssite-infra-partner" class="block block-drupalorg-crosssite">
+<div class="block-inner">
+    
+  <div class="content">
+    <a href="https://www.tag1.com/?utm_source=DA&utm_medium=referral&utm_campaign=drupal-org-footer" >Infrastructure management for Drupal.org provided by <img src="/sites/all/modules/drupalorg/drupalorg/images/tag1-w.svg" alt="Tag1 logo" ></a> 
+<br>
+<span style="font-size: .65em;"><a href="https://d7es.tag1.com/plans?utm_source=DA&utm_medium=footer&utm_campaign=EOL&utm_id=d7es&utm_term=plans&utm_content=Dec">Need a Drupal 7 extended support partner? Consider Tag1.</a></span>  </div>
+  </div>
+</div>
+<div id="block-drupalorg-crosssite-drupalorg-footer" class="block block-drupalorg-crosssite">
+<div class="block-inner">
+    
+  <div class="content">
+    <h4 class="element-invisible">News items</h4><ul class="drupal-news"><li class="0 first"><a href="https://www.drupal.org/news">News</a></li>
+<li class="1"><a href="https://www.drupal.org/planet" title="News from Drupal community members">Planet Drupal</a></li>
+<li class="2"><a href="https://www.drupal.org/about/media-kit/social-media" title="Drupal on social media">Social media</a></li>
+<li class="3"><a href="https://www.drupal.org/subscribe">Sign up for Drupal news</a></li>
+<li class="4"><a href="https://www.drupal.org/security" title="Announcements from the Drupal Security Team">Security advisories</a></li>
+<li class="5 last"><a href="https://jobs.drupal.org/" title="Drupal Jobs">Jobs</a></li>
+</ul><h4 class="element-invisible">Our community</h4><ul class="community"><li class="0 first"><a href="https://www.drupal.org/community">Community</a></li>
+<li class="1"><span><a href="https://www.drupal.org/drupal-services" title="People and organizations offering Drupal services">Services</a>, <a href="https://www.drupal.org/training" title="People and organizations offering Drupal training">Training</a> & <a href="https://www.drupal.org/hosting" title="Organizations offering Drupal hosting">Hosting</a></span></li>
+<li class="2"><a href="https://www.drupal.org/community/contributor-guide">Contributor guide</a></li>
+<li class="3"><a href="https://groups.drupal.org/groups" title="groups.drupal.org">Groups &amp; meetups</a></li>
+<li class="4"><a href="https://events.drupal.org" title="Upcoming and past DrupalCons">DrupalCon</a></li>
+<li class="5 last"><a href="https://www.drupal.org/dcoc" title="Drupal code of conduct">Code of conduct</a></li>
+</ul><h4 class="element-invisible">Documentation</h4><ul class="get-started"><li class="0 first"><a href="https://www.drupal.org/documentation" title="Documentation for working with Drupal">Documentation</a></li>
+<li class="1"><a href="https://www.drupal.org/docs">Drupal Guide</a></li>
+<li class="2"><a href="https://www.drupal.org/docs/user_guide/en/index.html">Drupal User Guide</a></li>
+<li class="3"><a href="https://www.drupal.org/documentation/develop">Developer docs</a></li>
+<li class="4 last"><a href="https://api.drupal.org/" title="Drupal API reference">API.Drupal.org</a></li>
+</ul><h4 class="element-invisible">Drupal code base</h4><ul class="download-extend"><li class="0 first"><a href="https://www.drupal.org/download">Download &amp; Extend</a></li>
+<li class="1"><a href="https://www.drupal.org/project/drupal" title="Download the latest version of the Drupal software">Drupal core</a></li>
+<li class="2"><a href="https://www.drupal.org/project/project_module" title="Download add-on features and functionality">Modules</a></li>
+<li class="3"><a href="https://www.drupal.org/project/project_theme" title="Download pre-designed styles for Drupal">Themes</a></li>
+<li class="4 last"><a href="https://www.drupal.org/project/project_distribution" title="Download a pre-packaged Drupal site">Distributions</a></li>
+</ul><h4 class="element-invisible">Governance of community</h4><ul class="about"><li class="0 first"><a href="https://www.drupal.org/about">About</a></li>
+<li class="1"><a href="https://www.drupal.org/about/features/accessibility" title="Our committment to accessibility">Web accessibility</a></li>
+<li class="2"><a href="https://www.drupal.org/association" title="About the Drupal Association">Drupal Association</a></li>
+<li class="3"><a href="https://www.drupal.org/drupalorg" title="About Drupal.org">About Drupal.org</a></li>
+<li class="4"><a href="https://www.drupal.org/terms" title="Drupal.org terms of service">Terms of service</a></li>
+<li class="5 last"><a href="https://www.drupal.org/privacy" title="Drupal.org privacy policy">Privacy policy</a></li>
+</ul>  </div>
+  </div>
+</div>
+<div id="block-block-77" class="block block-block">
+<div class="block-inner">
+    
+  <div class="content">
+    <p>Drupal is a <a href="/about/trademark">registered trademark</a> of <a href="https://dri.es">Dries Buytaert</a>.</p>
+  </div>
+  </div>
+</div>
+  </div>
+      </div>
+    <div class="region region-page-bottom">
+    <script type="text/javascript">
+      (function(){
+          window._pxAppId = 'PXVnPBBfwe';
+          window._pxParam2 = '';
+          window._pxParam3 = '0';
+          var p = document.getElementsByTagName('script')[0],
+              s = document.createElement('script');
+          s.async = 1;
+          s.src = '/VnPBBfwe/init.js';
+          p.parentNode.insertBefore(s,p);
+      }());
+  </script>
+  <noscript>
+      <div style="position:fixed; top:0; left:0; display:none" width="1" height="1">
+          <img src="/VnPBBfwe/xhr/api/v1/collector/noScript.gif?appId=PXVnPBBfwe">
+      </div>
+  </noscript>  </div>
+<script type="text/javascript" src="/files/advagg_js/js__B0FBwiP97ZnD38IFraZus4upS4KVkMXI3ou0fJ2ZXGA__pPDESRJz9GHsxqQIwQ_V8xnFYEH5jipG2eicsfrdWCs__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+
+<!--[if lte IE 9]>
+<script type="text/javascript" src="/files/advagg_js/js__79M6UrZjAw3oNGnUjsWip12JsvnUZmJGA3h9LI0kuzE__J0sbXAJNry2-C_ZL2xd0RdVuzwTLvwN-UisIv5RNCvU__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js#ie9-" onload="if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(true);}"></script>
+<![endif]-->
+
+<!--[if gt IE 9]>
+<script type="text/javascript" src="/files/advagg_js/js__79M6UrZjAw3oNGnUjsWip12JsvnUZmJGA3h9LI0kuzE__J0sbXAJNry2-C_ZL2xd0RdVuzwTLvwN-UisIv5RNCvU__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js#ie10+" defer="defer" onload="if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(true);}"></script>
+<![endif]-->
+
+<!--[if !IE]><!-->
+<script type="text/javascript" src="/files/advagg_js/js__79M6UrZjAw3oNGnUjsWip12JsvnUZmJGA3h9LI0kuzE__J0sbXAJNry2-C_ZL2xd0RdVuzwTLvwN-UisIv5RNCvU__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer" onload="if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(true);}"></script>
+<!--<![endif]-->
+<script type="text/javascript" src="/files/advagg_js/js__pqoYaVR8NVhof-vNXe50j2TKhFv__IihVag_h4G6kus__B4mbn4wICLQjWm1m3-z1kw8F1FtP0cDAHKp00Xy_-88__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" src="/files/advagg_js/js__H5AFmq1RrXKsrazzPq_xPQPy4K0wUKqecPjczzRiTgQ__wor4r9P8YTtQ7p6fbywTetZ47Z_orumIfrrhgxrpLus__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer" onload="
+function advagg_mod_1() {
+  // Count how many times this function is called.
+  advagg_mod_1.count = ++advagg_mod_1.count || 1;
+  try {
+    if (advagg_mod_1.count <= 40) {
+      init_drupal_core_settings();
+
+      // Set this to 100 so that this function only runs once.
+      advagg_mod_1.count = 100;
+    }
+  }
+  catch(e) {
+    if (advagg_mod_1.count >= 40) {
+      // Throw the exception if this still fails after running 40 times.
+      throw e;
+    }
+    else {
+      // Try again in 1 ms.
+      window.setTimeout(advagg_mod_1, 1);
+    }
+  }
+}
+function advagg_mod_1_check() {
+  if (window.init_drupal_core_settings && window.jQuery && window.Drupal) {
+    advagg_mod_1();
+  }
+  else {
+    window.setTimeout(advagg_mod_1_check, 1);
+  }
+}
+advagg_mod_1_check();"></script>
+<script type="text/javascript" src="/files/advagg_js/js__Oc0wwB7MVRfxtYw6EQM7d9sXj9PAQePoWSzQJ0uTk6c__iXqOGoaPhZHCPEspUr5BC8BwOx5P8B11xv7VOhoUii8__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" src="/files/advagg_js/js__FabcJ6qluktliDejymsuV-FqaN_HyMKGe93c2rO9Ky0__el1ZLGkKneOoCS6OWa01WHuIEsTsXZ46MRLCF390Fbw__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" src="/files/advagg_js/js__YT6D1B_BKxvm6JCH_t9sZNI5L6yITa_DlU5QcSlOkAU__OXobH7d1IP1o3WABlniIrU_-pcJacVSIPUv9bpD-6pQ__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" src="/files/advagg_js/js__06Uejkt2sN1AJAk3QcRQG9yrq-jCjZth0s-OymGOkVE__Xp4EnlVJbsmbe8O0bsvmSRyilyUy2SuxkbvrHYNE4bk__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" src="/files/advagg_js/js__pLKQd4r7OrHglE7Qkqw53K2UXCqQdhqQ9v0cz7hMCQY__OErfYuQdGbFHcCoLoUW_ESSvaumApNojzjJit8-2xcw__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" src="/files/advagg_js/js__hHUWFbMAa11eJtx5V0ym9o0YBsB1udk34qUT5wr1ihI__vSxsxbzmzuz4XPh--CL1BBciQpEQ_m8FfdQINCOAg14__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function init_drupal_core_settings() {jQuery.extend(Drupal.settings,{"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"bluecheese","theme_token":"3Z9bcxhZLXOkVYsn14Hj_QFLc40_mA6Yp8ztdQtAogc"},"drupalorgGitlab":{"gitlab_base_url":"https:\/\/git.drupalcode.org","base_url":"https:\/\/www.drupal.org"},"better_exposed_filters":{"views":{"documentation_help":{"displays":{"improve_pane":{"filters":[]}}},"documentation_related_content":{"displays":{"related_content_pane":{"filters":[]}}},"drupalorg_issue_relations_blocks":{"displays":{"block_parent_issue":{"filters":[]},"block_related_issues":{"filters":[]}}}}},"urlIsAjaxTrusted":{"\/docs\/develop\/drupal-apis\/icon-api":true},"drupalorgCrosssiteConsentNeeded":true,"ogContext":{"groupType":"node","gid":"2814041"}}); 
+if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(false);}} if(window.jQuery && window.Drupal){init_drupal_core_settings();}
+//--><!]]>
+</script>
+<script type="text/javascript" src="/files/advagg_js/js__2k0CJ3KAQNFTFab3y6ZvNtxs3HLons0Brq7VwvPSkKo__sQv8imhcZRev08LnyQ7OzwuHrZ3Jdwo5NmznAARX0ig__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" src="/files/advagg_js/js__vj0LjvNwl-3K1P9LGT4BGuXCZcAovYsVlVmoJN3TMRg__KW8SiGceRY3sjIKVrffDjf2MK4A5Vp3EDDxVO-4pegI__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+</body>
+</html>

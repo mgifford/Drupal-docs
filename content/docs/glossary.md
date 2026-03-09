@@ -1,85 +1,103 @@
 ---
-author: null
-drupal_version: null
-last_updated: null
-readability_score: -29.79
-source_url: /home
-suggested_reviewers: []
-summary: Welcome to Drupal.org, the open source framework behind millions of websites.
-  Discover Drupal, Build with Drupal, Partners & Services, Community and Support Drupal.
-tags: []
-themes: []
-title: Drupal.org home
+error: Failed to parse metadata
+raw: 'Here''s a summary of key Drupal terms and concepts from the provided glossary:
+
+
+  1. Drupal: Open-source content management system for building websites
+
+
+  2. Modules: Add functionality to Drupal
+
+
+  3. Themes: Customize the appearance of Drupal sites
+
+
+  4. Content types: Define what kind of content a site can have
+
+
+  5. Nodes: Pieces of content on a Drupal site
+
+
+  6. Views: Module for creating custom lists of content
+
+
+  7. Taxonomy: System for categorizing content
+
+
+  8. Blocks: Pieces of reusable content
+
+
+  9. Regions: Areas of a page where blocks can be placed
+
+
+  10. Panels: Framework for creating custom layouts
+
+
+  11. Panels Everywhere: Module to add Panels support to node edit pages
+
+
+  12. Panels Profile: Module to create and manage panelized pages
+
+
+  13. Panels UI: Interface for creating and editing panels layouts
+
+
+  14. Contexts: Sets of variables used to determine how a layout should be displayed
+
+
+  15. Menu: Navigation system for a Drupal site
+
+
+  16. Links: Navigation elements within a menu
+
+
+  17. Terms: Entries in a taxonomy vocabulary
+
+
+  18. Vocabulary: Collection of terms in a taxonomy
+
+
+  19. Roles: User permissions and capabilities
+
+
+  20. Users: Site visitors and administrators
+
+
+  21. Permissions: What actions a user can perform on a site
+
+
+  22. Access control: Mechanisms for restricting access to content and features
+
+
+  23. Views: Module for creating custom lists of content
+
+
+  24. Views UI: Interface for creating and editing views
+
+
+  25. Panels: Framework for creating custom layouts
+
+
+  These terms cover the core concepts of Drupal, including content management, theming,
+  layout, and user management.'
+readability_score: 57.14
+suggested_reviewers:
+- Log in
+- Create account
 ---
 
-```markdown
-# Drupal.org Home
+This text appears to be a glossary or dictionary of Drupal terms and jargon. It covers a wide range of concepts related to the Drupal content management system, including:
 
-## Discover Drupal
+1. Basic Drupal terms like "node", "user", "block", etc.
+2. Features and modules like "Views", "Taxonomy", "Blocks", etc.
+3. Technical concepts like "rendering", "weight", "view mode", etc.
+4. Project management and development terms like "module", "theme", "patch", etc.
+5. Drupal-specific acronyms and shorthand like "UID", "URL", "D6", "D7", etc.
 
-- **Drupal Core**: The open source framework behind millions of websites.
-- **Drupal CMS**: Puts the power of Drupal into the hands of marketers, designers and content creators.
-- **Drupal AI**: Open limitless possibilities with Drupal AI.
-- **Case Studies**: Powerful stories that show Drupal solutions in the real world.
-- **Drupal for Government**: Enables digital transformation of government and increases citizen engagement.
-- **Drupal for Higher Education**: See why 70% of the world's leading universities chose Drupal.
-- **Drupal for Nonprofit**: The open-source CMS choice for some of the world’s most influential nonprofits.
-- **Drupal for eCommerce**: Natively integrate content and commerce.
-- **Drupal for FinTech**: Secure and trustworth FinTech infrastructure.
-- **Drupal for Healthcare**: Powers systems that are secure, patient-centric and engaging.
-- **Drupal for Enterprise**: Why enterprise organizations choose Drupal for multi-brand governance and global scale.
-- **Drupal for Retail**: See how Drupal delivers retail experiences across every channel and touchpoint.
-- **Drupal for Travel & Tourism**: Discover how Drupal powers travel across websites, mobile, and onboard experiences.
+The text is organized alphabetically and provides definitions and explanations for each term. It also includes links to more detailed documentation where available.
 
-## Build with Drupal
+While not a perfect glossary (some terms may be missing), it provides a good overview of key Drupal concepts and terminology that would be useful for new users, developers, or anyone working with Drupal.
 
-- **Download Drupal**: Download Drupal and the extensions you need
-- **Documentation**: Full knowledge base including Drupal 7 resources
-- **Getting Started**
-- **Local Development Guide**
-- **Developer Resources**
-- **Drupal CMS User Guide**
-- **Drupal User Guide**
-- **API**
-- **Modules**
-- **Themes**
-- **Distributions**
-- **Issue queues**
-- **Security Advisories**
+The text is structured as a webpage, with a main content area displaying the glossary entries and a sidebar providing additional help and links. It uses Drupal-specific markup and classes, suggesting it may be part of a larger Drupal site or documentation system.
 
-## Partners & Services
-
-- **Find a Drupal Certified Partner**: Connect with the best Drupal agencies around the world.
-- **Become a Drupal Certified Partner**: Join an elite network of agencies committed to Drupal excellence and innovation.
-- **Find a Hosting Provider**: Find a hosting provider for your Drupal project.
-- **Find a Migration Partner**: Get help with your migration to the latest version of Drupal.
-- **Find Training**: Upskill your Drupal team.
-- **Drupal Steward**: Ensure your website is protected with Drupal Steward.
-
-## Community
-
-- **About the Community**: Come for the code, stay for the community.
-- **How to Contribute**: Get involved in growing and evolving Drupal.
-- **DrupalCon**: Unites experts from around the globe who create ambitious digital experiences. Network, learn, and be inspired.
-- **Events**: Discover local events, community meet-ups, and training.
-- **Jobs / Careers**: Find opportunities to work in Drupal.
-- **News & Blogs**: News and stories about Drupal.
-- **Forum**: Got a question about Drupal? Find answers on the Drupal forums.
-- **Slack**: Get support and communicate with the global Drupal community.
-- **Newsletters**: Sign up for Drupal news and manage your subscriptions.
-- **Drupal Swag Shop**: Get your Drupal branded merch!
-
-## Support Drupal
-
-- **The Drupal Association**: Meet the non-profit accelerating Drupal innovation
-- **Donate**: Donate to the non-profit that supports Drupal
-- **Become a Partner**: Join the network of official Drupal Certified Partners
-- **Become a Ripple Maker**: Become an individual member of the Drupal Association
-- **Become an Organization Member**: Join and show your organization's support for Drupal
-- **Drupal Swag Shop**: Get your Drupal-branded bucket hats, hoodies, and more
-
-## Get Started
-
-- **Try Drupal CMS**
-- **Try Hosting**
-```
+Overall, this appears to be a useful resource for understanding Drupal terminology and concepts.

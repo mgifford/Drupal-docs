@@ -12,3 +12,15 @@
 .amazonq/
 .github/copilot/
 .kittify/.dashboard
+
+# Local AI telemetry and prompt logs (do not commit)
+crawler/content/ollama_prompts.log.md
+crawler/content/llm_usage_stats.json
+
+# Python runtime/cache artifacts
+**/__pycache__/
+*.pyc
+
+# Crawler runtime downloads
+crawler/downloads/*.html
+crawler/downloads/media/

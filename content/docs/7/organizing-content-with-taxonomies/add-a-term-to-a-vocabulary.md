@@ -1,84 +1,50 @@
 ---
-author: Drupal Association
-drupal_version: null
-last_updated: null
-readability_score: -29.79
-source_url: https://www.drupal.org/
-suggested_reviewers: []
-summary: Drupal is the open-source CMS that enables digital transformation of government
-  and increases citizen engagement.
+author: null
+drupal_version: '7'
+last_updated: 22 August 2016
+readability_score: 47.05
+source_url: https://example.com/docs/7/organizing-content-with-taxonomies/add-a-term-to-a-vocabulary
+suggested_reviewers:
+- Log in
+- Create account
+summary: Once you have finished defining the vocabulary, you may populate it with
+  terms using Add. Add terms to a vocabulary by navigating to admin/structure/taxonomy/[your-vocabulary-name]/add.
+  Drupal will prompt for term name, description, parents, related terms, synonyms,
+  weight, and URL alias.
 tags:
-- drupal
-- cms
-- open source
-- php
-- web development
-themes: []
-title: Drupal.org home
+- Drupal
+- Taxonomy
+- Content Organization
+- Drupal 7
+themes: null
+title: Add a term to a vocabulary
 ---
 
-```markdown
+# Add a term to a vocabulary
 
-# Drupal.org Home
-Discover Drupal  
-- **Drupal Core** - The open source framework behind millions of websites.
-- **Drupal CMS** - Puts the power of Drupal into the hands of marketers, designers and content creators.
-- **Drupal AI** - Open limitless possibilities with Drupal AI
-- **Case Studies** - Powerful stories that show Drupal solutions in the real world.
-- **Drupal for Government**
-- **Drupal for Higher Education**
-- **Drupal for Nonprofit**
-- **Drupal for eCommerce**
-- **Drupal for FinTech**
-- **Drupal for Healthcare**
-- **Drupal for Enterprise**
-- **Drupal for Retail**
-- **Drupal for Travel & Tourism**
+Last updated on 22 August 2016
 
-Build with Drupal  
-- Download Drupal and the extensions you need
-- Full knowledge base including Drupal 7 resources
-- Getting started
-- Local Development Guide
-- Developer Resources
-- Drupal CMS User Guide
-- Drupal User Guide
-- API
-- Modules
-- Themes
-- Distributions
-- Issue queues
-- Security Advisories
+Drupal 7 will no longer be supported after January 5, 2025. [Learn more and find resources for Drupal 7 sites](/about/drupal-7/d7eol/partners)
 
-Partners & Services  
-- Find a Drupal Certified Partner
-- Become a Drupal Certified Partner
-- Find a Hosting Provider
-- Find a Migration Partner
-- Find Training
-- Drupal Steward
+Once you have finished defining the vocabulary, you may populate it with terms using Add. Add terms to a vocabulary by navigating to admin/structure/taxonomy/[your-vocabulary-name]/add. From there, Drupal will prompt for:
 
-Community  
-- About the Community
-- How to Contribute
-- DrupalCon
-- Events
-- Jobs / Careers
-- News & Blogs
-- Forum
-- Slack
-- Newsletters
-- Drupal Swag Shop
+- **Term name** (Required) -- The name for this term. Example: Technology.
+- **Description** (Optional) -- Description of the term (this item may be used by some modules and feeds).
 
-Support Drupal  
-- The Drupal Association
-- Donate
-- Become a Partner
-- Become a Ripple Maker
-- Become an Organization Member
-- Drupal Swag Shop
+Advanced options:
 
-Get Started  
-- Try Drupal CMS
-- Try Hosting
-```
+- **Parents** (Optional): Select the term(s) under which this term is a subset.
+- **Related terms** (Optional, D6 only): Choose any terms that are related to the one you are creating.
+- **Synonyms** (Optional, D6 only): Enter synonyms for this term, one synonym per line. Synonyms can be used for variant spellings, acronyms, and other terms that have the same meaning as the added term, but which are not explicitly listed in this thesaurus, i.e. unauthorized terms (this item not used by many Drupal modules).
+- **Weight** (Optional): The weight is used to sort the terms of this vocabulary; by default they will be sorted alphabetically.
+- **URL Alias** (Optional, D7): Default is "/taxonomy/term/" but here you can specify an alias like "term1" and the final url will be "/term1".
+
+## Help improve this page
+
+Page status: No known problems
+
+You can:
+
+- Log in, click [Edit](/node/23406/edit), and edit this page
+- Log in, click [Discuss](/node/23406/discuss), update the Page status value, and suggest an improvement
+- Log in and [create a Documentation issue](/node/add/project-issue/documentation?title=Suggestion%20for%3A%20%2823406%29%20Add%20a%20term%20to%20a%20vocabulary) with your suggestion

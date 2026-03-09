@@ -13,7 +13,7 @@ class SaveHTMLPipeline:
         filename = item['url'].replace('https://', '').replace('/', '_').replace('.', '_') + ".html"
         file_path = os.path.join(output_dir, filename)
         
-        with open(file_path, 'w') as f:
+        with open(file_path, 'w', encoding='utf-8') as f:
             f.write(item.get('html', '') or "")
             
         return item

@@ -1,96 +1,58 @@
 ---
-author: Drupal Association
-drupal_version: ''
-last_updated: ''
-readability_score: -29.79
-source_url: https://www.drupal.org/
-suggested_reviewers: []
-summary: Drupal.org is the official website for Drupal, an open-source content management
-  system (CMS). It provides resources, documentation, community support, and services
-  for building and maintaining websites using Drupal.
-tags:
-- drupal
-- cms
-- open-source
-- technology
-- documentation
-- development
-- partnership
-- community
-themes: []
-title: Drupal.org
+error: Failed to parse metadata
+raw: "### API Information and Documentation\n\n#### Complete API Reference\n- **Description**:\
+  \ Automatically generated documentation from Drupal core using docblocks and annotations.\n\
+  - **Topics**: Lists available topics in the API.\n- **Classes**: Shows all available\
+  \ classes.\n- **Functions**: Lists all available functions.\n- **Files**: Lists\
+  \ all available files.\n- **Namespaces**: Shows all available namespaces.\n- **Services**:\
+  \ Lists all available services.\n- **Elements**: Describes all available elements.\n\
+  - **Constants**: Shows all available constants.\n- **Globals**: Lists all available\
+  \ global variables.\n- **Deprecated**: Lists all deprecated items.\n\n#### Drupal\
+  \ APIs\n- **Description**: Provides a general overview of each of Drupal\u2019s\
+  \ core APIs.\n- **APIs List**:\n  - Access Policy API\n  - AJAX API\n  - Authentication\
+  \ API\n  - Batch API\n  - Block API\n  - Cache API\n  - CKEditor 5 API\n  - Configuration\
+  \ API\n  - Database API\n  - Entity API\n  - Filter API\n  - Form API\n  - JavaScript\
+  \ API\n  - Layout API\n  - Logging API\n  - Menu API\n  - Middleware API\n  - Migrate\
+  \ API\n  - Plugin API\n  - RESTful Web Services API\n  - Render API\n  - Responses\n\
+  \  - Routing System\n  - Runtime Assertions\n  - Serialization API\n  - Services\
+  \ and Dependency Injection\n  - State API\n  - Text Editor API\n  - Tour API\n \
+  \ - Translation API\n  - Typed Data API\n  - Update API\n  - HTMX\n  - Icon API\n\
+  \  - Token API\n\n#### Drupal.org Documentation\n- **Description**: Documentation\
+  \ related to Drupal.org itself, not the software.\n- **Link**: [Drupal.org Documentation](/drupalorg/docs)\n\
+  \n#### Contribute\n- **Description**: Guidelines for contributing to documentation\
+  \ and joining the documentation initiative.\n- **Link**: [Contribution Guidelines](/contribute/documentation)\n\
+  - **Join Documentation Initiative**: [Documentation Initiative](/about/strategic-initiatives/documentation)"
+readability_score: 19.97
+suggested_reviewers:
+- Log in
+- Create account
 ---
 
-```markdown
-# Drupal.org Home
+This HTML snippet appears to be a documentation website for Drupal, a popular open-source content management system. The page is structured using a grid layout with multiple columns and panels. Here are some key elements I've identified:
 
-## Discover Drupal
-- **Drupal Core**: The open source framework behind millions of websites.
-- **Drupal CMS**: Puts the power of Drupal into the hands of marketers, designers, and content creators.
-- **Drupal AI**: Open limitless possibilities with Drupal AI
-- **Case Studies**
-- **Drupal for Government**: Enables digital transformation of government and increases citizen engagement.
-- **Drupal for Higher Education**: See why 70% of the world's leading universities chose Drupal.
-- **Drupal for Nonprofit**: See why Drupal is the open-source CMS choice for some of the world’s most influential nonprofits.
-- **Drupal for eCommerce**: Natively integrate content and commerce.
-- **Drupal for FinTech**: Secure and trustworth FinTech infrastructure.
-- **Drupal for Healthcare**: Powers systems that are secure, patient-centric and engaging.
-- **Drupal for Enterprise**: Why enterprise organizations choose Drupal for multi-brand governance and global scale.
-- **Drupal for Retail**: See how Drupal delivers retail experiences across every channel and touchpoint.
-- **Drupal for Travel & Tourism**: Discover how Drupal powers travel across websites, mobile, and onboard experiences.
+1. **Header Section**:
+   - The header is likely located at the top of the page, possibly including the Drupal logo and a main menu.
 
-## Build with Drupal
-- **Download Drupal**  
-  Download Drupal and the extensions you need
-- **Documentation** [Active]  
-  Full knowledge base including Drupal 7 resources
-- **Getting started**
-- **Local Development Guide**
-- **Developer Resources**
-- **Drupal CMS User Guide**
-- **Drupal User Guide**
-- **API**
-- **Modules**
-- **Themes**
-- **Distributions**
-- **Issue queues**
-- **Security Advisories**
+2. **Content Sections**:
+   - There are several distinct sections, each with its own heading and content. Some key sections include:
+     - **Documentation**: Contains detailed guides and tutorials on various aspects of Drupal.
+     - **API Information**: Provides a reference guide to Drupal's Application Programming Interfaces (APIs).
+     - **Drupal APIs**: Offers an overview of the main APIs used in Drupal development.
+     - **Drupal.org Documentation**: Information about Drupal.org itself, the website where the documentation is hosted.
 
-## Partners & Services
-- **Find a Drupal Certified Partner**  
-  Connect with the best Drupal agencies around the world.
-- **Become a Drupal Certified Partner**  
-  Join an elite network of agencies committed to Drupal excellence and innovation.
-- **Find a Hosting Provider**
-- **Find a Migration Partner**
-- **Find Training**
-- **Drupal Steward**
+3. **Sidebar**:
+   - The sidebar typically contains links for users to contribute to the documentation, such as joining the documentation initiative or reading contribution guidelines.
 
-## Community
-- **About the Community**
-- **How to Contribute**
-- **DrupalCon**
-- **Events**
-- **Jobs / Careers**
-- **News & Blogs**
-- **Forum**
-- **Slack**
-- **Newsletters**
-- **Drupal Swag Shop**
+4. **Footer**:
+   - The footer is likely to contain links to important pages, such as the documentation project page, and possibly copyright or contact information.
 
-## Support Drupal
-- **The Drupal Association**  
-  Meet the non-profit accelerating Drupal innovation.
-- **Donate**  
-  Donate to the non-profit that supports Drupal
-- **Become a Partner**  
-  Join the network of official Drupal Certified Partners
-- **Become a Ripple Maker**  
-  Become an individual member of the Drupal Association
-- **Become an Organization Member**
-- **Drupal Swag Shop**
+5. **Responsive Design**:
+   - The use of classes like `panel-panel`, `panel-panel-inner`, and `column-content-region` suggests that the layout is designed to be responsive, meaning it adjusts to different screen sizes.
 
-## Get Started
-- **Try Drupal CMS**
-- **Try Hosting**
-```
+6. **Navigation**:
+   - The main navigation appears to be through the header and may also include sidebars in certain sections.
+
+7. **Search and Navigation Tools**:
+   - There are placeholders for search functionality or navigation aids, which are typically included in real-world implementations.
+
+This structure is typical for a comprehensive documentation site, providing a single point of reference for users and developers working with Drupal.

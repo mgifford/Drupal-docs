@@ -14,7 +14,15 @@ class MetadataExtractor:
         )
         prompt = f"Extract metadata from this HTML:\n\n{html_content}"
         
-        response_text = self.client.generate(prompt, system_prompt)
+        try:
+            response_text = self.client.generate(
+                prompt,
+                system_prompt,
+                require_json_object=True,
+            )
+        except TypeError:
+            # Backward compatibility for clients without router-style kwargs.
+            response_text = self.client.generate(prompt, system_prompt)
         metadata = {}
         try:
             start = response_text.find('{')

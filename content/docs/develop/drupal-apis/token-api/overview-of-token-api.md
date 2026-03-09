@@ -1,78 +1,71 @@
 ---
-author: ''
-drupal_version: ''
-last_updated: ''
-readability_score: -29.79
-source_url: /home
-suggested_reviewers: []
-summary: The open source framework behind millions of websites.
-tags: []
-themes: []
-title: Drupal.org home
+author: null
+drupal_version: null
+last_updated: 24 April 2025
+readability_score: 34.65
+source_url: /docs/develop/drupal-apis/token-api/overview-of-token-api
+suggested_reviewers:
+- Log in
+- Create account
+summary: Token API in Drupal exists to allow replacement of placeholders in text --
+  "tokens" -- with contextual values that match those placeholders. These tokens are
+  formatted in a consistent pattern and are used in various cases to provide inter-operation
+  between different parts of Drupal's framework.
+tags:
+- Token API
+- Drupal API
+- Use cases
+themes: null
+title: Overview of Token API
 ---
 
-```markdown
-# Drupal.org Home
+# Overview of Token API
 
-## Discover Drupal
-- [Drupal Core](https://www.drupal.org/about/overview/technical)
-- [Drupal CMS](https://new.drupal.org/drupal-cms)
-- [Drupal AI](https://new.drupal.org/ai)
-- [Case Studies](https://www.drupal.org/case-studies)
-- [Drupal for Government](https://www.drupal.org/industries/government)
-- [Drupal for Higher Education](https://www.drupal.org/industries/education)
-- [Drupal for Nonprofit](https://www.drupal.org/industries/nonprofit)
-- [Drupal for eCommerce](https://www.drupal.org/industries/ecommerce)
-- [Drupal for FinTech](https://www.drupal.org/industries/fintech)
-- [Drupal for Healthcare](https://www.drupal.org/industries/healthcare)
-- [Drupal for Enterprise](https://new.drupal.org/industries/enterprise)
-- [Drupal for Retail](https://new.drupal.org/industries/retail)
-- [Drupal for Travel & Tourism](https://new.drupal.org/industries/travel)
+Token API in Drupal exists to allow replacement of placeholders in text -- "tokens" -- with contextual values that match those placeholders. These tokens are formatted in a consistent pattern:
 
-## Build with Drupal
-- [Download Drupal](/download)
-- [Documentation](/documentation)
-- [Getting started](https://www.drupal.org/docs/getting-started)
-- [Local Development Guide](https://www.drupal.org/docs/official_docs/local-development-guide)
-- [Developer Resources](https://www.drupal.org/developers)
-- [Drupal CMS User Guide](https://new.drupal.org/docs/drupal-cms)
-- [Drupal User Guide](https://www.drupal.org/docs/user_guide/en/index.html)
-- [API](https://api.drupal.org/api/drupal/11.x)
-- [Modules](https://www.drupal.org/project/modules)
-- [Themes](https://www.drupal.org/project/themes)
-- [Distributions](https://www.drupal.org/project/project_distribution)
-- [Issue queues](/project/issues)
-- [Security Advisories](/security)
-
-## Partners & Services
-- [Find a Drupal Certified Partner](https://www.drupal.org/drupal-services)
-- [Become a Drupal Certified Partner](https://new.drupal.org/association/become-a-drupal-certified-partner)
-- [Find a Hosting Provider](https://www.drupal.org/hosting)
-- [Find a Migration Partner](https://www.drupal.org/about/drupal-7/d7eol/migration-resource-center/enterprise)
-- [Find Training](https://www.drupal.org/training)
-- [Drupal Steward](https://www.drupal.org/steward)
-
-## Community
-- [About the Community](https://www.drupal.org/community)
-- [How to Contribute](https://www.drupal.org/community/contributor-guide)
-- [DrupalCon](https://events.drupal.org/)
-- [Events](https://www.drupal.org/community/events)
-- [Jobs / Careers](https://jobs.drupal.org/home)
-- [News & Blogs](https://www.drupal.org/blog)
-- [Forum](https://www.drupal.org/forum)
-- [Slack](/community/contributor-guide/reference-information/talk/tools/slack)
-- [Newsletters](https://www.drupal.org/subscribe)
-- [Drupal Swag Shop](https://www.drupal.org/swag)
-
-## Support Drupal
-- [The Drupal Association](/association)
-- [Donate](/association/donate)
-- [Become a Partner](/association/become-a-drupal-certified-partner)
-- [Become a Ripple Maker](/association/RippleMakers)
-- [Become an Organization Member](/association/organization-membership)
-- [Drupal Swag Shop](https://www.drupal.org/swag?utm_source=drupalorg&utm_medium=banner&utm_campaign=drupal_swag_shop_2020_09_17)
-
-## Get Started
-- [Try Drupal CMS](https://new.drupal.org/drupal-cms/trial)
-- [Try Hosting](/try-hosting)
+```html
+[data-type:chained:values:value]
 ```
+
+The data-type component might be a content entity type like node, a configuration entity type like view, or a completely custom type like site or date.
+
+Depending on the token value you are trying to fetch, you might have to chain several values together to get to the value you are trying to reach. For example, you might have a specific node and want to print the name of the author. You might start with text formatted like so:
+
+```html
+The node's author is: [node:author:display-name]
+```
+
+This traverses through the following steps in Drupal's content hierarchy:
+
+1. Starts with the Node itself
+2. Traverses to the author
+3. Fetches the display name for the author
+
+So in the end, the text returned matches the display name of the author linked through entity references.
+
+The output would look something like:
+
+```html
+The node's author is: Jane Doe
+```
+
+## Use cases
+
+Tokens aren't necessarily available throughout Drupal sites in their entirety. They mainly appear in cases that provide inter-operation between different parts of Drupal's framework -- acting as a sort of "glue" that passes data from one component to another.
+
+Some cases where you might see tokens appear include the following:
+
+1. Where Drupal defines email templates that are personalized to the user receiving them, such as the User Accounts configuration
+    - This allows emails to users to be populated with facts relevant to them, such as their username, or their first name if there's a field for it, and so on.
+    - When users register new accounts, a callback in the API is called to attach additional tokens that are usually unsafe to have available, such as the dynamically generated URL that lets users reset their password.
+2. Configuration for core modules
+    - File upload directory names
+    - Views plugins such as Row, Field or Area
+3. Specific field formatters, such as Link field titles
+4. Configuration for contributed modules
+    - [Metatag](https://www.drupal.org/project/metatag) is a great example because it can take tokenized input to return both summarized and precise information about content entities for rendering into page markup as metatags.
+    - [Pathauto](https://www.drupal.org/project/pathauto) is another great example because it provides configuration for rendering URL aliases for nodes and other content. The module renders raw URL aliases with tokens replaced to set items in the path like `[node:title]`, `[node:field_category:entity:name]` and so on -- and Pathauto finishes by normalizing out any non-ASCII characters and spaces, ensuring a clean, SEO-friendly, and above all consistent URL alias.
+5. Adding additional token types and extending the capabilities of Token API
+    - The [Token](https://www.drupal.org/docs/extending-drupal/contributed-modules/contributed-module-documentation/token) contributed module does this, adding a token tree browser, additional tokens and token types, and most crucially, entity field tokens that allow deeply nested fields to be surfaced through tokens.
+
+There are many more use cases for the Token API, but this might give you a few ideas about how you could use it.

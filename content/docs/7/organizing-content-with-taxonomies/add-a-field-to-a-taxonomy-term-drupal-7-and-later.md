@@ -1,78 +1,42 @@
 ---
 author: null
-drupal_version: null
-last_updated: null
-readability_score: -29.79
-source_url: null
-suggested_reviewers: []
-summary: null
-tags: null
+drupal_version: '7'
+last_updated: 22 August 2016
+readability_score: 50.63
+source_url: /docs/7/organizing-content-with-taxonomies/add-a-field-to-a-taxonomy-term-drupal-7-and-later
+suggested_reviewers:
+- Log in
+- Create account
+summary: Taxonomy now depends on the Field module. This allows you to add new fields
+  to your Vocabulary Terms as you would to a Content Type. Please note that in order
+  to add new fields you will need to have the Field UI module enabled. Adding a field
+  to a Vocabulary will add that field to all Taxonomy Terms of the Vocabulary - not
+  the Vocabulary object itself.
+tags:
+- Drupal
+- Taxonomy
+- Field
+- Drupal 7
 themes: null
-title: null
+title: Add a field to a taxonomy term (Drupal 7 and later)
 ---
 
-```markdown
-# Drupal.org Home
+# Add a field to a taxonomy term (Drupal 7 and later)
 
-## Discover Drupal
-- [Drupal Core](https://www.drupal.org/about/overview/technical)
-- [Drupal CMS](https://new.drupal.org/drupal-cms)
-- [Drupal AI](https://new.drupal.org/ai)
-- [Case Studies](https://www.drupal.org/case-studies)
-- [Drupal for Government](https://www.drupal.org/industries/government)
-- [Drupal for Higher Education](https://www.drupal.org/industries/education)
-- [Drupal for Nonprofit](https://www.drupal.org/industries/nonprofit)
-- [Drupal for eCommerce](https://www.drupal.org/industries/ecommerce)
-- [Drupal for FinTech](https://www.drupal.org/industries/fintech)
-- [Drupal for Healthcare](https://www.drupal.org/industries/healthcare)
-- [Drupal for Enterprise](https://new.drupal.org/industries/enterprise)
-- [Drupal for Retail](https://new.drupal.org/industries/retail)
-- [Drupal for Travel & Tourism](https://new.drupal.org/industries/travel)
+**Last updated on:** 22 August 2016
 
-## Build with Drupal
-- [Download Drupal](/download)
-- [Documentation](/documentation)
-- [Getting Started](https://www.drupal.org/docs/getting-started)
-- [Local Development Guide](https://www.drupal.org/docs/official_docs/local-development-guide)
-- [Developer Resources](https://www.drupal.org/developers)
-- [Drupal CMS User Guide](https://new.drupal.org/docs/drupal-cms)
-- [Drupal User Guide](https://www.drupal.org/docs/user_guide/en/index.html)
-- [API](https://api.drupal.org/api/drupal/11.x)
-- [Modules](https://www.drupal.org/project/modules)
-- [Themes](https://www.drupal.org/project/themes)
-- [Distributions](https://www.drupal.org/project/project_distribution)
-- [Issue queues](/project/issues)
-- [Security Advisories](/security)
+**Deprecated:** Drupal 7 will no longer be supported after January 5, 2025. [Learn more and find resources for Drupal 7 sites](/about/drupal-7/d7eol/partners)
 
-## Partners & Services
-- [Find a Drupal Certified Partner](https://www.drupal.org/drupal-services)
-- [Become a Drupal Certified Partner](https://new.drupal.org/association/become-a-drupal-certified-partner)
-- [Find a Hosting Provider](https://www.drupal.org/hosting)
-- [Find a Migration Partner](https://www.drupal.org/about/drupal-7/d7eol/migration-resource-center/enterprise)
-- [Find Training](https://www.drupal.org/training)
-- [Drupal Steward](https://www.drupal.org/steward)
+Taxonomy now depends on the [Field](/handbook/modules/field) module. This allows you to add new fields to your Vocabulary Terms as you would to a Content Type. Please note that in order to add new fields you will need to have the [Field UI](http://drupal.org/handbook/modules/field-ui) module enabled. Adding a field to a Vocabulary will add that field to all Taxonomy Terms of the Vocabulary - not the Vocabulary object itself.
 
-## Community
-- [About the Community](https://www.drupal.org/community)
-- [How to Contribute](https://www.drupal.org/community/contributor-guide)
-- [DrupalCon](https://events.drupal.org/)
-- [Events](https://www.drupal.org/community/events)
-- [Jobs / Careers](https://jobs.drupal.org/home)
-- [News & Blogs](https://www.drupal.org/blog)
-- [Forum](https://www.drupal.org/forum)
-- [Slack](/community/contributor-guide/reference-information/talk/tools/slack)
-- [Newsletters](https://www.drupal.org/subscribe)
-- [Drupal Swag Shop](https://www.drupal.org/swag)
+Because Drupal 7 entities (content nodes, users, taxonomy vocabularies, etc.) uses the [Field UI](http://drupal.org/handbook/modules/field-ui) module to manage fields you can just follow the directions over at [http://drupal.org/handbook/modules/field-ui](http://drupal.org/handbook/modules/field-ui) in order to add/remove a field to/from vocabularies.
 
-## Support Drupal
-- [The Drupal Association](/association)
-- [Donate](/association/donate)
-- [Become a Partner](/association/become-a-drupal-certified-partner)
-- [Become a Ripple Maker](/association/RippleMakers)
-- [Become an Organization Member](/association/organization-membership)
-- [Drupal Swag Shop](https://www.drupal.org/swag?utm_source=drupalorg&utm_medium=banner&utm_campaign=drupal_swag_shop_2020_09_17)
-
-## Get Started
-- [Try Drupal CMS](https://new.drupal.org/drupal-cms/trial)
-- [Try Hosting](/try-hosting)
-```
+> There's a lot about Drupal 7 that is designed to be more usable by beginners, but may be confusing if you come from D6 with expectations of where to find your tools. This is one of those situations.
+>
+> Fields (CCK) have been moved into core, and taxonomy is treated as just another field -- not some separate and special concept.
+>
+> If you edit your content type (admin->structure->content types) existing vocabularies will be available in the "add existing field" widget. To create a new vocabulary and associate it with a content type, just "add new field" of type "term reference."
+>
+> You also can go admin->structure->taxonomy and add a vocabulary there, but (as you discovered) that doesn't glue it to the content type.
+>
+> Copied from this comment [http://drupal.org/node/1107028#comment-4267500](http://drupal.org/node/1107028#comment-4267500) by yelvington

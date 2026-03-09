@@ -1,84 +1,61 @@
 ---
-author: null
-drupal_version: 11.x
-last_updated: null
-readability_score: -29.79
-source_url: https://www.drupal.org/
-suggested_reviewers: []
-summary: Drupal is an open-source content management framework that powers millions
-  of websites. It provides a robust platform for building and maintaining complex
-  digital experiences.
-tags:
-- Drupal
-- CMS
-- Open Source
-- Web Development
-themes: null
-title: Drupal.org
+error: Failed to parse metadata
+raw: "The provided text is a detailed documentation on an Icon API for Drupal, a popular\
+  \ content management system. Here's a summary of the key points:\n\n1. **Icon Packs**:\
+  \ The API allows for the creation of custom icon packs, each represented by a provider\
+  \ plugin. Each pack has a unique ID and can include metadata like enabled status,\
+  \ label, description, links, version, and license.\n\n2. **Extractors**: These are\
+  \ plugins responsible for discovering icons within a pack. The text mentions built-in\
+  \ extractors for SVG and web fonts, as well as an example extractor for Iconify\
+  \ Icons.\n\n3. **Rendering Icons**:\n   - **PHP**: Icons can be rendered using a\
+  \ new render element called `icon`. It requires the pack ID and icon ID, and optionally\
+  \ a settings array.\n   - **Twig**: A Twig function `icon()` is available for rendering\
+  \ icons. It takes the pack ID, icon ID, and an optional settings array as parameters.\n\
+  \n4. **Contrib Module**: The text mentions a contributed module called \"UI Icons\"\
+  \ that uses this API to integrate icons into Drupal.\n\n5. **Documentation and Feedback**:\
+  \ The documentation includes information on how to help improve the page, suggesting\
+  \ either editing the page directly, discussing the page status, or creating a documentation\
+  \ issue.\n\nThe overall goal of this API is to provide a flexible and extensible\
+  \ way to integrate icons into Drupal, supporting various types of icons and allowing\
+  \ for easy customization and extension."
+readability_score: 52.26
+suggested_reviewers:
+- Log in
+- Create account
 ---
 
-```markdown
-# Drupal.org Home
+This document provides an overview of Drupal's Icon API, which allows developers to add and use icons in their Drupal sites. The key features and concepts covered include:
 
-## Discover Drupal
-- **Drupal Core**: The open source framework behind millions of websites.
-- **Drupal CMS**: Puts the power of Drupal into the hands of marketers, designers and content creators.
-- **Drupal AI**: Open limitless possibilities with Drupal AI.
-- **Case Studies**
-- **Drupal for Government**: Enables digital transformation of government and increases citizen engagement.
-- **Drupal for Higher Education**: See why 70% of the world's leading universities chose Drupal.
-- **Drupal for Nonprofit**: See why Drupal is the open-source CMS choice for some of the world’s most influential nonprofits.
-- **Drupal for eCommerce**: Natively integrate content and commerce.
-- **Drupal for FinTech**: Secure and trustworth FinTech infrastructure.
-- **Drupal for Healthcare**: Powers systems that are secure, patient-centric and engaging.
-- **Drupal for Enterprise**: Why enterprise organizations choose Drupal for multi-brand governance and global scale.
-- **Drupal for Retail**: See how Drupal delivers retail experiences across every channel and touchpoint.
-- **Drupal for Travel & Tourism**: Discover how Drupal powers travel across websites, mobile, and onboard experiences.
+1. Icon Packs: 
+   - A set of related icons provided by a specific icon pack provider.
+   - Defined using a YAML configuration file.
 
-## Build with Drupal
-- **Download Drupal**
-- **Documentation** (Full knowledge base including Drupal 7 resources)
-- **Getting Started** (All documentation)
-- **Local Development Guide**
-- **Developer Resources**
-- **Drupal CMS User Guide**
-- **Drupal User Guide**
-- **API**
-- **Modules**
-- **Themes**
-- **Distributions**
-- **Issue queues**
-- **Security Advisories**
+2. Extractors:
+   - Plugins that discover icons from various sources (e.g. SVG files, web fonts).
+   - Implement the IconExtractorInterface.
 
-## Partners & Services
-- **Find a Drupal Certified Partner**
-- **Become a Drupal Certified Partner**
-- **Find a Hosting Provider**
-- **Find a Migration Partner**
-- **Find Training**
-- **Drupal Steward**
+3. Rendering Icons:
+   - PHP render element: #type => 'icon'
+   - Twig function: {{ icon('pack_id', 'icon_id', settings) }}
 
-## Community
-- **About the Community**
-- **How to Contribute**
-- **DrupalCon** (Unites experts from around the globe who create ambitious digital experiences. Network, learn, and be inspired.)
-- **Events** (Discover local events, community meet-ups, and training.)
-- **Jobs / Careers** (Find opportunities to work in Drupal.)
-- **News & Blogs** (News and stories about Drupal.)
-- **Forum** (Got a question about Drupal? Find answers on the Drupal forums.)
-- **Slack** (Get support and communicate with the global Drupal community.)
-- **Newsletters** (Sign up for Drupal news and manage your subscriptions.)
-- **Drupal Swag Shop**
+4. Icon Packs Available:
+   - SVG based: 
+     - Material Symbols
+     - Iconify
+     - Font based: 
+       - Material Icons
+       - FontAwesome
+       - Iconify
 
-## Support Drupal
-- **The Drupal Association**
-- **Donate**
-- **Become a Partner**
-- **Become a Ripple Maker**
-- **Become an Organization Member**
-- **Drupal Swag Shop**
+5. Adding Custom Extractors:
+   - Modules can create custom extractors by implementing IconExtractorInterface.
+   - Plugins are declared using PHP attributes.
 
-## Get Started
-- **Try Drupal CMS**
-- **Try Hosting**
-```
+6. Icon Rendering in Twig:
+   - The icon() Twig function can be used to render icons directly in templates.
+
+7. Documentation and Contribution:
+   - The page mentions a contrib module called UI Icons that uses this API.
+   - It provides links for users to contribute improvements or suggest changes to the documentation.
+
+Overall, this API provides a flexible and extensible framework for integrating various icon sets and rendering them throughout a Drupal site. The documentation covers the core features and provides examples of how to use the API.

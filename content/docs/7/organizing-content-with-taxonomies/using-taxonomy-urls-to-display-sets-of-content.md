@@ -1,90 +1,68 @@
 ---
-author: Drupal Association
-drupal_version: null
-last_updated: null
-readability_score: -29.79
-source_url: https://www.drupal.org/
-suggested_reviewers: []
-summary: The Drupal.org home page provides information about the open-source content
-  management system, including details on technical aspects of Drupal, building with
-  Drupal, community resources, and how to support Drupal.
+author: null
+drupal_version: '7'
+last_updated: 22 August 2016
+readability_score: 44.24
+source_url: /docs/7/organizing-content-with-taxonomies/using-taxonomy-urls-to-display-sets-of-content
+suggested_reviewers:
+- Log in
+- Create account
+summary: This document explains how to use taxonomy URLs to display sets of content
+  in Drupal 7. It covers how to combine Term IDs using commas and plus signs to create
+  listings of nodes using either OR both taxonomy terms.
 tags:
-- Drupal
-- CMS
-- Open Source
-- Web Development
-themes: []
-title: Drupal.org Home Page
+- Taxonomy
+- Drupal 7
+- Content organization
+themes: null
+title: Using taxonomy URLs to display sets of content
 ---
 
-```markdown
-# Drupal.org Home
+# Using taxonomy URLs to display sets of content
 
-## Discover Drupal
+**Last updated on** 22 August 2016
 
-- [Drupal Core](https://www.drupal.org/about/overview/technical)
-- [Drupal CMS](https://new.drupal.org/drupal-cms)
-- [Drupal AI](https://new.drupal.org/ai)
-- [Case Studies](https://www.drupal.org/case-studies)
-- [Drupal for Government](https://www.drupal.org/industries/government)
-- [Drupal for Higher Education](https://www.drupal.org/industries/education)
-- [Drupal for Nonprofit](https://www.drupal.org/industries/nonprofit)
-- [Drupal for eCommerce](https://www.drupal.org/industries/ecommerce)
-- [Drupal for FinTech](https://www.drupal.org/industries/fintech)
-- [Drupal for Healthcare](https://www.drupal.org/industries/healthcare)
-- [Drupal for Enterprise](https://new.drupal.org/industries/enterprise)
-- [Drupal for Retail](https://new.drupal.org/industries/retail)
-- [Drupal for Travel & Tourism](https://new.drupal.org/industries/travel)
+**Deprecated**: Drupal 7 will no longer be supported after January 5, 2025. [Learn more and find resources for Drupal 7 sites](/about/drupal-7/d7eol/partners)
 
-## Build with Drupal
+When displaying nodes, both in teaser listings on the Drupal home pages and in full, single-node view, many Drupal themes display the categories applied to the node. If the user selects any category term, Drupal will then display a browsable listing for all nodes tagged with that term. 
 
-- [Download Drupal](/download)
-- [Documentation](/documentation)
-- [Getting started](https://www.drupal.org/docs/getting-started)
-- [Local Development Guide](https://www.drupal.org/docs/official_docs/local-development-guide)
-- [Developer Resources](https://www.drupal.org/developers)
-- [Drupal CMS User Guide](https://new.drupal.org/docs/drupal-cms)
-- [Drupal User Guide](https://www.drupal.org/docs/user_guide/en/index.html)
-- [API](https://api.drupal.org/api/drupal/11.x)
-- [Modules](https://www.drupal.org/project/modules)
-- [Themes](https://www.drupal.org/project/themes)
-- [Distributions](https://www.drupal.org/project/project_distribution)
-- [Issue queues](/project/issues)
-- [Security Advisories](/security)
+Examine the Taxonomy URL for one such category listing. The end of the URL should look something like this:
 
-## Partners & Services
-
-- [Find a Drupal Certified Partner](https://www.drupal.org/drupal-services)
-- [Become a Drupal Certified Partner](https://new.drupal.org/association/become-a-drupal-certified-partner)
-- [Find a Hosting Provider](https://www.drupal.org/hosting)
-- [Find a Migration Partner](https://www.drupal.org/about/drupal-7/d7eol/migration-resource-center/enterprise)
-- [Find Training](https://www.drupal.org/training)
-- [Drupal Steward](https://www.drupal.org/steward)
-
-## Community
-
-- [About the Community](https://www.drupal.org/community)
-- [How to Contribute](https://www.drupal.org/community/contributor-guide)
-- [DrupalCon](https://events.drupal.org/)
-- [Events](https://www.drupal.org/community/events)
-- [Jobs / Careers](https://jobs.drupal.org/home)
-- [News & Blogs](https://www.drupal.org/blog)
-- [Forum](https://www.drupal.org/forum)
-- [Slack](/community/contributor-guide/reference-information/talk/tools/slack)
-- [Newsletters](https://www.drupal.org/subscribe)
-- [Drupal Swag Shop](https://www.drupal.org/swag)
-
-## Support Drupal
-
-- [The Drupal Association](/association)
-- [Donate](/association/donate)
-- [Become a Partner](/association/become-a-drupal-certified-partner)
-- [Become a Ripple Maker](/association/RippleMakers)
-- [Become an Organization Member](/association/organization-membership)
-- [Drupal Swag Shop](https://www.drupal.org/swag?utm_source=drupalorg&utm_medium=banner&utm_campaign=drupal_swag_shop_2020_09_17)
-
-## Get Started
-
-- [Try Drupal CMS](https://new.drupal.org/drupal-cms/trial)
-- [Try Hosting](/try-hosting)
+```php
+taxonomy/term/1
 ```
+
+And another Taxonomy URL, for a different term, something like this:
+
+```php
+taxonomy/term/2
+```
+
+Note that Taxonomy URLs always contain one or more Term IDs at the end of the URL. These numbers, 1 and 2 above, tell Drupal which categories to display.
+
+Now combine the Term ID's above in one URL using a comma as a delimiter:
+
+```php
+taxonomy/term/1,2
+```
+
+The resulting listing represents the boolean AND operation. It includes all nodes tagged with both terms. To get a listing of nodes using either taxonomy term 1 OR 2, use a plus sign as the operator
+
+```php
+taxonomy/term/1+2 
+```
+
+Want to combine more categories? Just add more delimiters and numbers. Know that you can use the taxonomy section in Drupal site administration to find out any Term ID. Just place the cursor over any *edit term* and look to the status bar at the bottom of the browser. Then substitute the new Term ID's found there to create a different category listing.
+
+In addition to displaying Drupal nodes by category on site, Drupal has category specific RSS feeds for other sites to access your site content. See how the URL format for the RSS feed is very similar to the Taxonomy URL:
+
+```php
+taxonomy/term/1+2/0/feed
+```
+
+This feature has been removed in Drupal 7.
+
+Building individual Taxonomy URL's is not the most user friendly way to provide site users access to browsable listings. Nor do administrators necessarily want to build custom blocks for users with links to each category listing. To extend the means of accessing nodes by category, evaluate the following modules:
+
+- [Taxonomy Menu](http://drupal.org/project/taxonomy_menu)
+- [Dhtml Menu](http://drupal.org/project/dhtml_menu)

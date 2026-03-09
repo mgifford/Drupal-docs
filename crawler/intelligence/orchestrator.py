@@ -1,11 +1,11 @@
 import os
-from intelligence.gemini_client import GeminiClient
+from intelligence.llm_router import LLMRouter
 from intelligence.ai_merger import AIMerger
 from intelligence.gap_analyzer import GapAnalyzer
 
 class IntelligenceOrchestrator:
     def __init__(self):
-        self.client = GeminiClient()
+        self.client = LLMRouter()
         self.merger = AIMerger(self.client)
         self.gap_analyzer = GapAnalyzer(self.client)
 

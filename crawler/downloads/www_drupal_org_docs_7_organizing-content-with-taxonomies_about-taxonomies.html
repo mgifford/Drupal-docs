@@ -1,11 +1,58 @@
-<div class="content">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:fb="http://ogp.me/ns/fb#"
+  xmlns:og="http://ogp.me/ns#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="MobileOptimized" content="width" />
+  <!--[if IE]><![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Drupal&#039;s taxonomy system provides the ability to classify content." />
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)" />
+<link rel="image_src" href="https://www.drupal.org/sites/all/themes/bluecheese/images/drupal_meta_image.png" />
+<link rel="canonical" href="https://www.drupal.org/docs/7/organizing-content-with-taxonomies/about-taxonomies" />
+<link rel="shortlink" href="https://www.drupal.org/node/774892" />
+<meta property="og:site_name" content="Drupal.org" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.drupal.org/docs/7/organizing-content-with-taxonomies/about-taxonomies" />
+<meta property="og:title" content="About taxonomy" />
+<meta property="og:description" content="Taxonomy is the practice and science of classifying things. In Drupal, the Taxonomy module allows you to classify your website content, and it can be an important part of your information architecture. Planning taxonomy The first step in establishing a taxonomy is creating a new vocabulary. Next you provide the terms that fall within that vocabulary. The arrangement can be &quot;flat,&quot; as in a tagging system, or hierarchical, with parents and children." />
+<meta property="og:updated_time" content="2018-05-24T15:45:26+00:00" />
+<meta property="article:published_time" content="2010-04-18T23:15:53+00:00" />
+<meta property="article:modified_time" content="2018-05-24T15:45:26+00:00" />
+  <title>About taxonomy | Organizing content with taxonomy in Drupal 7 | Drupal Wiki guide on Drupal.org</title>
+  <link type="text/css" rel="stylesheet" href="/files/advagg_css/css__IGnvPR1nQd12eUWIitgZ6GDDyWxn9W82zUE-pgSt6Y8__Gh7RLUb1X-_kkfJcUW2xrjQQJCrbwuGgKr5Ix51cJYc__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__Xi-PZpvKTY78w7l1WNsqwUA52MIupHJebCMiX34Ugt0__D_EUHDAfEQdxcLiSDY7hREUWkG1Ge56_h2z3Er8V188__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__WF0PRotZAhCcl0aJjY5W2LYj8UwiYuB2dZEFluOh3Tc__FviX13FUB-Ppa2XB29BUIJQZ1Wg-F5XiDE7XD5y7mjQ__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__Fx0_w1L9q3nwzXnALG7UfjLF34FGYgJTz636-GWbM6k__0jWLTEHP3h5U5RcXuZcFhf0DdvRdzP3_wzCVNT015Ls__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__71G6gao0TOuJxFfw9efqGV9HafmPRGSqQoYV4yqGUWc__0k8WmohJ7uI39H7Fx7anieczTl-L07amrSNRIaXteE4__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+  </head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-774892 node-type-documentation drupalorg-site-main panels-layout og-context og-context-node og-context-node-2764189" >
+  <div id="skip-link" tabindex="-1">
+    <a class="element-invisible element-focusable" href="#content">Skip to main content</a>
+    <a class="element-invisible element-focusable skip-link-search" href="#search-block-form">Skip to search</a>
+  </div>
+    <div class="region region-page-top">
+    <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W36H8DW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div id="drupalorg-crosssite-gdpr">Can we use first and third party cookies and web beacons to <a href="https://www.drupal.org/terms">understand our audience, and to tailor promotions you see</a>?<br><button class="yes">Yes, please</button><button class="no">No, do not track me</button></div>  </div>
+      <div id="nav-header">
+          <div class="menu-nav">
+        <a class="nav-btn" id="nav-open-btn" href="#block-system-main-menu"><img src="/sites/all/themes/bluecheese/images/icon-w-menu.svg" alt="Main menu"></a>
+      </div>
+        <nav id="navigation-inner" class="container-12" role="navigation">
+        <div class="region region-navigation">
+    <div id="block-system-main-menu" class="block block-system block-menu">
+<div class="block-inner">
+    
+  <div class="content">
     <div class="menu-block"><ul class="menu button"><li class="first leaf"><a href="/home" title="Drupal.org home page">Drupal.org home</a></li>
 <li class="expanded"><a href="https://www.drupal.org/about/overview/technical" title="">Discover Drupal</a><div class="menu-block"><ul class="menu button"><li class="first leaf"><a href="https://www.drupal.org/about/overview/technical" title="The open source framework behind millions of websites.">Drupal Core</a></li>
 <li class="leaf"><a href="https://new.drupal.org/drupal-cms" title="Drupal CMS puts the power of Drupal into the hands of marketers, designers and content creators.">Drupal CMS</a></li>
 <li class="leaf"><a href="https://new.drupal.org/ai" title="Open limitless possibilities with Drupal AI">Drupal AI</a></li>
 <li class="leaf"><a href="https://www.drupal.org/case-studies" title="Powerful stories that show Drupal solutions in the real world.">Case Studies</a></li>
 <li class="leaf"><a href="https://www.drupal.org/industries/government" title="Drupal is the open-source CMS that enables digital transformation of government and increases citizen engagement.">Drupal for Government</a></li>
-<li class="leaf"><a href="https://www.drupal.org/industries/education" title="See why 70% of the world's leading universities chose Drupal.">Drupal for Higher Education</a></li>
+<li class="leaf"><a href="https://www.drupal.org/industries/education" title="See why 70% of the world&#039;s leading universities chose Drupal.">Drupal for Higher Education</a></li>
 <li class="leaf"><a href="https://www.drupal.org/industries/nonprofit" title="See why Drupal is the open-source CMS choice for some of the world’s most influential nonprofits.">Drupal for Nonprofit</a></li>
 <li class="leaf"><a href="https://www.drupal.org/industries/ecommerce" title="Natively integrate content and commerce.">Drupal for eCommerce</a></li>
 <li class="leaf"><a href="https://www.drupal.org/industries/fintech" title="Secure and trustworth FinTech infrastructure.">Drupal for FinTech</a></li>
@@ -51,10 +98,499 @@
 <li class="leaf"><a href="/association/donate" title="Donate to the non-profit that supports Drupal">Donate</a></li>
 <li class="leaf"><a href="/association/become-a-drupal-certified-partner" title="Join the network of official Drupal Certified Partners">Become a Partner</a></li>
 <li class="leaf"><a href="/association/RippleMakers" title="Become an individual member of the Drupal Association">Become a Ripple Maker</a></li>
-<li class="leaf"><a href="/association/organization-membership" title="Join and show your organization's support for Drupal">Become an Organization Member</a></li>
+<li class="leaf"><a href="/association/organization-membership" title="Join and show your organization&#039;s support for Drupal">Become an Organization Member</a></li>
 <li class="last leaf"><a href="https://www.drupal.org/swag?utm_source=drupalorg&amp;utm_medium=banner&amp;utm_campaign=drupal_swag_shop_2020_09_17" title="Get your Drupal-branded bucket hats, hoodies, and more">Drupal Swag Shop</a></li>
 </ul></div></li>
 <li class="last expanded"><a href="/try-hosting" title="Try Drupal">Get Started</a><div class="menu-block"><ul class="menu button"><li class="first leaf"><a href="https://new.drupal.org/drupal-cms/trial" title="">Try Drupal CMS</a></li>
 <li class="last leaf"><a href="/try-hosting" title="">Try Hosting</a></li>
 </ul></div></li>
 </ul></div><a class="close-btn" href="#top">Return to content</a>  </div>
+  </div>
+</div>
+<div id="block-search-form" class="block block-search">
+<div class="block-inner">
+    
+  <div class="content">
+    <form action="/docs/7/organizing-content-with-taxonomies/about-taxonomies" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input placeholder="Search…" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input alt="Search" type="image" id="edit-submit" name="submit" value="Search" src="/sites/all/themes/bluecheese/images/icon-w-search.svg" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-3-sKBRLxWAJ7IkNEuhvewisduu4ynEhFGibrbbxLNEM" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+  </div>
+</div>
+<div id="block-system-user-menu" class="block block-system block-menu">
+<div class="block-inner">
+    
+  <div class="content">
+    <div class="menu-block"><ul class="menu"><li class="button default"><a href="#block-system-user-menu"><img src="https://www.drupal.org/sites/all/themes/bluecheese/images/icon-w-user.svg" alt="Log in, view profile, and more"></a><ul><li class="first leaf"><a href="/user/login?destination=node/774892" title="">Log in</a></li>
+<li class="last leaf"><a href="/user/register?destination=node/774892" title="">Create account</a></li>
+</ul></li></ul></div>  </div>
+  </div>
+</div>
+  </div>
+    </nav>
+  </div>
+
+    <div id="header" class="clearfix">
+    <div id="header-inner" class="container-12 clearfix">
+      <div id="header-left">
+        <div id="site-name"><a href="/documentation">Documentation</a></div>
+              </div>
+      <div id="header-right">
+          <div class="region region-header">
+    <div id="block-drupalorg-search-documentation" class="block block-drupalorg">
+<div class="block-inner">
+    
+  <div class="content">
+    <form class="container-inline" action="/docs/7/organizing-content-with-taxonomies/about-taxonomies" method="post" id="drupalorg-documentation-search-form" accept-charset="UTF-8"><div><input type="hidden" name="form_build_id" value="form-BIIaFtMEh9ShFpWJN89kCwEc_kAL5jq-qIG3XbIaLIU" />
+<input type="hidden" name="form_id" value="drupalorg_documentation_search_form" />
+<div class="form-item form-type-textfield form-item-drupalorg-documentation-search-form">
+  <label class="element-invisible" for="edit-drupalorg-documentation-search-form--2">Search </label>
+ <input placeholder="Search documentation…" type="text" id="edit-drupalorg-documentation-search-form--2" name="drupalorg_documentation_search_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions--2"><input alt="Search" type="image" id="edit-submit--2" name="submit" value="Search" src="/sites/all/themes/bluecheese/images/icon-w-search.svg" class="form-submit" /></div></div></form>  </div>
+  </div>
+</div>
+  </div>
+      </div>
+    </div>
+  </div>
+  
+      <div id="banner" data-nosnippet>
+        <div class="region region-banner">
+    <div id="block-drupalorg-announcements" class="block block-drupalorg">
+<div class="block-inner">
+    
+  <div class="content">
+    <div class="announcement">Level up your skills at DrupalCon Chicago 2026 with focused Summits and immersive, hands-on Trainings led by community experts.</div>
+<div class="cta"><a href="https://events.drupal.org/chicago2026/summits-trainings" class="global-announce-banner dc-chicago-26-training-summits">View all offerings and register today</a></div>  </div>
+  </div>
+</div>
+  </div>
+    </div>
+  
+  <div id="page" class="clearfix">
+    <div class="breadbox"><nav class="breadcrumb container-12"><span><a href="/docs/7">Drupal 7</a></span><span><a href="/docs/7/organizing-content-with-taxonomy-in-drupal-7">Organizing content with taxonomy in Drupal 7</a></span></nav></div>
+
+    <div id="main" role="main">
+      
+      <div id="content" class="clearfix">
+                                <div id="content-inner" class="clearfix">
+
+          
+            <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+<div class="block-inner">
+    
+  <div class="content">
+    
+<div class="panelizer-view-mode node node-full node-documentation node-774892">
+        
+<div class="panel-display hydra panel-layout clearfix " >
+
+  <div class="container preface clearfix panel-panel">
+    <div class="container-inner preface-inner panel-panel-inner">
+          </div>
+  </div>
+
+  <div class="container content clearfix">
+    <div class="container-inner content-inner panel-panel-inner">
+      <div class="column-content-region top-right-content column panel-panel">
+        <div class="column-content-region-inner top-right-content-inner column-inner panel-panel-inner">
+          <div class="panel-pane pane-block pane-drupalorg-carbon-ad-sidebar"  >
+  
+      
+  
+  <div class="pane-content">
+    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYIEKJI&placement=drupalorg" id="_carbonads_js"></script><div class="ad-explanation description">Advertising sustains the DA. Ads are hidden for members. <a href="/association/individual-membership">Join today</a></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-block pane-table-of-contents-toc-w-3y7froeoqmgrpcmgnphqwt4pi3"  id="on-this-page" >
+  
+        <h3 class="pane-title">
+      On this page    </h3>
+    
+  
+  <div class="pane-content">
+    <div class="item-list"><ul class="anchor-list"><li class="anchor-list__item h2-tag first"><a href="/docs/7/organizing-content-with-taxonomies/about-taxonomies#s-planning-taxonomy" class="toc-link toc-link-invalid-id active">Planning taxonomy</a></li>
+<li class="anchor-list__item h3-tag"><a href="/docs/7/organizing-content-with-taxonomies/about-taxonomies#s-taxonomy-principles" class="toc-link toc-link-invalid-id active">Taxonomy principles</a></li>
+<li class="anchor-list__item h2-tag"><a href="/docs/7/organizing-content-with-taxonomies/about-taxonomies#s-using-the-taxonomy-module" class="toc-link toc-link-invalid-id active">Using the Taxonomy module</a></li>
+<li class="anchor-list__item h3-tag"><a href="/docs/7/organizing-content-with-taxonomies/about-taxonomies#s-working-with-taxonomy" class="toc-link toc-link-invalid-id active">Working with Taxonomy</a></li>
+<li class="anchor-list__item h4-tag"><a href="/docs/7/organizing-content-with-taxonomies/about-taxonomies#s-adding-a-vocabulary" class="toc-link toc-link-invalid-id active">Adding a vocabulary</a></li>
+<li class="anchor-list__item h4-tag"><a href="/docs/7/organizing-content-with-taxonomies/about-taxonomies#s-working-with-terms" class="toc-link toc-link-invalid-id active">Working with Terms</a></li>
+<li class="anchor-list__item h3-tag last"><a href="/docs/7/organizing-content-with-taxonomies/about-taxonomies#s-using-categories-in-menus" class="toc-link toc-link-invalid-id active">Using Categories in Menus</a></li>
+</ul></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-block pane-og-menu-og-single-menu-block"  id="organizing-content-with-taxonomy-in-drupal-7" >
+  
+        <h2 class="pane-title">
+      <a href="/docs/7/organizing-content-with-taxonomy-in-drupal-7">Organizing content with taxonomy in Drupal 7</a>    </h2>
+    
+  
+  <div class="pane-content">
+    <ul class="menu"><li class="first leaf active-trail"><a href="/docs/7/organizing-content-with-taxonomies/about-taxonomies" class="active-trail active">About taxonomies</a></li>
+<li class="leaf"><a href="/docs/7/organizing-content-with-taxonomies/add-a-field-to-a-taxonomy-term-drupal-7-and-later">Add a field to a taxonomy term (Drupal 7 and later)</a></li>
+<li class="leaf"><a href="/docs/7/organizing-content-with-taxonomies/add-a-term-to-a-vocabulary">Add a term to a vocabulary</a></li>
+<li class="leaf"><a href="/docs/7/organizing-content-with-taxonomies/add-a-vocabulary-to-a-content-type">Add a vocabulary to a content type</a></li>
+<li class="leaf"><a href="/docs/7/organizing-content-with-taxonomies/create-a-vocabulary">Create a vocabulary</a></li>
+<li class="leaf"><a href="/docs/7/organizing-content-with-taxonomies/guidelines-for-taxonomy-design">Guidelines for taxonomy design</a></li>
+<li class="leaf"><a href="/docs/7/organizing-content-with-taxonomy/organizing-content-with-taxonomy">Organizing content with taxonomies</a></li>
+<li class="last leaf"><a href="/docs/7/organizing-content-with-taxonomies/using-taxonomy-urls-to-display-sets-of-content">Using taxonomy URLs to display sets of content</a></li>
+</ul>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-node-links"  >
+  
+      
+  
+  <div class="pane-content">
+      </div>
+
+  
+  </div>
+        </div>
+      </div>
+      <div class="column-content-region left-content column panel-panel ">
+        <div class="column-content-region-inner left-content-inner column-inner panel-panel-inner">
+          <div class="panel-pane pane-node-title"  >
+  
+      
+  
+  <div class="pane-content">
+    <h1>About taxonomy</h1>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-node-updated"  id="last-updated-on" >
+  
+        <span class="pane-title">
+      Last <a href="/node/774892/discuss">updated</a> on    </span>
+    
+  
+  <div class="pane-content">
+    24 May 2018  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-documentation-notices"  >
+  
+      
+  
+  <div class="pane-content">
+    <p class="deprecated">Drupal 7 will no longer be supported after January 5, 2025. <a href="/about/drupal-7/d7eol/partners">Learn more and find resources for Drupal 7 sites</a></p>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-entity-field pane-node-body"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p><a href="http://en.wikipedia.org/wiki/Taxonomy" rel="nofollow">Taxonomy</a> is the practice and science of classifying things. In Drupal, the Taxonomy module allows you to classify your website content, and it can be an important part of your information architecture.</p>
+<h2 id="s-planning-taxonomy"><a class="toc-anchor" title="Permalink to this headline" href="#s-planning-taxonomy"></a>Planning taxonomy</h2>
+<p>The first step in establishing a taxonomy is creating a new vocabulary. Next you provide the terms that fall within that vocabulary. The arrangement can be "flat," as in a tagging system, or hierarchical, with parents and children.</p>
+<p>Here's how you might create a taxonomy for a site arranged by musical genre:</p>
+<dl>
+<dt>Vocabulary = Music</dt>
+<dt>Term = Classical</dt>
+<dd>Sub-term = Concertos</dd>
+<dd>Sub-term = Sonatas</dd>
+<dd>Sub-term = Symphonies</dd>
+<dt>Term = Jazz</dt>
+<dd>Sub-term = Swing</dd>
+<dd>Sub-term = Fusion</dd>
+</dl>
+<p>Sometimes you will want to create a "controlled vocabulary," where content authors can assign terms that have been predetermined. If so, you will need to add those terms to your vocabulary in advance.</p>
+<p>An alternative model for organizing information is the use of "tags." User-defined tags can be added to Drupal content on the fly. In <strong>Drupal 7</strong>, a ready-to-use "Tags" vocabulary is included by default, so users can immediately begin adding tags to their content.</p>
+<p>By using multiple vocabularies it is possible to classify an individual node in many ways. For example, a node representing a musical work might have a genre vocabulary and a time-period vocabulary (including terms such as: seventeenth century, eighteenth century). The node might also be identified using a vocabulary term, such as "sonata". Adding a vocabulary for "composers", might lead to the following combination of terms: as an "early-eighteenth-century" "sonata" by "Bach", and it could be located by any of these three terms.</p>
+<h3 id="s-taxonomy-principles"><a class="toc-anchor" title="Permalink to this headline" href="#s-taxonomy-principles"></a>Taxonomy principles</h3>
+<ul>
+<li>Each vocabulary consists of a set of terms.</li>
+<li>A site can have an unlimited number of vocabularies.</li>
+<li>Each vocabulary has an associated ID number. Each taxonomy term has an associated ID number.</li>
+<li>Each vocabulary can contain an unlimited number of terms.</li>
+<li>Within a vocabulary, terms can be ordered into hierarchies. All vocabularies can be arranged into a hierarchy without taking additional steps, if you find this useful.</li>
+<li>In Drupal 7, you don't need to predefine the type of vocabulary in order to create a "tagging" vocabulary. In Drupal 6, vocabularies should be designated as "free tagging" or "tags" and "multiple select" should be chosen (in Drupal 6).</li>
+<li>In Drupal 6, vocabularies can be set to allow terms to have <em>related terms</em>. This function is similar to "See also" in a dictionary. In Drupal 7, this can be replicated by adding a "term reference" field to the vocabulary. For more on the use of Fields with Taxonomy, see <a href="http://drupal.org/handbook/modules/field-ui" rel="nofollow">the handbook on Field UI</a>.</li>
+<li>In Drupal 6, vocabularies define whether users may attach only a single term to a node or whether users may attach multiple terms to a node. In Drupal 7, this is controlled in the settings of each "term reference" field.</li>
+</ul>
+<h2 id="s-using-the-taxonomy-module"><a class="toc-anchor" title="Permalink to this headline" href="#s-using-the-taxonomy-module"></a>Using the Taxonomy module</h2>
+<p>In Drupal 7, the Taxonomy module is turned on, by default. In earlier versions of Drupal, you can enable the Taxonomy module on the <em>modules</em> page (<em>Administer &gt; Site building &gt; Modules</em>).</p>
+<ul>
+<li>In <strong>Drupal 7</strong> settings for the Taxonomy module can be found at <em>Administer &gt; Structure &gt; Taxonomy</em></li>
+<li>In <strong>Drupal 6</strong> settings for the Taxonomy module can be found at <em>Administer &gt; Content Management &gt; Taxonomy</em></li>
+</ul>
+<h3 id="s-working-with-taxonomy"><a class="toc-anchor" title="Permalink to this headline" href="#s-working-with-taxonomy"></a>Working with Taxonomy</h3>
+<p>Vocabularies are managed on the <em>Taxonomy</em> page.</p>
+<ul>
+<li>In <strong>Drupal 7</strong>, it's found under <em>Administration &gt; Structure</em> (i.e., <a href="http://yoururl/admin/structure/taxonomy" rel="nofollow">http://yoururl/admin/structure/taxonomy</a>)</li>
+<li>In <strong>Drupal 6</strong>, it's found at <em>Administer &gt; Content management &gt; Taxonomy</em> - (i.e., <a href="http://example.com/admin/content/taxonomy" rel="nofollow">http://example.com/admin/content/taxonomy</a>).</li>
+</ul>
+<h4 id="s-adding-a-vocabulary"><a class="toc-anchor" title="Permalink to this headline" href="#s-adding-a-vocabulary"></a>Adding a vocabulary</h4>
+<ul>
+<li>Choose a name for your vocabulary.</li>
+<li>Give your vocabulary a description. Modules may use this description in different ways. (For example, a module may show the description when users hover over a link.)</li>
+<li>In Drupal 7, vocabularies are only assigned to content types through the addition of a "term reference" field for that content type. One step in setting the "term reference" field will be to choose the vocabulary from which the term will be chosen. In Drupal 6, you can tie your vocabulary to particular content type: "story" or "book page". Once you've assigned a vocabulary to a content type, content creators will be able to choose to assign a term from that list to their content.</li>
+<li>You can also give your vocabulary "help text" to help your users choose. Note that when creating a new content type, existing vocabularies do not have the new content type selected; you need to edit them to add the type.</li>
+<li>Vocabularies can have hierarchies of terms. In Drupal 7 and 6, you simply arrange items to create a hierarchy.</li>
+<li>In Drupal 6
+<ul>
+<li>You can allow "related terms."</li>
+<li>If you allow "free tagging," when your users create content they can make up their own terms as they go along, instead of having to choose from a list.</li>
+<li>By choosing "multiple select," you can allow your users to put a post into more than one category at once by tagging it with more than one vocabulary term.</li>
+<li>You may also require that when your users create content of a certain "content type" they assign at least one of this vocabulary's terms.</li>
+<li>You can decide the order in which your vocabulary will appear in lists by assigning a "weight" to it. A term that is weighted 2 is "lighter" than a term that is weighted 6 so the term weighted 2 will appear higher on the list.</li>
+</ul>
+</li>
+<li>Finally, you can delete the vocabulary altogether, thereby also deleting all its terms, but not the nodes to which they were assigned.</li>
+</ul>
+<h4 id="s-working-with-terms"><a class="toc-anchor" title="Permalink to this headline" href="#s-working-with-terms"></a>Working with Terms</h4>
+<p>To view or manage the terms of each vocabulary, click on its <em>list terms</em> link. On the <em>list terms</em> page you can edit each term by clicking the <em>edit</em> link. Now, on the <em>edit term</em> page you have several kinds of choices.</p>
+<ul>
+<li>You can put the term in its place in the hierarchy by choosing the term's "parent" .</li>
+<li>You must assign your term a name as a "nameless term" does not exist.</li>
+<li>In Drupal 6
+<ul>
+<li>You can list synonyms for your term and this creates what is known as a "thesaurus".</li>
+<li>You can select from this vocabulary one or more terms with which you'd like your term to be related (select multiple terms by using the standard conventions of your operating system, like shift-click and control-click).</li>
+</ul>
+</li>
+<li>You can decide the order in which your term will appear in lists by assigning it a "weight".</li>
+<li>You can delete a term altogether.</li>
+</ul>
+<p>To add new terms to your vocabulary, click its <em>add terms</em> link. The <em>list terms</em> page also has an <em>add terms</em> link that does the same thing. When you add new terms you have the same options as when you edit them.</p>
+<h3 id="s-using-categories-in-menus"><a class="toc-anchor" title="Permalink to this headline" href="#s-using-categories-in-menus"></a>Using Categories in Menus</h3>
+<p>The menus on your site can call for items that match specific taxonomy terms. To create a menu using Taxonomy, follow these steps:</p>
+<ul>
+<li>Find the number given to your taxonomy term (to find the term number, go to the <em>categories</em> page, <em>"list terms"</em> for the category to which your term belongs, and hover over the term. You'll see the number.)</li>
+<li>Go to the <em>menus</em> page (<em>Administer &gt; Site building &gt; Menus</em>)</li>
+<li>Select <em>Add item,</em></li>
+<li>When you fill in the <em>Path</em> field you add your term as follows:<br />
+	<code class="language-php">taxonomy/term/1</code><br />
+	If the term "Sonatas" is term 1, this would call for all the nodes of that category.</li>
+</ul>
+<p>In Drupal 6, you could also combine terms or add a <em>depth</em> parameter to the path. Note that the following does <em>not</em> work in Drupal 7:</p>
+<ul>
+<li>If the term "Bach" is term 2, this could call for only those sonatas written by Bach:<br />
+	<code class="language-php">taxonomy/term/1,2</code></li>
+<li>Or if Brahms is term 3 and this will call for everything that has to do with either Bach <em>or</em> Brahms:<br />
+	<code class="language-php">taxonomy/term/2+3</code></li>
+<li>If you are using a <em>hierarchical</em> taxonomy, and want all nodes tagged with child terms to show up also, you can create an URL link like <code class="language-php">taxonomy/term/2/2</code> where the second parameter is the <em>depth</em> that the tree will be recursed into, or <code class="language-php">taxonomy/term/2/all</code> for <em>all</em> child terms.</li>
+</ul>
+<p>(In Drupal 7, you can no longer specify paths such as "taxonomy/term/1,2", "taxonomy/term/1+2","taxonomy/term/2/2" or "taxonomy/term/2/all". Function taxonomy_term_page (Drupal 7) does not parse the string as it did in Drupal 6.)</p>
+<p>Several <a href="/project/Modules/category/71" rel="nofollow">contributed modules</a> make powerful use of the categories (taxonomy) module, exploiting and extending what it can do.</p></div></div></div>  </div>
+
+  
+  </div>
+        </div>
+      </div>
+      <div class="column-content-region bottom-right-content column panel-panel">
+        <div class="column-content-region-inner bottom-right-content-inner column-inner panel-panel-inner">
+          <div class="panel-pane pane-views-panes pane-documentation-help-improve-pane"  id="help-improve-this-page" >
+  
+        <h2 class="pane-title">
+      Help improve this page    </h2>
+    
+  
+  <div class="pane-content">
+    <div class="view view-documentation-help view-id-documentation_help view-display-id-improve_pane view-dom-id-929e7f29ec79e0492c1e538a975d94c4">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <span class="views-field views-field-field-documentation-status">    <strong class="views-label views-label-field-documentation-status">Page status: </strong>    <span class="field-content">No known problems</span>  </span>  
+  <div class="views-field views-field-nothing">        <span class="field-content"><br /><strong>You can:</strong><br />
+<ul>
+<li>Log in, click <a href="/node/774892/edit">Edit</a>, and edit this page</li>
+<li>Log in, click <a href="/node/774892/discuss">Discuss</a>, update the Page status value, and suggest an improvement</li>
+<li>Log in and <a href="/node/add/project-issue/documentation?title=Suggestion%20for%3A%20%28774892%29%20About%20taxonomy">create a Documentation issue</a> with your suggestion</li>
+</ul></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+
+  
+  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer clearfix panel-panel">
+    <div class="container-inner footer-inner panel-panel-inner">
+          </div>
+  </div>
+
+</div><!-- /.sutro -->
+</div>
+  </div>
+  </div>
+</div>
+  </div>
+        </div>
+              </div> <!-- /#content -->
+
+    </div> <!-- /#column-left -->
+
+      </div> <!-- /#page -->
+
+  <div id="footer" role="contentinfo">
+            <div class="region region-footer">
+    <div id="block-drupalorg-documentation-license" class="block block-drupalorg">
+<div class="block-inner">
+    
+  <div class="content">
+    Drupal’s online documentation is © 2000-2026 by the individual contributors and can be used in accordance with the <a href="/terms">Creative Commons License, Attribution-ShareAlike 2.0</a>. PHP code is distributed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU General Public License</a>.  </div>
+  </div>
+</div>
+<div id="block-drupalorg-crosssite-infra-partner" class="block block-drupalorg-crosssite">
+<div class="block-inner">
+    
+  <div class="content">
+    <a href="https://www.tag1.com/?utm_source=DA&utm_medium=referral&utm_campaign=drupal-org-footer" >Infrastructure management for Drupal.org provided by <img src="/sites/all/modules/drupalorg/drupalorg/images/tag1-w.svg" alt="Tag1 logo" ></a> 
+<br>
+<span style="font-size: .65em;"><a href="https://d7es.tag1.com/plans?utm_source=DA&utm_medium=footer&utm_campaign=EOL&utm_id=d7es&utm_term=plans&utm_content=Dec">Need a Drupal 7 extended support partner? Consider Tag1.</a></span>  </div>
+  </div>
+</div>
+<div id="block-drupalorg-crosssite-drupalorg-footer" class="block block-drupalorg-crosssite">
+<div class="block-inner">
+    
+  <div class="content">
+    <h4 class="element-invisible">News items</h4><ul class="drupal-news"><li class="0 first"><a href="https://www.drupal.org/news">News</a></li>
+<li class="1"><a href="https://www.drupal.org/planet" title="News from Drupal community members">Planet Drupal</a></li>
+<li class="2"><a href="https://www.drupal.org/about/media-kit/social-media" title="Drupal on social media">Social media</a></li>
+<li class="3"><a href="https://www.drupal.org/subscribe">Sign up for Drupal news</a></li>
+<li class="4"><a href="https://www.drupal.org/security" title="Announcements from the Drupal Security Team">Security advisories</a></li>
+<li class="5 last"><a href="https://jobs.drupal.org/" title="Drupal Jobs">Jobs</a></li>
+</ul><h4 class="element-invisible">Our community</h4><ul class="community"><li class="0 first"><a href="https://www.drupal.org/community">Community</a></li>
+<li class="1"><span><a href="https://www.drupal.org/drupal-services" title="People and organizations offering Drupal services">Services</a>, <a href="https://www.drupal.org/training" title="People and organizations offering Drupal training">Training</a> & <a href="https://www.drupal.org/hosting" title="Organizations offering Drupal hosting">Hosting</a></span></li>
+<li class="2"><a href="https://www.drupal.org/community/contributor-guide">Contributor guide</a></li>
+<li class="3"><a href="https://groups.drupal.org/groups" title="groups.drupal.org">Groups &amp; meetups</a></li>
+<li class="4"><a href="https://events.drupal.org" title="Upcoming and past DrupalCons">DrupalCon</a></li>
+<li class="5 last"><a href="https://www.drupal.org/dcoc" title="Drupal code of conduct">Code of conduct</a></li>
+</ul><h4 class="element-invisible">Documentation</h4><ul class="get-started"><li class="0 first"><a href="https://www.drupal.org/documentation" title="Documentation for working with Drupal">Documentation</a></li>
+<li class="1"><a href="https://www.drupal.org/docs">Drupal Guide</a></li>
+<li class="2"><a href="https://www.drupal.org/docs/user_guide/en/index.html">Drupal User Guide</a></li>
+<li class="3"><a href="https://www.drupal.org/documentation/develop">Developer docs</a></li>
+<li class="4 last"><a href="https://api.drupal.org/" title="Drupal API reference">API.Drupal.org</a></li>
+</ul><h4 class="element-invisible">Drupal code base</h4><ul class="download-extend"><li class="0 first"><a href="https://www.drupal.org/download">Download &amp; Extend</a></li>
+<li class="1"><a href="https://www.drupal.org/project/drupal" title="Download the latest version of the Drupal software">Drupal core</a></li>
+<li class="2"><a href="https://www.drupal.org/project/project_module" title="Download add-on features and functionality">Modules</a></li>
+<li class="3"><a href="https://www.drupal.org/project/project_theme" title="Download pre-designed styles for Drupal">Themes</a></li>
+<li class="4 last"><a href="https://www.drupal.org/project/project_distribution" title="Download a pre-packaged Drupal site">Distributions</a></li>
+</ul><h4 class="element-invisible">Governance of community</h4><ul class="about"><li class="0 first"><a href="https://www.drupal.org/about">About</a></li>
+<li class="1"><a href="https://www.drupal.org/about/features/accessibility" title="Our committment to accessibility">Web accessibility</a></li>
+<li class="2"><a href="https://www.drupal.org/association" title="About the Drupal Association">Drupal Association</a></li>
+<li class="3"><a href="https://www.drupal.org/drupalorg" title="About Drupal.org">About Drupal.org</a></li>
+<li class="4"><a href="https://www.drupal.org/terms" title="Drupal.org terms of service">Terms of service</a></li>
+<li class="5 last"><a href="https://www.drupal.org/privacy" title="Drupal.org privacy policy">Privacy policy</a></li>
+</ul>  </div>
+  </div>
+</div>
+<div id="block-block-77" class="block block-block">
+<div class="block-inner">
+    
+  <div class="content">
+    <p>Drupal is a <a href="/about/trademark">registered trademark</a> of <a href="https://dri.es">Dries Buytaert</a>.</p>
+  </div>
+  </div>
+</div>
+  </div>
+      </div>
+    <div class="region region-page-bottom">
+    <script type="text/javascript">
+      (function(){
+          window._pxAppId = 'PXVnPBBfwe';
+          window._pxParam2 = '';
+          window._pxParam3 = '0';
+          var p = document.getElementsByTagName('script')[0],
+              s = document.createElement('script');
+          s.async = 1;
+          s.src = '/VnPBBfwe/init.js';
+          p.parentNode.insertBefore(s,p);
+      }());
+  </script>
+  <noscript>
+      <div style="position:fixed; top:0; left:0; display:none" width="1" height="1">
+          <img src="/VnPBBfwe/xhr/api/v1/collector/noScript.gif?appId=PXVnPBBfwe">
+      </div>
+  </noscript>  </div>
+<script type="text/javascript" src="/files/advagg_js/js__B0FBwiP97ZnD38IFraZus4upS4KVkMXI3ou0fJ2ZXGA__pPDESRJz9GHsxqQIwQ_V8xnFYEH5jipG2eicsfrdWCs__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+
+<!--[if lte IE 9]>
+<script type="text/javascript" src="/files/advagg_js/js__79M6UrZjAw3oNGnUjsWip12JsvnUZmJGA3h9LI0kuzE__J0sbXAJNry2-C_ZL2xd0RdVuzwTLvwN-UisIv5RNCvU__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js#ie9-" onload="if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(true);}"></script>
+<![endif]-->
+
+<!--[if gt IE 9]>
+<script type="text/javascript" src="/files/advagg_js/js__79M6UrZjAw3oNGnUjsWip12JsvnUZmJGA3h9LI0kuzE__J0sbXAJNry2-C_ZL2xd0RdVuzwTLvwN-UisIv5RNCvU__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js#ie10+" defer="defer" onload="if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(true);}"></script>
+<![endif]-->
+
+<!--[if !IE]><!-->
+<script type="text/javascript" src="/files/advagg_js/js__79M6UrZjAw3oNGnUjsWip12JsvnUZmJGA3h9LI0kuzE__J0sbXAJNry2-C_ZL2xd0RdVuzwTLvwN-UisIv5RNCvU__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer" onload="if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(true);}"></script>
+<!--<![endif]-->
+<script type="text/javascript" src="/files/advagg_js/js__pqoYaVR8NVhof-vNXe50j2TKhFv__IihVag_h4G6kus__B4mbn4wICLQjWm1m3-z1kw8F1FtP0cDAHKp00Xy_-88__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" src="/files/advagg_js/js__H5AFmq1RrXKsrazzPq_xPQPy4K0wUKqecPjczzRiTgQ__wor4r9P8YTtQ7p6fbywTetZ47Z_orumIfrrhgxrpLus__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer" onload="
+function advagg_mod_1() {
+  // Count how many times this function is called.
+  advagg_mod_1.count = ++advagg_mod_1.count || 1;
+  try {
+    if (advagg_mod_1.count <= 40) {
+      init_drupal_core_settings();
+
+      // Set this to 100 so that this function only runs once.
+      advagg_mod_1.count = 100;
+    }
+  }
+  catch(e) {
+    if (advagg_mod_1.count >= 40) {
+      // Throw the exception if this still fails after running 40 times.
+      throw e;
+    }
+    else {
+      // Try again in 1 ms.
+      window.setTimeout(advagg_mod_1, 1);
+    }
+  }
+}
+function advagg_mod_1_check() {
+  if (window.init_drupal_core_settings && window.jQuery && window.Drupal) {
+    advagg_mod_1();
+  }
+  else {
+    window.setTimeout(advagg_mod_1_check, 1);
+  }
+}
+advagg_mod_1_check();"></script>
+<script type="text/javascript" src="/files/advagg_js/js__Oc0wwB7MVRfxtYw6EQM7d9sXj9PAQePoWSzQJ0uTk6c__iXqOGoaPhZHCPEspUr5BC8BwOx5P8B11xv7VOhoUii8__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" src="/files/advagg_js/js__FabcJ6qluktliDejymsuV-FqaN_HyMKGe93c2rO9Ky0__el1ZLGkKneOoCS6OWa01WHuIEsTsXZ46MRLCF390Fbw__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" src="/files/advagg_js/js__YT6D1B_BKxvm6JCH_t9sZNI5L6yITa_DlU5QcSlOkAU__OXobH7d1IP1o3WABlniIrU_-pcJacVSIPUv9bpD-6pQ__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" src="/files/advagg_js/js__06Uejkt2sN1AJAk3QcRQG9yrq-jCjZth0s-OymGOkVE__Xp4EnlVJbsmbe8O0bsvmSRyilyUy2SuxkbvrHYNE4bk__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" src="/files/advagg_js/js__pLKQd4r7OrHglE7Qkqw53K2UXCqQdhqQ9v0cz7hMCQY__OErfYuQdGbFHcCoLoUW_ESSvaumApNojzjJit8-2xcw__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" src="/files/advagg_js/js__hHUWFbMAa11eJtx5V0ym9o0YBsB1udk34qUT5wr1ihI__vSxsxbzmzuz4XPh--CL1BBciQpEQ_m8FfdQINCOAg14__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function init_drupal_core_settings() {jQuery.extend(Drupal.settings,{"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"bluecheese","theme_token":"HysQdSYjU3lNoXvxRrOobwgSWaUfDFhhAjtfcA-w7vY"},"drupalorgGitlab":{"gitlab_base_url":"https:\/\/git.drupalcode.org","base_url":"https:\/\/www.drupal.org"},"better_exposed_filters":{"views":{"documentation_help":{"displays":{"improve_pane":{"filters":[]}}},"documentation_related_content":{"displays":{"related_content_pane":{"filters":[]}}},"drupalorg_issue_relations_blocks":{"displays":{"block_parent_issue":{"filters":[]},"block_related_issues":{"filters":[]}}}}},"urlIsAjaxTrusted":{"\/docs\/7\/organizing-content-with-taxonomies\/about-taxonomies":true},"drupalorgCrosssiteConsentNeeded":true,"ogContext":{"groupType":"node","gid":"2764189"}}); 
+if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(false);}} if(window.jQuery && window.Drupal){init_drupal_core_settings();}
+//--><!]]>
+</script>
+<script type="text/javascript" src="/files/advagg_js/js__2k0CJ3KAQNFTFab3y6ZvNtxs3HLons0Brq7VwvPSkKo__sQv8imhcZRev08LnyQ7OzwuHrZ3Jdwo5NmznAARX0ig__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" src="/files/advagg_js/js__vj0LjvNwl-3K1P9LGT4BGuXCZcAovYsVlVmoJN3TMRg__KW8SiGceRY3sjIKVrffDjf2MK4A5Vp3EDDxVO-4pegI__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+</body>
+</html>

@@ -1,6 +1,7 @@
 import scrapy
 import json
 import os
+from datetime import datetime, timezone
 from drupal_crawler.items import DrupalCrawlerItem
 
 class DocumentationSpider(scrapy.Spider):
@@ -31,21 +32,32 @@ class DocumentationSpider(scrapy.Spider):
         with open(self.state_file, 'w') as f:
             json.dump(self.sync_state, f, indent=2)
 
+    def normalize_url(self, url):
+        # Normalize trailing slash to avoid duplicate keys in sync_state.
+        return url.rstrip('/')
+
     def parse(self, response):
+        current_url = self.normalize_url(response.url)
+        already_crawled = current_url in self.sync_state
+
         item = DrupalCrawlerItem()
         item['url'] = response.url
         item['title'] = response.css('h1.page-title::text').get()
-        item['html'] = response.css('div.content').get()
+        item['html'] = response.text
         
         item['image_urls'] = response.css('img::attr(src)').getall()
         item['file_urls'] = response.css('a[href$=".pdf"]::attr(href)').getall()
         
-        self.sync_state[response.url] = {
-            "last_crawled": "now"
-        }
-        self.save_state()
+        if not already_crawled:
+            self.sync_state[current_url] = {
+                "last_crawled": datetime.now(timezone.utc).isoformat()
+            }
+            self.save_state()
+            yield item
 
-        yield item
-
-        for next_page in response.css('a[href^="/docs/"]::attr(href)').getall() + response.css('a[href^="/documentation/"]::attr(href)').getall():
+        next_links = response.css('a[href^="/docs/"]::attr(href)').getall() + response.css('a[href^="/documentation/"]::attr(href)').getall()
+        for next_page in next_links:
+            next_url = self.normalize_url(response.urljoin(next_page))
+            if next_url in self.sync_state:
+                continue
             yield response.follow(next_page, self.parse)

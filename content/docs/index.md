@@ -1,90 +1,101 @@
 ---
-author: ''
-drupal_version: ''
-last_updated: ''
-readability_score: -29.79
-source_url: https://www.drupal.org/
-suggested_reviewers: []
-summary: Welcome to Drupal.org, where you can discover, build, and support the Drupal
-  CMS. This site offers information on Drupal Core, Drupal CMS, Drupal AI, documentation,
-  local development, community resources, and more.
+author: Multiple authors
+drupal_version: Not specified in the HTML
+last_updated: Not specified in the HTML
+readability_score: -10.73
+source_url: http://www.drupal.org/docs
+suggested_reviewers:
+- Log in
+- Create account
+summary: Drupal is a content management system (CMS) that allows you to easily create
+  and manage your own website. It includes features such as user management, node
+  types, fields, comments, and much more.
 tags:
 - Drupal
-- CMS
-- Open Source
-- Community
-themes: []
-title: Drupal.org
+- Documentation
+- User Guide
+- Administration
+- Upgrading
+- Extending
+themes:
+- Not specified in the HTML
+title: Drupal
 ---
 
-```markdown
-# Drupal.org Home
+# Drupal
 
-## Discover Drupal
+## Getting started
 
-- [Drupal Core](https://www.drupal.org/about/overview/technical)
-- [Drupal CMS](https://new.drupal.org/drupal-cms)
-- [Drupal AI](https://new.drupal.org/ai)
-- [Case Studies](https://www.drupal.org/case-studies)
-- [Drupal for Government](https://www.drupal.org/industries/government)
-- [Drupal for Higher Education](https://www.drupal.org/industries/education)
-- [Drupal for Nonprofit](https://www.drupal.org/industries/nonprofit)
-- [Drupal for eCommerce](https://www.drupal.org/industries/ecommerce)
-- [Drupal for FinTech](https://www.drupal.org/industries/fintech)
-- [Drupal for Healthcare](https://www.drupal.org/industries/healthcare)
-- [Drupal for Enterprise](https://new.drupal.org/industries/enterprise)
-- [Drupal for Retail](https://new.drupal.org/industries/retail)
-- [Drupal for Travel & Tourism](https://new.drupal.org/industries/travel)
+Learn how to install Drupal and explore key Drupal concepts.
 
-## Build with Drupal
+- [System requirements](/docs/getting-started/system-requirements)
+- [Installing Drupal](/docs/getting-started/installing-drupal)
+- [Accessibility](/docs/getting-started/accessibility)
+- [Understanding Drupal](/docs/getting-started/understanding-drupal)
+- [Umami: Drupal demonstration installation profile](/docs/getting-started/umami-drupal-demonstration-installation-profile)
+- [Distributions](/docs/getting-started/drupal-distributions)
+- [Multisite Drupal](/docs/getting-started/multisite-drupal)
+- [Sustainability](/docs/getting-started/sustainability)
 
-- [Download Drupal](/download)
-- [Documentation](/documentation)
-- [Getting Started](https://www.drupal.org/docs/getting-started)
-- [Local Development Guide](https://www.drupal.org/docs/official_docs/local-development-guide)
-- [Developer Resources](https://www.drupal.org/developers)
-- [Drupal CMS User Guide](https://new.drupal.org/docs/drupal-cms)
-- [Drupal User Guide](https://www.drupal.org/docs/user_guide/en/index.html)
-- [API](https://api.drupal.org/api/drupal/11.x)
-- [Modules](https://www.drupal.org/project/modules)
-- [Themes](https://www.drupal.org/project/themes)
-- [Distributions](https://www.drupal.org/project/project_distribution)
-- [Issue queues](/project/issues)
-- [Security Advisories](/security)
+## Administering a Drupal site
 
-## Partners & Services
+This guide contains a detailed information about administering a Drupal site
 
-- [Find a Drupal Certified Partner](https://www.drupal.org/drupal-services)
-- [Become a Drupal Certified Partner](https://new.drupal.org/association/become-a-drupal-certified-partner)
-- [Find a Hosting Provider](https://www.drupal.org/hosting)
-- [Find a Migration Partner](https://www.drupal.org/about/drupal-7/d7eol/migration-resource-center/enterprise)
-- [Find Training](https://www.drupal.org/training)
-- [Drupal Steward](https://www.drupal.org/steward)
+- [Getting started with Drupal administration](/docs/administering-a-drupal-site/getting-started-with-drupal-administration)
+- [Managing content](/docs/administering-a-drupal-site/managing-content)
+- [Multilingual guide](/docs/administering-a-drupal-site/multilingual-guide)
+- [Checklist for launching a site](/docs/administering-a-drupal-site/checklist-for-launching-a-site)
+- [Configuration management](/docs/administering-a-drupal-site/configuration-management)
+- [Creating a static archive of a Drupal site](/docs/administering-a-drupal-site/creating-a-static-archive-of-a-drupal-site)
+- [Cron automated tasks](/docs/administering-a-drupal-site/cron-automated-tasks)
+- [Managing site performance and scalability](/docs/administering-a-drupal-site/managing-site-performance-and-scalability)
+- [Node Revisions](/docs/administering-a-drupal-site/node-revisions)
+- [Security in Drupal](/docs/administering-a-drupal-site/security-in-drupal)
+- [Uploaded file management](/docs/administering-a-drupal-site/uploaded-file-management)
+- [Internal Page Cache](/docs/administering-a-drupal-site/internal-page-cache)
+- [Troubleshooting Drupal](/docs/administering-a-drupal-site/troubleshooting-drupal)
 
-## Community
+## Upgrading Drupal
 
-- [About the Community](https://www.drupal.org/community)
-- [How to Contribute](https://www.drupal.org/community/contributor-guide)
-- [DrupalCon](https://events.drupal.org/)
-- [Events](https://www.drupal.org/community/events)
-- [Jobs / Careers](https://jobs.drupal.org/home)
-- [News & Blogs](https://www.drupal.org/blog)
-- [Forum](https://www.drupal.org/forum)
-- [Slack](/community/contributor-guide/reference-information/talk/tools/slack)
-- [Newsletters](https://www.drupal.org/subscribe)
-- [Drupal Swag Shop](https://www.drupal.org/swag)
+Upgrading your site between Drupal major versions.
 
-## Support Drupal
+- [Preparing your site to upgrade to a newer major version](/docs/upgrading-drupal/prepare-major-upgrade)
+- [Upgrading Drupal](/docs/upgrading-drupal/upgrading-drupal)
+- [Upgrading from Drupal 6 or Drupal 7](/docs/upgrading-drupal/upgrading-from-drupal-6-or-drupal-7)
+- [After the upgrade](/docs/upgrading-drupal/after-the-upgrade)
 
-- [The Drupal Association](/association)
-- [Donate](/association/donate)
-- [Become a Partner](/association/become-a-drupal-certified-partner)
-- [Become a Ripple Maker](/association/RippleMakers)
-- [Become an Organization Member](/association/organization-membership)
-- [Drupal Swag Shop](https://www.drupal.org/swag?utm_source=drupalorg&utm_medium=banner&utm_campaign=drupal_swag_shop_2020_09_17)
+## Updating Drupal
 
-## Get Started
+Upgrading your site between Drupal minor versions.
 
-- [Try Drupal CMS](https://new.drupal.org/drupal-cms/trial)
-- [Try Hosting](/try-hosting)
-```
+- [Overview of options](/docs/updating-drupal/options-for-updating-drupal-core)
+- [Update core via Composer](/docs/updating-drupal/updating-drupal-core-via-composer)
+- [Update core manually](/docs/updating-drupal/updating-drupal-core-manually)
+- [Updating Modules and Themes using Composer](/docs/updating-drupal/updating-modules-and-themes-using-composer)
+- [Migrate composer project for Drupal earlier than 8.8.0](/docs/updating-drupal/migrating-the-composer-project-for-drupal-earlier-than-880)
+- [Troubleshooting database updates](/docs/updating-drupal/troubleshooting-database-updates)
+- [Known database update issues and workarounds](/docs/updating-drupal/known-database-update-issues-and-workarounds)
+- [Responding to critical security update advisories](/docs/updating-drupal/responding-to-critical-security-update-advisories)
+- [Automatic Updates](/docs/8/update/automatic-updates)
+- [Drupal updates and deployments](/docs/updating-drupal/deploying-a-drupal-update)
+- [How to back up your Drupal site](/docs/updating-drupal/how-to-back-up-your-drupal-site)
+
+## Extending Drupal
+
+Extend your Drupal site’s functionality with contributed modules or alter its appearance with contributed themes.
+
+- [Overview](/docs/extending-drupal/overview)
+- [Themes](/docs/extending-drupal/themes)
+- [Contributed modules](/docs/extending-drupal/contributed-modules)
+- [Drupal Recipes](/docs/extending-drupal/drupal-recipes)
+- [Installing Modules](/docs/extending-drupal/installing-modules)
+- [Installing modules' Composer dependencies](/docs/extending-drupal/installing-modules-composer-dependencies)
+- [Updating Modules](/docs/extending-drupal/updating-modules)
+- [Module Configuration](/docs/extending-drupal/module-configuration)
+- [Module Documentation and Help](/docs/extending-drupal/module-documentation-and-help)
+- [Uninstalling Modules](/docs/extending-drupal/uninstalling-modules)
+- [Installing Sandbox Modules](/docs/extending-drupal/installing-sandbox-modules)
+
+## Glossary
+
+This glossary describes terminology and acronyms used in the Drupal project and by the Drupal community.

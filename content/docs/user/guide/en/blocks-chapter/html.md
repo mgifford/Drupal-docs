@@ -1,96 +1,39 @@
 ---
-author: Drupal Association
+author: null
 drupal_version: null
 last_updated: null
-readability_score: -29.79
-source_url: /home
-suggested_reviewers: []
-summary: Drupal.org is the official home of Drupal, an open-source content management
-  system (CMS) used by millions of websites. It provides information on building with
-  Drupal, community resources, and support options.
+readability_score: 62.21
+source_url: http://asciidoc.org/
+suggested_reviewers:
+- Log in
+- Create account
+summary: This chapter covers the concept of blocks, how to create a custom block,
+  and how to place a block in a region.
 tags:
 - Drupal
-- CMS
-- Open Source
-- Technology
-- Marketing
-- Design
-- Content Creation
-- Government
-- Higher Education
-- Nonprofit
-- E-commerce
-- FinTech
-- Healthcare
-- Enterprise
-- Retail
-- Travel and Tourism
+- User Guide
+- Blocks
+- Custom Block
+- Block Placement
+- AsciiDoc
 themes: null
-title: Drupal.org Home
+title: Chapter 8. Blocks
 ---
 
-```markdown
-# Drupal.org home
+# Chapter 8. Blocks
 
-## Discover Drupal
-- [Drupal Core](https://www.drupal.org/about/overview/technical)
-- [Drupal CMS](https://new.drupal.org/drupal-cms)
-- [Drupal AI](https://new.drupal.org/ai)
-- [Case Studies](https://www.drupal.org/case-studies)
-- [Drupal for Government](https://www.drupal.org/industries/government)
-- [Drupal for Higher Education](https://www.drupal.org/industries/education)
-- [Drupal for Nonprofit](https://www.drupal.org/industries/nonprofit)
-- [Drupal for eCommerce](https://www.drupal.org/industries/ecommerce)
-- [Drupal for FinTech](https://www.drupal.org/industries/fintech)
-- [Drupal for Healthcare](https://www.drupal.org/industries/healthcare)
-- [Drupal for Enterprise](https://new.drupal.org/industries/enterprise)
-- [Drupal for Retail](https://new.drupal.org/industries/retail)
-- [Drupal for Travel & Tourism](https://new.drupal.org/industries/travel)
+Blocks are a fundamental part of Drupal, allowing you to add content to various regions of your site. Blocks can be customized, created, and placed in specific regions to enhance the user interface and functionality.
 
-## Build with Drupal
-- [Download Drupal](/download)
-- [Documentation](/documentation)
-- [Getting started](https://www.drupal.org/docs/getting-started)
-- [Local Development Guide](https://www.drupal.org/docs/official_docs/local-development-guide)
-- [Developer Resources](https://www.drupal.org/developers)
-- [Drupal CMS User Guide](https://new.drupal.org/docs/drupal-cms)
-- [Drupal User Guide](https://www.drupal.org/docs/user_guide/en/index.html)
-- [API](https://api.drupal.org/api/drupal/11.x)
-- [Modules](https://www.drupal.org/project/modules)
-- [Themes](https://www.drupal.org/project/themes)
-- [Distributions](https://www.drupal.org/project/project_distribution)
-- [Issue queues](/project/issues)
-- [Security Advisories](/security)
+## 8.1. Concept: Blocks
 
-## Partners & Services
-- [Find a Drupal Certified Partner](https://www.drupal.org/drupal-services)
-- [Become a Drupal Certified Partner](https://new.drupal.org/association/become-a-drupal-certified-partner)
-- [Find a Hosting Provider](https://www.drupal.org/hosting)
-- [Find a Migration Partner](https://www.drupal.org/about/drupal-7/d7eol/migration-resource-center/enterprise)
-- [Find Training](https://www.drupal.org/training)
-- [Drupal Steward](https://www.drupal.org/steward)
+Blocks in Drupal are modular pieces of content that can be placed in specific regions on a web page. Each block can be configured to display different types of content, such as text, images, menus, or even other blocks.
 
-## Community
-- [About the Community](https://www.drupal.org/community)
-- [How to Contribute](https://www.drupal.org/community/contributor-guide)
-- [DrupalCon](https://events.drupal.org/)
-- [Events](https://www.drupal.org/community/events)
-- [Jobs / Careers](https://jobs.drupal.org/home)
-- [News & Blogs](https://www.drupal.org/blog)
-- [Forum](https://www.drupal.org/forum)
-- [Slack](/community/contributor-guide/reference-information/talk/tools/slack)
-- [Newsletters](https://www.drupal.org/subscribe)
-- [Drupal Swag Shop](https://www.drupal.org/swag)
+## 8.2. Creating A Custom Block
 
-## Support Drupal
-- [The Drupal Association](/association)
-- [Donate](/association/donate)
-- [Become a Partner](/association/become-a-drupal-certified-partner)
-- [Become a Ripple Maker](/association/RippleMakers)
-- [Become an Organization Member](/association/organization-membership)
-- [Drupal Swag Shop](https://www.drupal.org/swag?utm_source=drupalorg&utm_medium=banner&utm_campaign=drupal_swag_shop_2020_09_17)
+Creating a custom block involves several steps. First, you need to decide on the content you want to include in the block. Then, you can use Drupal's block creation interface to add the block to your site. You can set the block's title, visibility settings, and content.
 
-## Get Started
-- [Try Drupal CMS](https://new.drupal.org/drupal-cms/trial)
-- [Try Hosting](/try-hosting)
-```
+## 8.3. Placing a Block in a Region
+
+Once you have created a block, you need to place it in a specific region on your site. Drupal provides a block layout interface that allows you to drag and drop blocks into different regions. Each region corresponds to a specific area of your site, such as the header, sidebar, or footer.
+
+For more detailed information on blocks and how to use them effectively, refer to the [Drupal User Guide](/docs/user_guide/en/index.html).

@@ -1,59 +1,161 @@
 {
   "https://www.drupal.org/docs": {
-    "last_crawled": "now"
+    "last_crawled": "2026-03-05T22:10:37.388755+00:00"
   },
   "https://www.drupal.org/documentation": {
-    "last_crawled": "now"
+    "last_crawled": "2026-03-05T22:10:37.388755+00:00"
   },
   "https://www.drupal.org/docs/glossary": {
-    "last_crawled": "now"
+    "last_crawled": "2026-03-05T22:10:37.388755+00:00"
   },
   "https://www.drupal.org/docs/develop/drupal-apis/token-api": {
-    "last_crawled": "now"
+    "last_crawled": "2026-03-05T22:10:37.388755+00:00"
   },
   "https://www.drupal.org/docs/7/organizing-content-with-taxonomy/organizing-content-with-taxonomy": {
-    "last_crawled": "now"
+    "last_crawled": "2026-03-05T22:10:37.388755+00:00"
   },
   "https://www.drupal.org/docs/develop/drupal-apis/token-api/token-upgrade-guides": {
-    "last_crawled": "now"
+    "last_crawled": "2026-03-05T22:10:37.388755+00:00"
   },
   "https://www.drupal.org/docs/7/organizing-content-with-taxonomies/using-taxonomy-urls-to-display-sets-of-content": {
-    "last_crawled": "now"
+    "last_crawled": "2026-03-05T22:10:37.388755+00:00"
   },
   "https://www.drupal.org/docs/7/organizing-content-with-taxonomies/guidelines-for-taxonomy-design": {
-    "last_crawled": "now"
+    "last_crawled": "2026-03-05T22:10:37.388755+00:00"
   },
   "https://www.drupal.org/docs/7/organizing-content-with-taxonomies/create-a-vocabulary": {
-    "last_crawled": "now"
+    "last_crawled": "2026-03-05T22:10:37.388755+00:00"
   },
   "https://www.drupal.org/docs/7/organizing-content-with-taxonomies/add-a-vocabulary-to-a-content-type": {
-    "last_crawled": "now"
+    "last_crawled": "2026-03-05T22:10:37.388755+00:00"
   },
   "https://www.drupal.org/docs/7/organizing-content-with-taxonomies/add-a-term-to-a-vocabulary": {
-    "last_crawled": "now"
+    "last_crawled": "2026-03-05T22:10:37.388755+00:00"
   },
   "https://www.drupal.org/docs/7/organizing-content-with-taxonomies/add-a-field-to-a-taxonomy-term-drupal-7-and-later": {
-    "last_crawled": "now"
+    "last_crawled": "2026-03-05T22:10:37.388755+00:00"
   },
   "https://www.drupal.org/docs/7/organizing-content-with-taxonomies/about-taxonomies": {
-    "last_crawled": "now"
+    "last_crawled": "2026-03-05T22:10:37.388755+00:00"
   },
   "https://www.drupal.org/docs/develop/drupal-apis/token-api/tokens-available-in-drupal-core": {
-    "last_crawled": "now"
+    "last_crawled": "2026-03-05T22:10:37.388755+00:00"
   },
   "https://www.drupal.org/docs/develop/drupal-apis/token-api/token-api-hooks": {
-    "last_crawled": "now"
+    "last_crawled": "2026-03-05T22:10:37.388755+00:00"
   },
   "https://www.drupal.org/docs/develop/drupal-apis/token-api/how-to-use-token-api": {
-    "last_crawled": "now"
+    "last_crawled": "2026-03-05T22:10:37.388755+00:00"
   },
   "https://www.drupal.org/docs/develop/drupal-apis/token-api/overview-of-token-api": {
-    "last_crawled": "now"
+    "last_crawled": "2026-03-05T22:10:37.388755+00:00"
   },
   "https://www.drupal.org/docs/user_guide/en/blocks-chapter.html": {
-    "last_crawled": "now"
+    "last_crawled": "2026-03-05T22:10:37.388755+00:00"
   },
   "https://www.drupal.org/docs/develop/drupal-apis/icon-api": {
-    "last_crawled": "now"
+    "last_crawled": "2026-03-05T22:10:37.388755+00:00"
+  },
+  "https://www.drupal.org/docs/extending-drupal/installing-sandbox-modules": {
+    "last_crawled": "2026-03-05T19:13:49.261514+00:00"
+  },
+  "https://www.drupal.org/docs/develop/drupal-apis/htmx": {
+    "last_crawled": "2026-03-05T19:13:57.582558+00:00"
+  },
+  "https://www.drupal.org/docs/drupal-apis/update-api": {
+    "last_crawled": "2026-03-05T19:14:05.481900+00:00"
+  },
+  "https://www.drupal.org/docs/develop/drupal-apis/htmx/ajax-api-to-htmx/updateselectioncommand": {
+    "last_crawled": "2026-03-05T19:14:19.546944+00:00"
+  },
+  "https://www.drupal.org/docs/drupal-apis/update-api/writing-automated-update-tests-for-drupal-8-or-later": {
+    "last_crawled": "2026-03-05T19:14:27.092681+00:00"
+  },
+  "https://www.drupal.org/docs/drupal-apis/update-api/updating-entities-and-fields-in-drupal-8": {
+    "last_crawled": "2026-03-05T19:14:41.775713+00:00"
+  },
+  "https://www.drupal.org/docs/drupal-apis/migrate-api/migration-tests": {
+    "last_crawled": "2026-03-05T19:14:52.057255+00:00"
+  },
+  "https://www.drupal.org/docs/7/testing/writing-upgrade-path-tests": {
+    "last_crawled": "2026-03-05T19:15:01.788162+00:00"
+  },
+  "https://www.drupal.org/docs/drupal-apis/migrate-api/process-pipelines": {
+    "last_crawled": "2026-03-05T19:15:14.440339+00:00"
+  },
+  "https://www.drupal.org/docs/7/testing/miscellaneous-simpletest-tips": {
+    "last_crawled": "2026-03-05T19:15:29.091305+00:00"
+  },
+  "https://www.drupal.org/docs/8/api/migrate-api/migrate-process-plugins/list-of-migrate-process-plugins": {
+    "last_crawled": "2026-03-05T19:15:49.952822+00:00"
+  },
+  "https://www.drupal.org/docs/7/testing/comprehensive-example": {
+    "last_crawled": "2026-03-05T19:16:03.167404+00:00"
+  },
+  "https://www.drupal.org/docs/8/api/migrate-api/migrate-process-plugins/process-plugins-from-contrib-modules/contrib-process-plugin-entity_generate": {
+    "last_crawled": "2026-03-05T19:16:28.622688+00:00"
+  },
+  "https://www.drupal.org/docs/8/api/migrate-api/migrate-process-plugins/chaining-migrations-using-migration_lookup": {
+    "last_crawled": "2026-03-05T19:16:42.836871+00:00"
+  },
+  "https://www.drupal.org/docs/8/api/migrate-api/migrate-process-plugins/process-plugins-from-contrib-modules/other-process-plugins": {
+    "last_crawled": "2026-03-05T19:16:56.883457+00:00"
+  },
+  "https://www.drupal.org/docs/8/api/migrate-api/migrate-process-plugins/process-plugins-from-contrib-modules/migrate-conditions": {
+    "last_crawled": "2026-03-05T19:17:06.794340+00:00"
+  },
+  "https://www.drupal.org/docs/8/api/migrate-api/migrate-process-plugins/process-plugins-from-other-contrib-modules/contrib-process-plugin-geofield_latlon": {
+    "last_crawled": "2026-03-05T19:17:21.050099+00:00"
+  },
+  "https://www.drupal.org/docs/extending-drupal/uninstalling-modules": {
+    "last_crawled": "2026-03-09T01:51:48.761648+00:00"
+  },
+  "https://www.drupal.org/docs/develop/drupal-apis/typed-data-api": {
+    "last_crawled": "2026-03-09T01:52:03.740266+00:00"
+  },
+  "https://www.drupal.org/docs/user_guide/en/config-uninstall.html": {
+    "last_crawled": "2026-03-09T01:52:12.794487+00:00"
+  },
+  "https://www.drupal.org/docs/drupal-apis/typed-data-api/computed-properties-tbd": {
+    "last_crawled": "2026-03-09T01:52:23.698493+00:00"
+  },
+  "https://www.drupal.org/docs/user_guide/en/structure-content-type-delete.html": {
+    "last_crawled": "2026-03-09T01:52:36.788399+00:00"
+  },
+  "https://www.drupal.org/docs/user_guide/en/prevent-cache-clear.html": {
+    "last_crawled": "2026-03-09T01:52:50.193886+00:00"
+  },
+  "https://www.drupal.org/docs/user_guide/en/language-concept.html": {
+    "last_crawled": "2026-03-09T01:53:01.579281+00:00"
+  },
+  "https://www.drupal.org/docs/user_guide/en/prevent-status.html": {
+    "last_crawled": "2026-03-09T01:53:13.085048+00:00"
+  },
+  "https://www.drupal.org/docs/user_guide/en/install-prepare.html": {
+    "last_crawled": "2026-03-09T01:53:28.672188+00:00"
+  },
+  "https://www.drupal.org/docs/user_guide/en/security-cron-concept.html": {
+    "last_crawled": "2026-03-09T01:53:42.314045+00:00"
+  },
+  "https://www.drupal.org/docs/user_guide/en/install-run.html": {
+    "last_crawled": "2026-03-09T01:53:55.752627+00:00"
+  },
+  "https://www.drupal.org/docs/user_guide/en/security-update-theme.html": {
+    "last_crawled": "2026-03-09T01:54:03.535766+00:00"
+  },
+  "https://www.drupal.org/docs/user_guide/en/install-dev-sites.html": {
+    "last_crawled": "2026-03-09T01:54:17.447473+00:00"
+  },
+  "https://www.drupal.org/docs/user_guide/en/thoughts-connecting.html": {
+    "last_crawled": "2026-03-09T01:54:28.437214+00:00"
+  },
+  "https://www.drupal.org/docs/user_guide/en/extend-git.html": {
+    "last_crawled": "2026-03-09T01:54:38.040256+00:00"
+  },
+  "https://www.drupal.org/docs/user_guide/en/understanding-project.html": {
+    "last_crawled": "2026-03-09T01:54:52.055619+00:00"
+  },
+  "https://www.drupal.org/docs/user_guide/en/thoughts-learn-more.html": {
+    "last_crawled": "2026-03-09T01:55:05.664591+00:00"
   }
 }

@@ -1,84 +1,48 @@
 ---
-author: ''
-drupal_version: ''
-last_updated: ''
-readability_score: -29.79
-source_url: https://www.drupal.org/
-suggested_reviewers: []
-summary: Welcome to Drupal.org, the home of the open-source CMS platform. Learn more
-  about Drupal, discover how it can be used in various industries, and get started
-  building your own site.
-tags:
-- Drupal
-- CMS
-- Open Source
-- Web Development
-themes: []
-title: Drupal.org Home
+error: Failed to parse metadata
+raw: "Here's a summary of the key points from the document about Drupal taxonomy:\n\
+  \n1. Taxonomy is used to categorize content on a Drupal site.\n\n2. Vocabulary is\
+  \ a collection of terms. \n\n3. Terms are the individual categories within a vocabulary.\n\
+  \n4. Vocabularies can be assigned to specific content types. \n\n5. Terms can be\
+  \ organized hierarchically.\n\n6. Vocabulary and term management is done through\
+  \ the Drupal admin interface.\n\n7. Vocabulary settings include:\n   - Name\n  \
+  \ - Description\n   - Help text\n   - Weight (for sorting in lists)\n   - Ability\
+  \ to require terms for certain content types\n\n8. Term settings include:\n   -\
+  \ Name\n   - Parent term (for hierarchy)\n   - Weight\n   - Ability to add synonyms\
+  \ (in Drupal 6)\n   - Ability to associate related terms (in Drupal 6)\n   - Ability\
+  \ to add new terms\n\n9. Taxonomy terms can be used to create menu items in Drupal.\n\
+  \n10. URLs can be constructed to show all content tagged with a specific term or\
+  \ hierarchy of terms.\n\n11. Various contributed modules can extend taxonomy functionality.\n\
+  \n12. The document provides instructions on how to edit, discuss, and suggest improvements\
+  \ to the page."
+readability_score: 52.65
+suggested_reviewers:
+- Log in
+- Create account
 ---
 
-```markdown
-# Drupal.org Home
+The given text is a detailed guide on how to manage taxonomy in Drupal, a popular content management system. It covers various aspects of taxonomy management, including adding and working with vocabularies and terms, as well as using categories in menus.
 
-## Discover Drupal
-- [Drupal Core](https://www.drupal.org/about/overview/technical)
-- [Drupal CMS](https://new.drupal.org/drupal-cms)
-- [Drupal AI](https://new.drupal.org/ai)
-- [Case Studies](https://www.drupal.org/case-studies)
-- [Drupal for Government](https://www.drupal.org/industries/government)
-- [Drupal for Higher Education](https://www.drupal.org/industries/education)
-- [Drupal for Nonprofit](https://www.drupal.org/industries/nonprofit)
-- [Drupal for eCommerce](https://www.drupal.org/industries/ecommerce)
-- [Drupal for FinTech](https://www.drupal.org/industries/fintech)
-- [Drupal for Healthcare](https://www.drupal.org/industries/healthcare)
-- [Drupal for Enterprise](https://new.drupal.org/industries/enterprise)
-- [Drupal for Retail](https://new.drupal.org/industries/retail)
-- [Drupal for Travel & Tourism](https://new.drupal.org/industries/travel)
+Here's a breakdown of the main sections and key points covered:
 
-## Build with Drupal
-- [Download Drupal](/download)
-- [Documentation](/documentation)
-- [Getting started](https://www.drupal.org/getting-started)
-- [Local Development Guide](/docs/local-development-guide)
-- [Developer Resources](https://www.drupal.org/developers)
-- [Drupal CMS User Guide](/docs/drupal-cms)
-- [Drupal User Guide](https://www.drupal.org/docs/user_guide/en/index.html)
-- [API](https://api.drupal.org/api/drupal/11.x)
-- [Modules](https://www.drupal.org/project/modules)
-- [Themes](https://www.drupal.org/project/themes)
-- [Distributions](https://www.drupal.org/project/project_distribution)
-- [Issue queues](/project/issues)
-- [Security Advisories](/security)
+1. **Adding a Vocabulary**: 
+   - Choose a name and description for the vocabulary.
+   - Decide whether to use hierarchies.
+   - Assign the vocabulary to content types.
+   - Set help text and weight for terms.
+   - Add new terms with the ability to set parent terms and synonyms.
 
-## Partners & Services
-- [Find a Drupal Certified Partner](https://www.drupal.org/drupal-services)
-- [Become a Drupal Certified Partner](https://new.drupal.org/association/become-a-drupal-certified-partner)
-- [Find a Hosting Provider](https://www.drupal.org/hosting)
-- [Find a Migration Partner](https://www.drupal.org/about/drupal-7/d7eol/migration-resource-center/enterprise)
-- [Find Training](https://www.drupal.org/training)
-- [Drupal Steward](https://www.drupal.org/steward)
+2. **Working with Terms**:
+   - View and manage terms by editing their details.
+   - Set weights to control term order in lists.
+   - Add new terms with the same options as editing terms.
 
-## Community
-- [About the Community](https://www.drupal.org/community)
-- [How to Contribute](https://www.drupal.org/community/contributor-guide)
-- [DrupalCon](https://events.drupal.org/)
-- [Events](https://www.drupal.org/community/events)
-- [Jobs / Careers](https://jobs.drupal.org/home)
-- [News & Blogs](https://www.drupal.org/blog)
-- [Forum](https://www.drupal.org/forum)
-- [Slack](/community/contributor-guide/reference-information/talk/tools/slack)
-- [Newsletters](https://www.drupal.org/subscribe)
-- [Drupal Swag Shop](https://www.drupal.org/swag)
+3. **Using Categories in Menus**:
+   - Learn how to create menu items that call for items matching specific taxonomy terms.
+   - Use the taxonomy term's path to display nodes tagged with that term.
+   - Note that combining terms and specifying paths with depth parameters is not supported in Drupal 7.
 
-## Support Drupal
-- [The Drupal Association](/association)
-- [Donate](/association/donate)
-- [Become a Partner](/association/become-a-drupal-certified-partner)
-- [Become a Ripple Maker](/association/RippleMakers)
-- [Become an Organization Member](/association/organization-membership)
-- [Drupal Swag Shop](https://www.drupal.org/swag?utm_source=drupalorg&utm_medium=banner&utm_campaign=drupal_swag_shop_2020_09_17)
+4. **Help Improve This Page**:
+   - Provide options for users to contribute to improving the page, such as editing, suggesting improvements, or creating documentation issues.
 
-## Get Started
-- [Try Drupal CMS](https://new.drupal.org/drupal-cms/trial)
-- [Try Hosting](/try-hosting)
-```
+This guide is a comprehensive resource for Drupal administrators and developers looking to effectively manage taxonomy within their Drupal sites, ensuring that content is organized and easily navigable.

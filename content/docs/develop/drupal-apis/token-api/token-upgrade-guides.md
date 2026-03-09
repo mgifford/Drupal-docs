@@ -1,84 +1,57 @@
 ---
 author: null
-drupal_version: null
-last_updated: null
-readability_score: -29.79
-source_url: https://www.drupal.org
-suggested_reviewers: []
-summary: Welcome to Drupal.org, the home of Drupal, an open-source content management
-  system (CMS). Discover information about Drupal, build with Drupal, and get support
-  from the Drupal community.
+drupal_version: '11.1'
+last_updated: 20 April 2025
+readability_score: 44.28
+source_url: /docs/develop/drupal-apis/token-api/token-upgrade-guides
+suggested_reviewers:
+- Log in
+- Create account
+summary: This page provides guides on how to upgrade the Token API in Drupal from
+  different versions.
 tags:
-- drupal
-- cms
-- open source
-- web development
-themes: []
-title: Drupal.org Home
+- Token API
+- Drupal APIs
+- Object-oriented hooks
+- Drupal 11.1
+- Drupal 7 to 8
+- Drupal 6 to 7 upgrade guide
+themes: null
+title: Token upgrade guides
 ---
 
-```markdown
-# Drupal.org Home
+# Token upgrade guides
 
-## Discover Drupal
-- **Drupal Core**: The open source framework behind millions of websites.
-- **Drupal CMS**: Puts the power of Drupal into the hands of marketers, designers and content creators.
-- **Drupal AI**: Open limitless possibilities with Drupal AI
-- **Case Studies**: Powerful stories that show Drupal solutions in the real world.
-- **Drupal for Government**: Enables digital transformation of government and increases citizen engagement.
-- **Drupal for Higher Education**: See why 70% of the world's leading universities chose Drupal.
-- **Drupal for Nonprofit**: See why Drupal is the open-source CMS choice for some of the world’s most influential nonprofits.
-- **Drupal for eCommerce**: Natively integrate content and commerce.
-- **Drupal for FinTech**: Secure and trustworth FinTech infrastructure.
-- **Drupal for Healthcare**: Powers systems that are secure, patient-centric and engaging.
-- **Drupal for Enterprise**: Why enterprise organizations choose Drupal for multi-brand governance and global scale.
-- **Drupal for Retail**: See how Drupal delivers retail experiences across every channel and touchpoint.
-- **Drupal for Travel & Tourism**: Discover how Drupal powers travel across websites, mobile, and onboard experiences.
+Last updated on 20 April 2025
 
-## Build with Drupal
-- **Download Drupal**
-- **Documentation**: Full knowledge base including Drupal 7 resources
-- **Getting started**
-- **Local Development Guide**
-- **Developer Resources**
-- **Drupal CMS User Guide**
-- **Drupal User Guide**
-- **API**
-- **Modules**
-- **Themes**
-- **Distributions**
-- **Issue queues**
-- **Security Advisories**
+This documentation **needs review**. See "Help improve this page" in the sidebar.
 
-## Partners & Services
-- **Find a Drupal Certified Partner**
-- **Become a Drupal Certified Partner**
-- **Find a Hosting Provider**
-- **Find a Migration Partner**
-- **Find Training**
-- **Drupal Steward**
+## Object-oriented hook system (Drupal 11.1+)
 
-## Community
-- **About the Community**
-- **How to Contribute**
-- **DrupalCon**
-- **Events**
-- **Jobs / Careers**
-- **News & Blogs**
-- **Forum**
-- **Slack**
-- **Newsletters**
-- **Drupal Swag Shop**
+Since [Drupal 11.1](https://www.drupal.org/blog/drupal-11-1-0), hooks can be implemented as classes that use the attribute `Drupal\Core\Hook\Attribute\Hook` to denote specific methods as belonging to specific hooks.
 
-## Support Drupal
-- **The Drupal Association**
-- **Donate**
-- **Become a Partner**
-- **Become a Ripple Maker**
-- **Become an Organization Member**
-- **Drupal Swag Shop**
+Instead of implementing `hook_token_info` or `hook_tokens`, you would create a new PHP class, add functions that implement `hook_token_info` or `hook_tokens` within the class, and set the `#[Hook('token_info')]` or `#[Hook('tokens')]` attribute before your function declaration.
 
-## Get Started
-- **Try Drupal CMS**
-- **Try Hosting**
-```
+Some examples of this usage have been provided in the guides for implementing [hook_token_info](https://www.drupal.org/docs/develop/drupal-apis/token-api/token-api-hooks#s-object-oriented-implementation-example-for-drupal-111) and [hook_tokens](https://www.drupal.org/docs/develop/drupal-apis/token-api/token-api-hooks#s-object-oriented-implementation-example-for-drupal-111--2).
+
+## Drupal 7 to 8+
+
+Updating `hook_token_info` and `hook_tokens` for Drupal 8+ mainly involves allowing type declarations for arguments and return values, and adding `$bubbleable_metadata` for hook_tokens.
+
+Type declarations for arguments and return values is well-supported in newer PHP versions and is highly recommended to ensure functions are being called safely.
+
+Bubbleable metadata is required in some cases to pass cache metadata to the top-level render method, which is critical if rendering a token that may involve something that might differ due to certain caching rules, such as URLs.
+
+For more information, consult [api.drupal.org](https://api.drupal.org)'s documentation on these two hooks and compare their example implementations from version to version.
+
+- `hook_token_info`
+  - [hook_token_info in Drupal 11.x](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Utility%21token.api.php/function/hook_token_info/11.x)
+  - [hook_token_info in Drupal 7.x](https://api.drupal.org/api/drupal/modules%21system%21system.api.php/function/hook_token_info/7.x)
+
+- `hook_tokens`
+  - [hook_tokens in Drupal 11.x](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Utility%21token.api.php/function/hook_tokens/11.x)
+  - [hook_tokens in Drupal 7.x](https://api.drupal.org/api/drupal/modules%21system%21system.api.php/function/hook_tokens/7.x)
+
+## Drupal 6 to 7 upgrade guide
+
+A comprehensive guide for updating Token API from Drupal 6 to Drupal 7 can be found at [https://www.drupal.org/documentation/modules/token/update/6/7](https://www.drupal.org/documentation/modules/token/update/6/7)

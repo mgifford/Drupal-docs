@@ -1,89 +1,41 @@
 ---
-author: Drupal Association
-drupal_version: null
-last_updated: null
-readability_score: -29.79
-source_url: /home
-suggested_reviewers: []
-summary: Drupal is a powerful open-source content management system for building websites,
-  applications, and digital experiences.
+author: geoffreyr
+drupal_version: Not specified in the HTML
+last_updated: Not specified in the HTML
+readability_score: 21.02
+source_url: /docs/develop/drupal-apis/token-api
+suggested_reviewers:
+- Log in
+- Create account
+summary: "The Token API in Drupal exists to allow replacement of placeholders in text\u2014\
+  \"tokens\"\u2014with contextual values that match those placeholders."
 tags:
-- Drupal
-- CMS
-- Open source
-- Web development
-themes: null
-title: Drupal.org home page
+- Drupal APIs
+- Token API
+themes: Not specified in the HTML
+title: Token API
 ---
 
-```markdown
-# Drupal.org home
+# Token API
 
-## Discover Drupal
+The Token API in Drupal exists to allow replacement of placeholders in text—"tokens"—with contextual values that match those placeholders.
 
-- **Drupal Core**: The open source framework behind millions of websites.
-- **Drupal CMS**: Puts the power of Drupal into the hands of marketers, designers and content creators.
-- **Drupal AI**: Open limitless possibilities with Drupal AI
-- **Case Studies**: Powerful stories that show Drupal solutions in the real world.
-- **Drupal for Government**: Enables digital transformation of government and increases citizen engagement.
-- **Drupal for Higher Education**: See why 70% of the world's leading universities chose Drupal.
-- **Drupal for Nonprofit**: The open-source CMS choice for some of the world’s most influential nonprofits.
-- **Drupal for eCommerce**: Natively integrate content and commerce.
-- **Drupal for FinTech**: Secure and trustworth FinTech infrastructure.
-- **Drupal for Healthcare**: Powers systems that are secure, patient-centric and engaging.
-- **Drupal for Enterprise**: Why enterprise organizations choose Drupal for multi-brand governance and global scale.
-- **Drupal for Retail**: See how Drupal delivers retail experiences across every channel and touchpoint.
-- **Drupal for Travel & Tourism**: Discover how Drupal powers travel across websites, mobile, and onboard experiences.
+## Overview of Token API
 
-## Build with Drupal
+A short introduction to Token API and what it can do.
 
-- **Download Drupal**
-- **Documentation** (Full knowledge base including Drupal 7 resources)
-- **Getting started**
-- **Local Development Guide**
-- **Developer Resources**
-- **Drupal CMS User Guide**
-- **Drupal User Guide**
-- **API**
-- **Modules**
-- **Themes**
-- **Distributions**
-- **Issue queues**
-- **Security Advisories**
+## How to use Token API
 
-## Partners & Services
+Covering the most common methods of using Token API.
 
-- **Find a Drupal Certified Partner**
-- **Become a Drupal Certified Partner**
-- **Find a Hosting Provider**
-- **Find a Migration Partner**
-- **Find Training**
-- **Drupal Steward**
+## Token API hooks
 
-## Community
+Details for how to use Token API's hooks.
 
-- **About the Community**
-- **How to Contribute**
-- **DrupalCon**
-- **Events**
-- **Jobs / Careers**
-- **News & Blogs**
-- **Forum**
-- **Slack**
-- **Newsletters**
-- **Drupal Swag Shop**
+## Tokens available in Drupal core
 
-**Support Drupal**
+List of tokens that are available in Drupal core.
 
-- **The Drupal Association**
-- **Donate**
-- **Become a Partner**
-- **Become a Ripple Maker**
-- **Become an Organization Member**
-- **Drupal Swag Shop**
+## Token upgrade guides
 
-## Get Started
-
-- **Try Drupal CMS**
-- **Try Hosting**
-```
+Information on how to upgrade Token API usage between major versions of Drupal.

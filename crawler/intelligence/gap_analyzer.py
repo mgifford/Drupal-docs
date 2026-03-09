@@ -10,7 +10,15 @@ class GapAnalyzer:
         
         prompt = f"Audit this documentation for {target_version} readiness:\n\n{markdown_content}"
         
-        response_text = self.client.analyze(prompt, system_instruction)
+        try:
+            response_text = self.client.analyze(
+                prompt,
+                system_instruction,
+                require_json_array=True,
+            )
+        except TypeError:
+            # Backward compatibility for clients that do not accept router kwargs.
+            response_text = self.client.analyze(prompt, system_instruction)
         try:
             # Extract JSON from response
             start = response_text.find('[')
